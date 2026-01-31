@@ -57,7 +57,7 @@ def sanitize_files():
             print(f"Removed: {file_path}")
 
 def install_to_stellaris(mod_context):
-    """Install descriptor.mod to Stellaris user directory."""
+    """Install descriptor.mod and dist to Stellaris user directory."""
     stellaris_dir = mod_context.get("stellaris_user_dir")
     if not stellaris_dir:
         print("Warning: No Stellaris user directory configured")
@@ -65,15 +65,39 @@ def install_to_stellaris(mod_context):
 
     descriptor_src = Path("src/descriptor.mod")
     descriptor_dst = Path(stellaris_dir) / "PerfectlyBalancedShipSections.mod"
+    install_path = None
 
     if descriptor_src.exists():
         try:
             shutil.copy2(descriptor_src, descriptor_dst)
             print(f"Installed descriptor to: {descriptor_dst}")
+            install_path = _extract_mod_folder(descriptor_src)
         except Exception as e:
             print(f"Error installing descriptor: {e}")
     else:
         print("Warning: src/descriptor.mod not found")
+        return
+
+    if install_path:
+        dist_src = Path("dist")
+        dist_dst = Path(stellaris_dir) / install_path
+        if dist_src.exists():
+            if dist_dst.exists():
+                shutil.rmtree(dist_dst)
+            shutil.copytree(dist_src, dist_dst)
+            print(f"Installed mod files to: {dist_dst}")
+
+def _extract_mod_folder(descriptor_path: Path):
+    """Read path= from descriptor.mod to get install folder."""
+    try:
+        for line in descriptor_path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line.startswith("path="):
+                value = line.split("=", 1)[1].strip().strip('"')
+                return Path(value).name
+    except Exception as e:
+        print(f"Error reading descriptor: {e}")
+    return None
 
 def load_mod_context():
     """Load mod context from .cursor/mod-context.json."""

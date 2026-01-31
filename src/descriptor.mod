@@ -8,6 +8,5 @@ tags={
 }
 name="Perfectly Balanced Ship Sections"
 supported_version="v4.2.*"
-path="mod/PerfectlyBalancedShipSections"
 picture="thumbnail.png"
 remote_file_id=""
