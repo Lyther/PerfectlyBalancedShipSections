@@ -1,0 +1,8 @@
+dist/
+*.log
+.DS_Store
+__pycache__/
+.vscode/
+*.tmp
+*.bak
+*.orig

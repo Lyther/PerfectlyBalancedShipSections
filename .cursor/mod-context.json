@@ -1,0 +1,7 @@
+{
+	"mod_name": "Perfectly Balanced Ship Sections",
+	"namespace_prefix": "PBSS",
+	"stellaris_user_dir": "c:/Users/ender/Documents/Paradox Interactive/Stellaris/mod",
+	"supported_version": "3.14.*",
+	"description": "Provides more ship sections for Stellaris ships, supporting original ships and planning to support ACOT's ships in the future"
+}
