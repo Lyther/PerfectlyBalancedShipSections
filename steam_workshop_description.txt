@@ -1,0 +1,154 @@
+[h1]Perfectly Balanced Ship Sections[/h1]
+
+[img]https://i.imgur.com/placeholder1.jpg[/img]
+
+[h2]🎯 What is Perfectly Balanced Ship Sections?[/h2]
+
+Tired of the limited ship design options in Stellaris? Want to create truly unique fleet compositions with meaningful tactical choices? Perfectly Balanced Ship Sections expands your ship-building capabilities with [b]450+ new section variants[/b] across all ship types while maintaining perfect balance and strategic depth!
+
+[h2]✨ Key Features[/h2]
+
+[list]
+[*] [b]Complete Ship Coverage[/b]: Military ships, capital ships, biological vessels, crisis ships, and defensive structures
+[*] [b]4-Tier Progression[/b]: Common → Advanced → Pro → Ultra sections with escalating requirements
+[*] [b]Perfect Balance[/b]: Advanced/Pro sections are player-only to maintain AI challenge
+[*] [b]Strategic Depth[/b]: Bow offense, Mid utility, Stern defense create meaningful ship roles
+[*] [b]Weapon Slot Balance[/b]: P=S, 2S=1M, 2M=1L, 1L=1HB, 2L=1X, 2X=1T
+[*] [b]Multilingual Support[/b]: 10 languages including English, Chinese, French, German, and more
+[*] [b]DLC Integration[/b]: Full support for all biological ships and crisis events
+[/list]
+
+[h2]🚀 Ship Types Supported[/h2]
+
+[h3]Military Ships[/h3]
+[list]
+[*] Corvettes (16 sections)
+[*] Destroyers (23 sections - 10 bow + 13 stern)
+[*] Cruisers (24 sections - 8 bow + 10 mid + 6 stern)
+[*] Battleships (30 sections - 10 per slot)
+[*] Titans (30 sections - 10 per slot)
+[/list]
+
+[h3]Special Capital Ships[/h3]
+[list]
+[*] Juggernauts (10 sections)
+[*] Bio-Titans (30 sections - 10 per slot)
+[*] Colossus (8 sections)
+[/list]
+
+[h3] Crisis & Biological Ships[/h3]
+[list]
+[*] Harbingers (10 sections)
+[*] Maulers (10 sections)
+[*] Stingers (10 sections)
+[*] Weavers (10 sections)
+[*] Offspring Variants (8-10 sections each)
+[*] Crisis Ships (25 sections)
+[*] Cosmo Crisis (25 sections)
+[*] Star Eaters (6 sections)
+[/list]
+
+[h3]Defensive Structures[/h3]
+[list]
+[*] Military Stations (6 sections)
+[*] Ion Cannons (10 sections)
+[/list]
+
+[h2]⚖️ Balance Philosophy[/h2]
+
+Every section follows strict balance rules:
+- [b]Economic Scaling[/b]: Ultra sections cost 2-4x base alloys
+- [b]Power Progression[/b]: Each tier offers meaningful upgrades
+- [b]Strategic Trade-offs[/b]: Powerful weapons require armor/utility sacrifices
+- [b]AI Protection[/b]: Overpowered sections restricted to players only
+
+[h2]🎮 Gameplay Examples[/h2]
+
+[h3]Battleship Design Options[/h3]
+[img]https://i.imgur.com/placeholder2.jpg[/img]
+
+Choose from specialized roles:
+- Artillery Command (heavy bombardment)
+- Carrier Command (strike craft operations)
+- Plasma Devastation (energy weapons, player-only)
+- Apocalypse Artillery (titanic weapons, extreme costs)
+
+[h3] Biological Fleet Composition[/h3]
+[img]https://i.imgur.com/placeholder3.jpg[/img]
+
+Biological ships now have diverse tactical roles:
+- Harbingers: Strike craft carriers with swarm capabilities
+- Maulers: Close-quarters brawlers with regeneration
+- Stingers: Long-range artillery with devastating barrages
+- Weavers: Support vessels with buffer/debuffer capabilities
+
+[h2]🔧 Technical Details[/h2]
+
+[list]
+[*] [b]Compatibility[/b]: Stellaris 4.2.* (all DLC supported)
+[*] [b]Performance[/b]: No impact on game performance
+[*] [b]Save Games[/b]: Safe to add/remove from existing saves
+[*] [b]Mod Conflicts[/b]: Compatible with most ship design mods
+[*] [b]File Size[/b]: Lightweight (only ship section definitions)
+[/list]
+
+[h2]📋 Change Log[/h2]
+
+[h3]Version 1.0.0 - Initial Release[/h3]
+[list]
+[*] ✅ 450+ new ship section variants
+[*] ✅ Complete coverage of all vanilla ships
+[*] ✅ 4-tier progression system implemented
+[*] ✅ Player-only restrictions on advanced sections
+[*] ✅ Full multilingual localization (10 languages)
+[*] ✅ T-slot weapon compatibility across all ships
+[*] ✅ Biological ship mechanics and regeneration
+[*] ✅ Crisis ship and special vessel support
+[*] ✅ UTF-8 BOM encoding for all localization files
+[/list]
+
+[h2]🎯 Installation[/h2]
+
+[b]Automatic Installation (Recommended):[/b]
+1. Subscribe to this mod on Steam Workshop
+2. Enable in the Stellaris launcher
+3. Enjoy your expanded ship design options!
+
+[b]Manual Installation:[/b]
+1. Download the mod files
+2. Extract to Documents/Paradox Interactive/Stellaris/mod/
+3. Enable in the Stellaris launcher
+
+[h2]🤝 Credits & Acknowledgments[/h2]
+
+[list]
+[*] [b]Paradox Interactive[/b] - For creating the amazing Stellaris universe
+[*] [b]Stellaris Modding Community[/b] - For inspiration and reference materials
+[*] [b]Open Source Contributors[/b] - For feedback and improvements
+[*] [b]Beta Testers[/b] - For balance testing and gameplay feedback
+[/list]
+
+[h2]📞 Support & Feedback[/h2]
+
+Found a bug? Have a suggestion? Want to contribute?
+- [b]Steam Workshop Comments[/b]: Post here for direct support
+- [b]GitHub Issues[/b]: [github.com/yourusername/perfectly-balanced-ship-sections/issues](https://github.com/yourusername/perfectly-balanced-ship-sections/issues)
+- [b]Stellaris Modding Forum[/b]: [forum.paradoxplaza.com](https://forum.paradoxplaza.com)
+
+[h2]🔗 Links[/h2]
+
+[list]
+[*] [b]GitHub Repository[/b]: [github.com/yourusername/perfectly-balanced-ship-sections](https://github.com/yourusername/perfectly-balanced-ship-sections)
+[*] [b]Stellaris Wiki[/b]: [stellaris.paradoxwikis.com](https://stellaris.paradoxwikis.com)
+[*] [b]Paradox Forums[/b]: [forum.paradoxplaza.com](https://forum.paradoxplaza.com)
+[/list]
+
+[h2]📜 License[/h2]
+
+This mod is released under the MIT License. Feel free to learn from, modify, and share!
+
+---
+
+[h1][b]Made with ❤️ for the Stellaris community![/b][/h1]
+
+[img]https://i.imgur.com/placeholder4.jpg[/img]

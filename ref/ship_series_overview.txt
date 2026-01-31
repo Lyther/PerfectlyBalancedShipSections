@@ -1,0 +1,320 @@
+# Perfectly Balanced Ship Sections - Ship Series Overview
+
+## VANILLA STELLARIS SHIP SERIES
+
+### Player-Buildable Military Ships
+
+#### Corvette (Size 1)
+- Smallest and cheapest military ship
+- High evasion, low firepower
+- Unlocks with "Corvettes" technology
+- Role: Anti-corvette, screening, harassment
+- Base cost: Alloys, Energy maintenance
+- Section variants: S3 (3 small weapons), S2PD1 (2 small + PD), M1S1 (1 medium + 1 small - used by Frigates)
+
+#### Frigate (Size 1)
+- Similar to Corvette but different weapon focus
+- Unlocks with "Space Torpedoes" technology
+- Role: Torpedo boat, specialized striker
+- Shares hull tech with Corvettes
+- Uses Corvette sections but with torpedo focus
+
+#### Destroyer (Size 2)
+- Medium ship, good balance of firepower and survivability
+- Unlocks with "Destroyers" technology
+- Role: Fleet escort, anti-medium ship
+- First ship that can mount advanced weapons
+- Section variants: Bow (M1S2, S3, L1), Stern (PD2, S2, M1)
+
+#### Cruiser (Size 4)
+- Large ship, heavy firepower and defenses
+- Unlocks with "Cruisers" technology
+- Role: Fleet backbone, capital ship hunter
+- Can mount multiple weapon types
+- 3-section layout: Bow, Mid, Stern
+
+#### Battleship (Size 8)
+- Massive capital ship, extreme firepower
+- Unlocks with "Battleships" technology
+- Role: Fleet command, planet bombardment
+- Requires significant naval capacity
+- 3-section layout: Bow, Mid, Stern
+
+#### Titan (Size 16) [Apocalypse DLC]
+- Colossal capital ship, ultimate firepower
+- Unlocks with "Titans" technology
+- Requires Citadel with Titan Assembly Yards
+- Role: Super-heavy artillery, fleet command
+- Hard cap: 1 per empire (base), +1 per 200 naval capacity
+- 3-section layout: Bow, Mid, Stern
+
+#### Crisis Corvette [Become the Crisis Ascension Perk]
+- Enhanced Corvette variant
+- Unlocks at Crisis Level 2
+- Superior evasion and armor
+- Costs minerals instead of alloys
+- Buildable during crisis ascension
+
+#### Crisis Destroyer [Become the Crisis Ascension Perk]
+- Enhanced Destroyer variant
+- Unlocks at Crisis Level 3
+- Multiple weapon roles available
+- Costs minerals instead of alloys
+- Buildable during crisis ascension
+
+#### Crisis Cruiser [Become the Crisis Ascension Perk]
+- Enhanced Cruiser variant
+- Unlocks at Crisis Level 4
+- Heavy armor and firepower
+- Costs minerals instead of alloys
+- Buildable during crisis ascension
+
+### Special Ship Variants
+
+#### Offspring Ships [Progenitor Hive Origin]
+- Enhanced versions of Corvettes, Destroyers, Cruisers, Battleships
+- Superior stats and special abilities
+- Build limits: +1 Corvette per 10 naval capacity, +1 Destroyer per 20, +1 Cruiser per 40, +1 Battleship per 80
+- Unique swarm tactics and regeneration
+
+#### Menacing Ships [Become the Crisis Ascension Perk]
+- Enhanced Corvettes, Destroyers, Cruisers
+- Terror weapons and psychological warfare
+- Unlocks during Crisis progression
+- Intimidation and fear effects on enemies
+
+### Player-Buildable Colossal Ships
+
+#### Colossus [Apocalypse DLC]
+- Single-purpose superweapon platform
+- Cannot attack fleets, only planetary targets
+- Planet-killer weapons: World Cracker, Neutron Sweep, Divine Enforcer, Nanobot Diffuser, Devolving Beam, Deluge Machine
+- Single-section layout (ship slot)
+- Hard cap: 1 per empire
+- Requires Colossal Assembly Yards
+- Triggers "Colossus" casus belli for total war
+- Cost: 10,000 Alloys
+
+#### Juggernaut [Federations DLC]
+- Mobile shipyard and fleet command center
+- Can build/repair/upgrade ships while moving
+- Massive hull points (10x Titan)
+- Single-section layout (core slot)
+- Hard cap: 1 per empire (except special federations)
+- Can be homebase for fleets
+- Requires Citadel with Colossal Assembly Yards
+- Includes shipyard capacity and aura components
+
+#### Star-Eater [Nemesis DLC]
+- Ultimate crisis weapon (Become the Crisis)
+- Can destroy entire star systems
+- Converts stars to black holes for dark matter
+- Single-section layout (mid slot)
+- Multiple builds allowed for Crisis Aspirant (crisis level 5+)
+- Combines colossal firepower with regular fleet combat
+- Costs 10,000 Dark Matter
+- Requires Colossal Assembly Yards
+
+### Non-Player Faction Ships (Some Buildable by Players)
+
+#### Fallen Empire Ships
+- Battlecruisers: Battleship-equivalent (not buildable by players)
+- Escorts: Corvette-equivalent (not buildable by players)
+- Ancient technology and superior stats
+- Awakened Fallen Empires can build more
+- Players cannot build these directly
+
+#### Pirate/Marauder Ships
+- Raiders: Corvette-sized (not buildable by players)
+- Pirate Frigates: Frigate-sized (not buildable by players)
+- Pirate Cruisers: Cruiser-sized (not buildable by players)
+- Galleons: Battleship-sized (not buildable by players)
+- Boarding-focused with crew damage mechanics
+- Players cannot build these directly
+
+### Crisis Faction Ships (Non-Player)
+
+#### Prethoryn Scourge [Base Game]
+- Scourge Corvettes: Basic swarm units
+- Scourge Destroyers: Medium artillery
+- Scourge Cruisers: Heavy carriers
+- Scourge Battleships: Devastating bio-weapons
+- Amoeboid tissue regeneration
+- Various specialized variants (Breacher, Guardian, etc.)
+
+#### Unbidden [Base Game]
+- Unbidden Corvettes: Phase-shifting attackers
+- Unbidden Destroyers: Reality-tearing weapons
+- Unbidden Cruisers: Dimensional anchors
+- Unbidden Battleships: Matter disruption
+- Reality-warping technology
+- Phase-shifting abilities
+
+#### Aberrant [Overlord DLC]
+- Aberrant Corvettes: Mind-controlled swarms
+- Aberrant Destroyers: Psychic disruption
+- Aberrant Cruisers: Hive mind coordination
+- Aberrant Battleships: Neural override
+- Mental domination effects
+- Psionic weapon variants
+
+#### Extradimensional Invaders [Base Game]
+- Dimensional Corvettes: Portal-based attacks
+- Dimensional Destroyers: Reality rifts
+- Dimensional Cruisers: Space-time anchors
+- Dimensional Battleships: Universe collapse
+- Portal manipulation technology
+- Reality-warping variants
+
+#### Horde Ships [Ancient Relics DLC]
+- Horde Corvettes: Swarm tactics
+- Horde Destroyers: Pack hunters
+- Horde Cruisers: Alpha predators
+- Horde Battleships: Mega-beasts
+- Instinct-driven combat AI
+- Various horde variants
+
+#### Gray Goo [Distant Stars DLC]
+- Nanocomposite Corvettes: Self-replicating swarms
+- Nanocomposite Destroyers: Adaptive weapons
+- Nanocomposite Cruisers: Hive coordination
+- Nanocomposite Battleships: Planetary consumption
+- Self-replicating nanotechnology
+
+#### Infernals [Cosmic Storms DLC]
+- Infernal Corvettes: Soul-burning attacks
+- Infernal Destroyers: Demonic possession
+- Infernal Cruisers: Hellfire artillery
+- Infernal Battleships: Apocalypse weapons
+- Soul-manipulating technology
+
+### Player-Buildable Civilian Ships
+
+#### Construction Ship
+- Builds starbases, mining/research stations
+- Can automate station construction
+- Cost: 100 Alloys, 1 Energy/month
+- Single-section layout
+- Auto-upgrades with new tech
+
+#### Science Ship
+- Explores systems, surveys planets
+- Researches anomalies, investigates debris
+- Requires scientist leader
+- Cost: 100 Alloys, 1 Energy/month (or half alloys + food for bio-ships)
+- Single-section layout
+- Auto-upgrades with new tech
+
+#### Colony Ship
+- Settles habitable planets
+- Pops automatically created from empire species
+- Cost varies by government/species (200-400 Alloys + food)
+- Takes 1 year to build
+- Single-section layout
+- Auto-upgrades with new tech
+
+#### Private Colony Ship [Corporate Dominion]
+- Alternative colony ship for Corporate empires
+- Costs energy instead of alloys/food
+- Faster construction
+- Corporate-only variant
+
+#### Lithoid Meteorite [Lithoid Origin]
+- Colony ship variant for Lithoid empires
+- Costs minerals instead of alloys/food
+- Very fast movement (meteor-like)
+- Single-use, impacts planet on arrival
+
+#### Guided Sapience Colony Ship [Pre-FTL Civilizations]
+- Specialized for uplifting primitive species
+- Higher cost but enables guided development
+- Prevents some negative traits
+
+#### Transport Ship
+- Carries assault armies for ground combat
+- Ungrouped with military fleets
+- No additional cost beyond army maintenance
+- Single-section layout
+- Auto-upgrades with new tech
+
+### Player-Buildable Military Stations
+
+#### Military Station Small
+- Basic defensive platform
+- Builds at starbases (outpost level and up)
+- Single-section layout with weapon/utility slots
+- Low cost, basic defense
+
+#### Military Station Medium [Unavailable - Template Only]
+- Larger defensive platform
+- Not directly buildable by players
+- Used by AI and events
+
+#### Military Station Large [Unavailable - Template Only]
+- Massive defensive platform
+- Not directly buildable by players
+- Used by AI and events
+
+### Player-Buildable Stations
+
+#### Mining Station
+- Extracts minerals, energy, strategic resources
+- Builds at construction ship command
+- Cost: 100 Minerals (or food for bio-ships)
+- Single-section layout
+
+#### Research Station
+- Generates physics/society/engineering research
+- Builds at construction ship command
+- Cost: 100 Minerals (or food for bio-ships)
+- Single-section layout
+
+#### Observation Station [First Contact DLC]
+- Studies primitive civilizations
+- Builds at construction ship command
+- Includes cloaking components
+- Single-section layout
+
+## SHIP SECTION DESIGN PHILOSOPHY
+
+For "Perfectly Balanced Ship Sections", we aim to:
+1. Provide meaningful choices between different section layouts
+2. Allow overpowered combinations but avoid game-breaking designs
+3. Maintain tactical depth and strategic variety
+4. Support ALL vanilla ship classes and DLC variants that players can build
+5. Future compatibility with ACOT and other popular mods
+6. Include crisis ships, special colony ships, and colossal ships
+7. Cover both military and civilian vessels
+
+Each ship class will have multiple section variants offering different trade-offs between:
+- Firepower vs Defense
+- Speed vs Armor
+- Utility vs Combat
+- Early-game vs Late-game optimization
+- Specialized roles (anti-shield, anti-armor, area denial, etc.)
+
+## IMPLEMENTATION SCOPE
+
+**High Priority (Core Military):**
+- Corvette sections (S3, S2PD1 variants)
+- Destroyer sections (Bow: M1S2/S3/L1, Stern: PD2/S2/M1)
+- Cruiser sections (3-slot layouts)
+- Battleship sections (3-slot layouts)
+- Titan sections (3-slot layouts)
+
+**Medium Priority (Special Military):**
+- Frigate sections (torpedo-focused Corvette layouts)
+- Crisis ships (Corvette/Destroyer/Cruiser variants)
+- Offspring ships (enhanced variants)
+- Menacing ships (terror variants)
+
+**Low Priority (Civilian/Colossal):**
+- Colony ship sections (various species variants)
+- Transport/Construction/Science ship sections
+- Colossus weapon platforms
+- Juggernaut mobile yards
+- Star-Eater system destroyers
+
+**Future Support:**
+- ACOT ship classes and sections
+- Mod-added ship types
