@@ -1,0 +1,942 @@
+# Perfectly Balanced Ship Sections - Enhanced Harbinger Sections
+# Biological growth-based ships that evolve through stages
+# Each stage represents a different phase of biological development
+
+# ===== HARBINGER STAGE 1 ENHANCEMENTS =====
+
+# Enhanced Picket - Superior early stage biological scout
+ship_section_template = {
+	key = "PBSS_HARBINGER_STAGE_1_ENHANCED_PICKET"
+	ship_size = harbinger_stage_1
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "harbinger_stage_1_ship_entity"
+
+	ai_tags = {
+		carrier
+		carrier_stealth
+	}
+
+	prerequisites = { "tech_strike_craft_2" }
+
+	ai_weight = {
+		modifier = {
+			factor = 12.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "small_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_03"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	medium_utility_slots = 10  # Enhanced biological systems
+	aux_utility_slots = 3
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.15
+		ship_evasion_add = 10
+		ship_hull_regen_add_perc = 0.2
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @harbinger_stage_1_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Enhanced Artillery - Superior early stage biological bombardment
+ship_section_template = {
+	key = "PBSS_HARBINGER_STAGE_1_ENHANCED_ARTILLERY"
+	ship_size = harbinger_stage_1
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "harbinger_stage_1_ship_entity"
+
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	prerequisites = {
+		OR = {
+			tech_swarmer_missiles_1
+			tech_swarmer_missiles_2
+			tech_scourge_missile_1
+			tech_energy_torpedoes_1
+			tech_energy_torpedoes_2
+			tech_repeatable_weapon_type_explosive_damage
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 11.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	medium_utility_slots = 8
+	aux_utility_slots = 4
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_weapon_range_mult = 0.15
+		ship_fire_rate_mult = 0.1
+		ship_hull_regen_add_perc = 0.25
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @harbinger_stage_1_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# ===== HARBINGER STAGE 2 ENHANCEMENTS =====
+
+# Enhanced Picket Stage 2 - Advanced mid-stage biological scout
+ship_section_template = {
+	key = "PBSS_HARBINGER_STAGE_2_ENHANCED_PICKET"
+	ship_size = harbinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "harbinger_stage_2_ship_entity"
+
+	ai_tags = {
+		carrier
+		carrier_stealth
+	}
+
+	prerequisites = { "tech_strike_craft_3" }
+
+	ai_weight = {
+		modifier = {
+			factor = 13.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "small_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "PD_03"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_04"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "PD_05"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_06"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	medium_utility_slots = 4
+	large_utility_slots = 6  # Enhanced biological growth
+	aux_utility_slots = 3
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_evasion_add = 15
+		ship_hull_regen_add_perc = 0.3
+		ship_armor_regen_add_perc = 0.2
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @harbinger_stage_2_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Enhanced Artillery Stage 2 - Advanced mid-stage biological bombardment
+ship_section_template = {
+	key = "PBSS_HARBINGER_STAGE_2_ENHANCED_ARTILLERY"
+	ship_size = harbinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "harbinger_stage_2_ship_entity"
+
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	prerequisites = {
+		OR = {
+			tech_swarmer_missiles_1
+			tech_swarmer_missiles_2
+			tech_scourge_missile_1
+			tech_energy_torpedoes_1
+			tech_energy_torpedoes_2
+			tech_repeatable_weapon_type_explosive_damage
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 12.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "PD_03"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_04"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "PD_05"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_06"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	medium_utility_slots = 2
+	large_utility_slots = 6
+	aux_utility_slots = 4
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.25
+		ship_weapon_range_mult = 0.2
+		ship_fire_rate_mult = 0.15
+		ship_hull_regen_add_perc = 0.35
+		ship_armor_regen_add_perc = 0.25
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @harbinger_stage_2_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# ===== HARBINGER STAGE 3 ENHANCEMENTS =====
+
+# Enhanced Artillery Stage 3 - Ultimate biological bombardment
+ship_section_template = {
+	key = "PBSS_HARBINGER_STAGE_3_ENHANCED_ARTILLERY"
+	ship_size = harbinger_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "harbinger_stage_3_ship_entity"
+
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	prerequisites = {
+		OR = {
+			tech_swarmer_missiles_1
+			tech_swarmer_missiles_2
+			tech_scourge_missile_1
+			tech_energy_torpedoes_1
+			tech_energy_torpedoes_2
+			tech_repeatable_weapon_type_explosive_damage
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 14.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.4
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	medium_utility_slots = 4
+	large_utility_slots = 8
+	aux_utility_slots = 6
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.3
+		ship_weapon_range_mult = 0.25
+		ship_fire_rate_mult = 0.2
+		ship_hull_regen_add_perc = 0.4
+		ship_armor_regen_add_perc = 0.3
+		ship_evasion_add = 10
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @harbinger_stage_3_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Enhanced Carrier Stage 3 - Ultimate biological swarm command
+ship_section_template = {
+	key = "PBSS_HARBINGER_STAGE_3_ENHANCED_CARRIER"
+	ship_size = harbinger_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "harbinger_stage_3_ship_entity"
+
+	ai_tags = {
+		carrier
+		carrier_stealth
+	}
+
+	prerequisites = { "tech_strike_craft_3" "tech_repeatable_weapon_type_strike_craft_damage" }
+
+	ai_weight = {
+		modifier = {
+			factor = 15.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.4
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	medium_utility_slots = 6
+	large_utility_slots = 10
+	aux_utility_slots = 8
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.25
+		ship_evasion_add = 20
+		ship_hull_regen_add_perc = 0.5
+		ship_armor_regen_add_perc = 0.4
+		fleet_command_limit_add = 5
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @harbinger_stage_3_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# ===== TIER 2: ADVANCED SECTIONS (Technology requirements) =====
+
+# Advanced Swarm - Superior mid stage biological strike craft carrier
+ship_section_template = {
+	key = "PBSS_HARBINGER_STAGE_2_ADVANCED_SWARM"
+	ship_size = harbinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "harbinger_stage_2_ship_entity"
+
+	ai_tags = {
+		carrier
+		carrier_stealth
+	}
+
+	prerequisites = { "tech_strike_craft_3" "tech_nanocomposite_materials" }
+
+	ai_weight = {
+		modifier = {
+			factor = 15.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "small_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	medium_utility_slots = 4
+	large_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.15
+		ship_evasion_add = 20
+		ship_hull_regen_add_perc = 0.3
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 160
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# ===== TIER 3: PRO SECTIONS (High-tier tech, difficult requirements, player-only) =====
+
+# Elite Swarm Commander - PLAYER ONLY ultimate biological strike craft carrier
+ship_section_template = {
+	key = "PBSS_HARBINGER_STAGE_3_ELITE_SWARM_COMMANDER"
+	ship_size = harbinger_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "harbinger_stage_3_ship_entity"
+
+	ai_tags = {
+		carrier
+		carrier_stealth
+	}
+
+	prerequisites = { "tech_repeatable_weapon_type_strike_craft_fire_rate" "tech_strike_craft_3" "tech_bio_reactor" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "small_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	medium_utility_slots = 5
+	large_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.4
+		ship_weapon_range_mult = 0.25
+		ship_evasion_add = 40
+		ship_hull_regen_add_perc = 0.8
+		ship_armor_regen_add_perc = 0.6
+		fleet_command_limit_add = 15
+		ship_hull_add = 50
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 260
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Elite Picket Swarm - PLAYER ONLY ultimate biological carrier
+ship_section_template = {
+	key = "PBSS_HARBINGER_STAGE_3_ELITE_PICKET_SWARM"
+	ship_size = harbinger_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "harbinger_stage_3_ship_entity"
+
+	ai_tags = {
+		carrier
+		carrier_stealth
+	}
+
+	prerequisites = { "tech_repeatable_weapon_type_strike_craft_fire_rate" "tech_strike_craft_3" "tech_hive_node" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "small_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "small_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	medium_utility_slots = 6
+	large_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.5
+		ship_weapon_range_mult = 0.35
+		ship_evasion_add = 50
+		ship_hull_regen_add_perc = 1.2
+		ship_armor_regen_add_perc = 1.0
+		fleet_command_limit_add = 25
+		ship_hull_add = 70
+		ship_armor_add = 40
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 300
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Elite Artillery Swarm - PLAYER ONLY ultimate biological artillery carrier
+ship_section_template = {
+	key = "PBSS_HARBINGER_STAGE_3_ELITE_ARTILLERY_SWARM"
+	ship_size = harbinger_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "harbinger_stage_3_ship_entity"
+
+	ai_tags = {
+		carrier
+		carrier_stealth
+		artillery
+	}
+
+	prerequisites = { "tech_repeatable_weapon_type_strike_craft_fire_rate" "tech_repeatable_weapon_type_explosive_damage" "tech_strike_craft_3" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "small_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "weapon_02"
+	}
+
+	medium_utility_slots = 5
+	large_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.6
+		ship_weapon_range_mult = 0.4
+		ship_fire_rate_mult = 0.2
+		ship_evasion_add = 45
+		ship_hull_regen_add_perc = 1.4
+		ship_armor_regen_add_perc = 1.2
+		fleet_command_limit_add = 30
+		ship_hull_add = 80
+		ship_armor_add = 50
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 320
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}

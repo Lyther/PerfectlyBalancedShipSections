@@ -1,0 +1,530 @@
+# Perfectly Balanced Ship Sections - Enhanced Station Sections
+# Extends vanilla defensive platforms with advanced technology options
+# All sections follow vanilla structure: fit on north/west/east/south slots
+
+# ===== BASIC DEFENSIVE PLATFORMS (Enhanced Vanilla) =====
+
+# Standard Defensive Platform - Enhanced kinetic weapons
+ship_section_template = {
+	key = "PBSS_LIGHT_MILITARY_STATION_KINETIC"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	ai_tags = { gunship }
+
+	fits_on_slot = "north"
+	fits_on_slot = "west"
+	fits_on_slot = "east"
+	fits_on_slot = "south"
+	should_draw_components = yes
+
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+		is_side_slot = no
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "small_turret"
+		locatorname = "small_gun_04"
+		is_side_slot = no
+	}
+
+	medium_utility_slots = 4  # Enhanced utility
+	aux_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.1  # Slight damage boost
+		ship_hull_add = 20  # Better survivability
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = 35  # Slightly more expensive than vanilla
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 35
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 35
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 12
+			is_preferred_weapons = weapon_type_kinetic
+		}
+	}
+}
+
+# Point Defense Platform - Enhanced anti-strike craft
+ship_section_template = {
+	key = "PBSS_PD_MILITARY_STATION_ENHANCED"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	ai_tags = { screen }
+
+	fits_on_slot = "north"
+	fits_on_slot = "west"
+	fits_on_slot = "east"
+	fits_on_slot = "south"
+	should_draw_components = yes
+
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "point_defence_turret"
+		locatorname = "small_gun_03"
+		is_side_slot = no
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "point_defence_turret"
+		locatorname = "small_gun_04"
+		is_side_slot = no
+	}
+
+	medium_utility_slots = 4  # Enhanced utility
+	aux_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_range_mult = 0.15  # Better PD range
+		ship_evasion_add = 10  # Better survivability vs strike craft
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = 40
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 40
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 40
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+	}
+}
+
+# ===== ADVANCED DEFENSIVE PLATFORMS =====
+
+# Ion Cannon Platform - Anti-shield energy weapons
+ship_section_template = {
+	key = "PBSS_LIGHT_MILITARY_STATION_ION"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	ai_tags = { artillery }
+
+	fits_on_slot = "north"
+	fits_on_slot = "west"
+	fits_on_slot = "east"
+	fits_on_slot = "south"
+	should_draw_components = yes
+
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { "tech_energy_lance_1" }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+		is_side_slot = no
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "small_turret"
+		locatorname = "small_gun_04"
+		is_side_slot = no
+	}
+
+	medium_utility_slots = 3
+	aux_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.25
+		ship_shield_penetration_mult = 0.5  # Ion specialty: ignores shields
+		ship_armor_damage_mult = 0.5  # Less effective vs armor
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = 45  # 1.5x base cost for advanced tech
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 45
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 45
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 12
+			is_preferred_weapons = weapon_type_energy
+		}
+	}
+}
+
+# Plasma Lance Platform - PLAYER ONLY devastating energy weapon
+ship_section_template = {
+	key = "PBSS_LIGHT_MILITARY_STATION_PLASMA"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	ai_tags = { artillery }
+
+	fits_on_slot = "north"
+	fits_on_slot = "west"
+	fits_on_slot = "east"
+	fits_on_slot = "south"
+	should_draw_components = yes
+
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { "tech_energy_lance_2" "tech_plasma_3" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	medium_utility_slots = 2  # Reduced for power requirements
+	aux_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.5
+		ship_weapon_range_mult = 0.3
+		ship_fire_rate_mult = 0.2
+		ship_shield_penetration_mult = 0.6
+		ship_armor_add = -15  # Sacrificed armor for weapon power
+		ship_hull_add = -10
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = 120  # 4x base cost for ultra-powerful tech
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 120
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 120
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+# Neutron Barrage Platform - PLAYER ONLY radiation weapon
+ship_section_template = {
+	key = "PBSS_LIGHT_MILITARY_STATION_NEUTRON"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	ai_tags = { artillery }
+
+	fits_on_slot = "north"
+	fits_on_slot = "west"
+	fits_on_slot = "east"
+	fits_on_slot = "south"
+	should_draw_components = yes
+
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { "tech_nanocomposite_materials" "tech_repeatable_weapon_type_explosive_damage" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+		is_side_slot = no
+	}
+
+	medium_utility_slots = 3
+	aux_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.4
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.25
+		ship_hull_add = -20  # Sacrificed durability for weapon potency
+		ship_armor_add = -25
+		ship_evasion_add = 8
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = 90  # 3x base cost for advanced tech
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 90
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 90
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+# Enhanced Carrier Platform - Advanced strike craft defense
+ship_section_template = {
+	key = "PBSS_LIGHT_MILITARY_STATION_ENHANCED_CARRIER"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	ai_tags = { carrier screen }
+
+	fits_on_slot = "north"
+	fits_on_slot = "west"
+	fits_on_slot = "east"
+	fits_on_slot = "south"
+	should_draw_components = yes
+
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { "tech_strike_craft_3" "tech_repeatable_weapon_type_strike_craft_fire_rate" }
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "small_hangar"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "small_hangar"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "point_defence_turret"
+		locatorname = "small_gun_03"
+		is_side_slot = no
+	}
+
+	medium_utility_slots = 4  # Extra utility for strike craft maintenance
+	aux_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.25
+		ship_weapon_range_mult = 0.15
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = 60  # 2x base cost for enhanced carrier
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 60
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 60
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 15
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+	}
+}

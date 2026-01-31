@@ -1,0 +1,918 @@
+# Perfectly Balanced Ship Sections - Enhanced Offspring Mauler Sections
+# Biological swarm-based offspring ships that evolve through stages
+# Smaller, younger versions of maulers with enhanced capabilities
+
+# ===== OFFSPRING MAULER STAGE 1 ENHANCEMENTS =====
+
+# Enhanced Swarm - Superior early stage biological offspring brawler
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_1_ENHANCED_SWARM"
+	ship_size = offspring_mauler_stage_1
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "mauler_stage_1_ship_entity"
+
+	ai_tags = {
+		brawler
+		brawler_stealth
+	}
+
+	prerequisites = {
+		OR = {
+			tech_mass_drivers_1
+			tech_lasers_1
+			tech_energy_torpedoes_1
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 12.0
+			OR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+		modifier = {
+			factor = 0.2
+			NOR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	small_utility_slots = 4  # Enhanced biological swarm capacity
+	aux_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.15
+		ship_fire_rate_mult = 0.1
+		ship_hull_regen_add_perc = 0.2
+		ship_evasion_add = 5
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @mauler_stage_1_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Enhanced Picket - Superior early stage biological offspring screen
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_1_ENHANCED_PICKET"
+	ship_size = offspring_mauler_stage_1
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "mauler_stage_1_ship_entity"
+
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+
+	prerequisites = { "tech_strike_craft_1" }
+
+	ai_weight = {
+		modifier = {
+			factor = 11.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "small_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	small_utility_slots = 4
+	aux_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.15
+		ship_evasion_add = 15
+		ship_hull_regen_add_perc = 0.25
+		fleet_command_limit_add = 2
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @mauler_stage_1_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# ===== OFFSPRING MAULER STAGE 2 ENHANCEMENTS =====
+
+# Enhanced Swarm Stage 2 - Advanced mid-stage biological offspring brawler
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_2_ENHANCED_SWARM"
+	ship_size = offspring_mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "mauler_stage_2_ship_entity"
+
+	ai_tags = {
+		brawler
+		brawler_stealth
+	}
+
+	prerequisites = {
+		OR = {
+			tech_mass_drivers_2
+			tech_lasers_2
+			tech_energy_torpedoes_2
+			tech_repeatable_weapon_type_kinetic_damage
+			tech_repeatable_weapon_type_energy_damage
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 13.0
+			OR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+		modifier = {
+			factor = 0.3
+			NOR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	small_utility_slots = 6
+	aux_utility_slots = 4
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_fire_rate_mult = 0.15
+		ship_hull_regen_add_perc = 0.3
+		ship_armor_regen_add_perc = 0.2
+		ship_evasion_add = 10
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @mauler_stage_2_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Enhanced Picket Stage 2 - Advanced mid-stage biological offspring screen
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_2_ENHANCED_PICKET"
+	ship_size = offspring_mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "mauler_stage_2_ship_entity"
+
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+
+	prerequisites = { "tech_strike_craft_2" }
+
+	ai_weight = {
+		modifier = {
+			factor = 12.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "small_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "small_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	small_utility_slots = 6
+	aux_utility_slots = 4
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_evasion_add = 20
+		ship_hull_regen_add_perc = 0.35
+		fleet_command_limit_add = 3
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @mauler_stage_2_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# ===== OFFSPRING MAULER STAGE 3 ENHANCEMENTS =====
+
+# Enhanced Swarm Stage 3 - Ultimate biological offspring brawler
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_3_ENHANCED_SWARM"
+	ship_size = offspring_mauler_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "mauler_stage_3_ship_entity"
+
+	ai_tags = {
+		brawler
+		brawler_stealth
+	}
+
+	prerequisites = {
+		OR = {
+			tech_mass_drivers_3
+			tech_lasers_3
+			tech_energy_torpedoes_2
+			tech_repeatable_weapon_type_kinetic_damage
+			tech_repeatable_weapon_type_energy_damage
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 15.0
+			OR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+		modifier = {
+			factor = 0.4
+			NOR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	small_utility_slots = 8
+	aux_utility_slots = 6
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.25
+		ship_fire_rate_mult = 0.2
+		ship_hull_regen_add_perc = 0.4
+		ship_armor_regen_add_perc = 0.3
+		ship_evasion_add = 15
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @mauler_stage_3_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Enhanced Picket Stage 3 - Ultimate biological offspring screen
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_3_ENHANCED_PICKET"
+	ship_size = offspring_mauler_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "mauler_stage_3_ship_entity"
+
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+
+	prerequisites = { "tech_strike_craft_3" "tech_repeatable_weapon_type_strike_craft_damage" }
+
+	ai_weight = {
+		modifier = {
+			factor = 14.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.4
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "small_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "small_strike_craft"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "small_strike_craft"
+		locatorname = "weapon_02"
+	}
+
+	small_utility_slots = 8
+	aux_utility_slots = 6
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.25
+		ship_evasion_add = 25
+		ship_hull_regen_add_perc = 0.45
+		fleet_command_limit_add = 5
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @mauler_stage_3_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Elite Swarm Predator - PLAYER ONLY ultimate biological offspring brawler
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_3_ELITE_SWARM_PREDATOR"
+	ship_size = offspring_mauler_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "mauler_stage_3_ship_entity"
+
+	ai_tags = {
+		brawler
+		brawler_stealth
+	}
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_energy_damage" "tech_repeatable_weapon_type_kinetic_damage" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	medium_utility_slots = 6
+	large_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.5
+		ship_weapon_range_mult = 0.3
+		ship_fire_rate_mult = 0.2
+		ship_evasion_add = 40
+		ship_hull_regen_add_perc = 1.1
+		ship_armor_regen_add_perc = 0.9
+		ship_hull_add = 50
+		ship_armor_add = 30
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 260
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Elite Artillery Predator - PLAYER ONLY ultimate biological offspring artillery brawler
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_3_ELITE_ARTILLERY_PREDATOR"
+	ship_size = offspring_mauler_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "mauler_stage_3_ship_entity"
+
+	ai_tags = {
+		brawler
+		brawler_stealth
+		artillery
+	}
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_energy_damage" "tech_repeatable_weapon_type_kinetic_damage" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_05"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	medium_utility_slots = 6
+	large_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.52
+		ship_weapon_range_mult = 0.32
+		ship_fire_rate_mult = 0.22
+		ship_evasion_add = 42
+		ship_hull_regen_add_perc = 1.2
+		ship_armor_regen_add_perc = 1.0
+		ship_shield_regen_add_perc = 0.6
+		ship_hull_add = 55
+		ship_armor_add = 35
+		ship_shield_add = 20
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 270
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# ===== ADDITIONAL ELITE SECTIONS =====
+
+# Elite Artillery Predator - PLAYER ONLY devastating biological bombardment
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_3_ELITE_ARTILLERY_PREDATOR"
+	ship_size = offspring_mauler_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "mauler_stage_3_ship_entity"
+
+	ai_tags = {
+		artillery
+		brawler
+	}
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_explosive_fire_rate" "tech_kinetic_artillery_3" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY - Too powerful
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	medium_utility_slots = 4
+	large_utility_slots = 4
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.45
+		ship_weapon_range_mult = 0.35
+		ship_fire_rate_mult = 0.25
+		ship_hull_regen_add_perc = 0.6
+		ship_armor_regen_add_perc = 0.4
+		ship_evasion_add = 20
+		ship_hull_add = 30
+		ship_armor_add = 25
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 260
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Elite Assault Bruiser - PLAYER ONLY ultimate biological close-quarters combatant
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_3_ELITE_ASSAULT_BRUISER"
+	ship_size = offspring_mauler_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "mauler_stage_3_ship_entity"
+
+	ai_tags = {
+		brawler
+		artillery
+	}
+
+	prerequisites = { "tech_repeatable_weapon_type_kinetic_damage" "tech_repeatable_weapon_type_energy_damage" "tech_nanocomposite_materials_2" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY - Too powerful
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "root"
+	}
+
+	medium_utility_slots = 6
+	large_utility_slots = 6
+	aux_utility_slots = 4
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.4
+		ship_weapon_range_mult = 0.15
+		ship_hull_regen_add_perc = 0.8
+		ship_armor_regen_add_perc = 0.6
+		ship_shield_regen_add_perc = 0.4
+		ship_evasion_add = 25
+		ship_hull_add = 50
+		ship_armor_add = 40
+		ship_shield_add = 25
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 265
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}

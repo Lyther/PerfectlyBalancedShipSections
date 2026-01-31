@@ -1,0 +1,322 @@
+# Perfectly Balanced Ship Sections - Star-Eater Sections
+# 3-tier system: Common (default), Advanced (tech-locked), Pro (high-tier/player-only)
+# Star-Eater has single mid section - system-destroying superweapon (Nemesis DLC)
+
+# ===== TIER 1: COMMON SECTIONS (Unlock by default) =====
+
+# Standard Star Cracker - Basic system destruction
+ship_section_template = {
+	key = "PBSS_STAR_EATER_MID_CRACKER"
+	ship_size = star_eater
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "star_eater_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	ai_weight = {
+		modifier = {
+			factor = 20.0
+			has_crisis_level = crisis_level_5
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_crisis_level = crisis_level_5 }
+		}
+	}
+
+	component_slot = {
+		name = "SYSTEM_KILLER"
+		template = "star_cracker"
+		locatorname = "main_body"
+	}
+
+	small_utility_slots = 8
+
+	resources = {
+		category = ship_sections
+		cost = {
+			sr_dark_matter = 12000
+		}
+	}
+}
+
+# Enhanced Star Cracker - Improved system destruction
+ship_section_template = {
+	key = "PBSS_STAR_EATER_MID_CRACKER_ENHANCED"
+	ship_size = star_eater
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "star_eater_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	ai_weight = {
+		modifier = {
+			factor = 18.0
+			has_crisis_level = crisis_level_5
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_crisis_level = crisis_level_5 }
+		}
+	}
+
+	component_slot = {
+		name = "SYSTEM_KILLER"
+		template = "star_cracker"
+		locatorname = "main_body"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 10
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.15
+		ship_hull_add = 50
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			sr_dark_matter = 14000
+		}
+	}
+}
+
+# ===== TIER 2: ADVANCED SECTIONS (Technology requirements) =====
+
+# Plasma Star Cracker - Energy-enhanced system destruction
+ship_section_template = {
+	key = "PBSS_STAR_EATER_MID_PLASMA"
+	ship_size = star_eater
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "star_eater_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_energy_damage" "tech_repeatable_weapon_type_energy_fire_rate" }
+
+	ai_weight = {
+		modifier = {
+			factor = 16.0
+			has_crisis_level = crisis_level_5
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { has_crisis_level = crisis_level_5 }
+		}
+	}
+
+	component_slot = {
+		name = "SYSTEM_KILLER"
+		template = "star_cracker"
+		locatorname = "main_body"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 12
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_weapon_range_mult = 0.15
+		ship_shield_add = 100
+		ship_armor_add = 50
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			sr_dark_matter = 16000
+		}
+	}
+}
+
+# Guided Star Cracker - Missile-enhanced system destruction
+ship_section_template = {
+	key = "PBSS_STAR_EATER_MID_GUIDED"
+	ship_size = star_eater
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "star_eater_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_explosive_fire_rate" }
+
+	ai_weight = {
+		modifier = {
+			factor = 17.0
+			has_crisis_level = crisis_level_5
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { has_crisis_level = crisis_level_5 }
+		}
+	}
+
+	component_slot = {
+		name = "SYSTEM_KILLER"
+		template = "star_cracker"
+		locatorname = "main_body"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_missile_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 12
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.25
+		ship_fire_rate_mult = 0.2
+		ship_evasion_add = 10
+		ship_hull_add = 75
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			sr_dark_matter = 17000
+		}
+	}
+}
+
+# ===== TIER 3: PRO SECTIONS (High-tier tech, difficult requirements, player-only) =====
+
+# Ultimate Star Cracker - PLAYER ONLY maximum system destruction
+ship_section_template = {
+	key = "PBSS_STAR_EATER_MID_ULTIMATE"
+	ship_size = star_eater
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "star_eater_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_energy_damage" "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_kinetic_damage" }
+
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "SYSTEM_KILLER"
+		template = "star_cracker"
+		locatorname = "main_body"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "extra_large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 14
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.4
+		ship_weapon_range_mult = 0.25
+		ship_fire_rate_mult = 0.3
+		ship_hull_add = 150
+		ship_armor_add = 100
+		ship_shield_add = 80
+		ship_evasion_add = 20
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			sr_dark_matter = 20000
+		}
+	}
+}
+
+# Apocalypse Star-Eater - PLAYER ONLY galaxy-ending superweapon
+ship_section_template = {
+	key = "PBSS_STAR_EATER_MID_APOCALYPSE"
+	ship_size = star_eater
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "star_eater_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_energy_damage" "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_kinetic_damage" "tech_repeatable_weapon_type_strike_craft_damage" }
+
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "SYSTEM_KILLER"
+		template = "star_cracker"
+		locatorname = "main_body"
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "PBSS_TITANIC_MISSILE_LAUNCHER"
+		locatorname = "extra_large_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 16
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.5
+		ship_weapon_range_mult = 0.3
+		ship_fire_rate_mult = 0.4
+		ship_hull_add = 200
+		ship_armor_add = 150
+		ship_shield_add = 120
+		ship_evasion_add = 25
+		ship_hull_regen_add_perc = 0.5
+		ship_armor_regen_add_perc = 0.4
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			sr_dark_matter = 25000
+		}
+	}
+}

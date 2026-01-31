@@ -1,0 +1,52 @@
+# Perfectly Balanced Ship Sections - Sacrifice Sections
+# Extreme trade-off sections where armor/utility is sacrificed for massive weapons
+
+# Corvette X-Slot Sacrifice - PLAYER ONLY extreme firepower trade-off
+ship_section_template = {
+	key = "PBSS_CORVETTE_MID_X_SACRIFICE"
+	ship_size = corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_S3_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_corvette_hull_2" }
+
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	# X-slot weapon on a corvette: extreme sacrifice
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	# No utility slots - everything sacrificed for weapon
+	small_utility_slots = 0
+	aux_utility_slots = 0
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.5
+		ship_weapon_range_mult = 0.2
+		ship_fire_rate_mult = 0.2
+		ship_armor_add = -30  # Major armor sacrifice
+		ship_shield_add = -20  # Shield sacrifice
+		ship_hull_add = -20   # Hull sacrifice
+		ship_evasion_add = 25  # Massive evasion from minimal mass
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 140
+		}
+	}
+}

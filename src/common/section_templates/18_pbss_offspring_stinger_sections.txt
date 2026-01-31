@@ -1,0 +1,821 @@
+# Perfectly Balanced Ship Sections - Enhanced Offspring Stinger Sections
+# Biological heavy-weapon offspring ships that evolve through stages
+# Smaller, younger versions of stingers with enhanced artillery capabilities
+
+# ===== OFFSPRING STINGER STAGE 1 ENHANCEMENTS =====
+
+# Enhanced Artillery - Superior early stage biological offspring gunship
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_1_ENHANCED_ARTILLERY"
+	ship_size = offspring_stinger_stage_1
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_1_ship_entity"
+
+	ai_tags = {
+		gunship
+		gunship_stealth
+	}
+
+	prerequisites = {
+		OR = {
+			tech_mass_drivers_1
+			tech_lasers_1
+			tech_energy_torpedoes_1
+		}
+	}
+
+	ai_weight = {
+		weight = 14
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "root"
+	}
+
+	small_utility_slots = 4
+	medium_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.1
+		ship_hull_regen_add_perc = 0.2
+		ship_armor_regen_add_perc = 0.15
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 120
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Enhanced Bombardment - Superior early stage biological offspring artillery
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_1_ENHANCED_BOMBARDMENT"
+	ship_size = offspring_stinger_stage_1
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_1_ship_entity"
+
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	prerequisites = { "tech_mass_drivers_1" "tech_nanocomposite_materials" }
+
+	ai_weight = {
+		modifier = {
+			factor = 15.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	small_utility_slots = 3
+	medium_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_range_mult = 0.15
+		ship_weapon_damage_mult = 0.15
+		ship_hull_regen_add_perc = 0.25
+		ship_armor_regen_add_perc = 0.2
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 140
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# ===== OFFSPRING STINGER STAGE 2 ENHANCEMENTS =====
+
+# Advanced Artillery - Superior mid stage biological offspring gunship
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_2_ADVANCED_ARTILLERY"
+	ship_size = offspring_stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_2_ship_entity"
+
+	ai_tags = {
+		gunship
+		gunship_stealth
+	}
+
+	prerequisites = { "tech_railguns_1" "tech_lasers_2" }
+
+	ai_weight = {
+		modifier = {
+			factor = 16.0
+			OR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+		modifier = {
+			factor = 0.4
+			NOR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	small_utility_slots = 4
+	medium_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_weapon_range_mult = 0.1
+		ship_hull_regen_add_perc = 0.35
+		ship_armor_regen_add_perc = 0.25
+		ship_shield_regen_add_perc = 0.15
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 180
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Advanced Bombardment - Superior mid stage biological offspring artillery
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_2_ADVANCED_BOMBARDMENT"
+	ship_size = offspring_stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_2_ship_entity"
+
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	prerequisites = { "tech_railguns_2" "tech_energy_torpedoes_1" "tech_bio_reactor" }
+
+	ai_weight = {
+		modifier = {
+			factor = 17.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	small_utility_slots = 3
+	medium_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_range_mult = 0.2
+		ship_weapon_damage_mult = 0.25
+		ship_fire_rate_mult = 0.1
+		ship_hull_regen_add_perc = 0.4
+		ship_armor_regen_add_perc = 0.3
+		ship_shield_regen_add_perc = 0.2
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 200
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# ===== OFFSPRING STINGER STAGE 3 ENHANCEMENTS =====
+
+# Elite Artillery - Superior late stage biological offspring gunship
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_3_ELITE_ARTILLERY"
+	ship_size = offspring_stinger_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_3_ship_entity"
+
+	ai_tags = {
+		gunship
+		gunship_stealth
+	}
+
+	prerequisites = { "tech_railguns_3" "tech_lasers_3" }
+
+	ai_weight = {
+		modifier = {
+			factor = 18.0
+			OR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+		modifier = {
+			factor = 0.6
+			NOR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	small_utility_slots = 4
+	medium_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.3
+		ship_weapon_range_mult = 0.15
+		ship_fire_rate_mult = 0.1
+		ship_hull_regen_add_perc = 0.5
+		ship_armor_regen_add_perc = 0.4
+		ship_shield_regen_add_perc = 0.25
+		ship_evasion_add = 5
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 240
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Elite Bombardment - Superior late stage biological offspring artillery
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_3_ELITE_BOMBARDMENT"
+	ship_size = offspring_stinger_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_3_ship_entity"
+
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	prerequisites = { "tech_railguns_3" "tech_energy_torpedoes_2" "tech_hive_node" }
+
+	ai_weight = {
+		modifier = {
+			factor = 19.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	small_utility_slots = 3
+	medium_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_range_mult = 0.25
+		ship_weapon_damage_mult = 0.35
+		ship_fire_rate_mult = 0.15
+		ship_hull_regen_add_perc = 0.6
+		ship_armor_regen_add_perc = 0.45
+		ship_shield_regen_add_perc = 0.3
+		ship_evasion_add = 8
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 260
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Elite Siege Engine - PLAYER ONLY ultimate biological offspring artillery
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_3_ELITE_SIEGE_ENGINE"
+	ship_size = offspring_stinger_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_3_ship_entity"
+
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_battleships" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	small_utility_slots = 2
+	medium_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_range_mult = 0.4
+		ship_weapon_damage_mult = 0.5
+		ship_fire_rate_mult = 0.2
+		ship_hull_regen_add_perc = 0.8
+		ship_armor_regen_add_perc = 0.6
+		ship_shield_regen_add_perc = 0.4
+		ship_evasion_add = 15
+		ship_hull_add = 40
+		ship_armor_add = 30
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 350
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Elite Siege Artillery - PLAYER ONLY ultimate biological offspring siege engine
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_3_ELITE_SIEGE_ARTILLERY"
+	ship_size = offspring_stinger_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_3_ship_entity"
+
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_energy_damage" "tech_repeatable_weapon_type_kinetic_damage" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	medium_utility_slots = 6
+	large_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.55
+		ship_weapon_range_mult = 0.4
+		ship_fire_rate_mult = 0.25
+		ship_evasion_add = 30
+		ship_hull_regen_add_perc = 1.2
+		ship_armor_regen_add_perc = 1.0
+		ship_hull_add = 70
+		ship_armor_add = 50
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 320
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Elite Bombardment Artillery - PLAYER ONLY ultimate biological offspring bombardment platform
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_3_ELITE_BOMBARDMENT_ARTILLERY"
+	ship_size = offspring_stinger_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_3_ship_entity"
+
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_energy_damage" "tech_bio_reactor" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "invisible_extra_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	medium_utility_slots = 6
+	large_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.6
+		ship_weapon_range_mult = 0.45
+		ship_fire_rate_mult = 0.2
+		ship_evasion_add = 35
+		ship_hull_regen_add_perc = 1.4
+		ship_armor_regen_add_perc = 1.2
+		ship_shield_regen_add_perc = 0.8
+		ship_hull_add = 80
+		ship_armor_add = 60
+		ship_shield_add = 40
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 340
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+# Elite Artillery Swarm - PLAYER ONLY ultimate biological offspring artillery swarm
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_3_ELITE_ARTILLERY_SWARM"
+	ship_size = offspring_stinger_stage_3
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_3_ship_entity"
+
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_energy_damage" "tech_repeatable_weapon_type_strike_craft_fire_rate" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "root"
+	}
+
+	medium_utility_slots = 6
+	large_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.58
+		ship_weapon_range_mult = 0.42
+		ship_fire_rate_mult = 0.22
+		ship_evasion_add = 32
+		ship_hull_regen_add_perc = 1.3
+		ship_armor_regen_add_perc = 1.1
+		ship_shield_regen_add_perc = 0.7
+		ship_hull_add = 75
+		ship_armor_add = 55
+		ship_shield_add = 35
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = 330
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}

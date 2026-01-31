@@ -1,0 +1,1256 @@
+# Perfectly Balanced Ship Sections - Cruiser Sections
+# 3-tier system: Common (default), Advanced (tech-locked), Pro (high-tier/player-only)
+# Cruisers have 3-section layout: Bow (offense), Mid (core), Stern (support/defense)
+
+# ===== TIER 1: COMMON SECTIONS (Unlock by default) =====
+
+# Bow: Heavy Combat - Primary offensive firepower
+ship_section_template = {
+	key = "PBSS_CRUISER_BOW_COMBAT"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+
+	ai_tags = { gunship artillery }
+
+	ai_weight = {
+		modifier = {
+			factor = 15.0
+			OR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 8
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+# Bow: Carrier Focus - Strike craft deployment
+ship_section_template = {
+	key = "PBSS_CRUISER_BOW_CARRIER"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+
+	ai_tags = { carrier }
+
+	ai_weight = {
+		modifier = {
+			factor = 12.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "large_hangar"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "small_hangar"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 8
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 85
+		}
+	}
+}
+
+# Mid: Core Combat - Central firepower and utility
+ship_section_template = {
+	key = "PBSS_CRUISER_MID_COMBAT"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { gunship artillery brawler }
+
+	ai_weight = {
+		modifier = {
+			factor = 14.0
+			OR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+				is_preferred_weapons = weapon_type_explosive
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_kinetic
+				is_preferred_weapons = weapon_type_energy
+				is_preferred_weapons = weapon_type_explosive
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 10
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 75
+		}
+	}
+}
+
+# Mid: Strike Craft Core - Central hangar operations
+ship_section_template = {
+	key = "PBSS_CRUISER_MID_STRIKE"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier }
+
+	ai_weight = {
+		modifier = {
+			factor = 13.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "large_hangar"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "small_hangar"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 10
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+# Stern: Support Defense - Rear defensive capabilities
+ship_section_template = {
+	key = "PBSS_CRUISER_STERN_SUPPORT"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+
+	ai_tags = { screen }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_ai = yes
+		}
+		modifier = {
+			factor = 0.6
+			is_ai = no
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 12
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 70
+		}
+	}
+}
+
+# Stern: Artillery Support - Rear long-range support
+ship_section_template = {
+	key = "PBSS_CRUISER_STERN_ARTILLERY"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+
+	ai_tags = { artillery }
+
+	ai_weight = {
+		modifier = {
+			factor = 11.0
+			has_technology = tech_battleships
+		}
+		modifier = {
+			factor = 0.4
+			NOT = { has_technology = tech_battleships }
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 12
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 85
+		}
+	}
+}
+
+# ===== TIER 2: ADVANCED SECTIONS (Technology requirements) =====
+
+# Bow: Plasma Artillery - Advanced energy weapons
+ship_section_template = {
+	key = "PBSS_CRUISER_BOW_PLASMA"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+
+	ai_tags = { artillery gunship }
+
+	prerequisites = { "tech_plasma_2" "tech_cruisers" }
+
+	# PLAYER ONLY - Too powerful for AI balance
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 16.0
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 10
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_shield_regen_add_perc = 0.25
+		ship_evasion_add = 5
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 120
+		}
+	}
+}
+
+# Mid: Guided Weapons Hub - Missile and strike craft coordination
+ship_section_template = {
+	key = "PBSS_CRUISER_MID_GUIDED"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier artillery }
+
+	prerequisites = { "tech_guided_weapons" "tech_strike_craft_3" }
+
+	# PLAYER ONLY - Too powerful for AI balance
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 15.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.4
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "large_hangar"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+	locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 12
+
+	ship_modifier = {
+		ship_weapon_range_mult = 0.2
+		ship_fire_rate_mult = 0.15
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 125
+		}
+	}
+}
+
+# Stern: Nanocomposite Defense - Advanced survivability
+ship_section_template = {
+	key = "PBSS_CRUISER_STERN_NANOCOMPOSITE"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+
+	ai_tags = { brawler screen }
+
+	prerequisites = { "tech_nanocomposite_materials" "tech_battleships" }
+
+	# PLAYER ONLY - Too powerful for AI balance
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 12.0
+			is_ai = yes
+		}
+		modifier = {
+			factor = 0.7
+			is_ai = no
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 14
+
+	ship_modifier = {
+		ship_hull_add = 50
+		ship_armor_add = 35
+		ship_hull_regen_add_perc = 0.5
+		ship_armor_regen_add_perc = 0.4
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 110
+		}
+	}
+}
+
+# ===== TIER 3: PRO SECTIONS (High-tier tech, difficult requirements, player-only) =====
+
+# Bow: Ultra Artillery Cruiser - PLAYER ONLY heavy bombardment
+ship_section_template = {
+	key = "PBSS_CRUISER_BOW_ULTRA_ARTILLERY"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_explosive_fire_rate" }
+
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 6
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.45
+		ship_weapon_range_mult = 0.3
+		ship_fire_rate_mult = 0.25
+		ship_evasion_add = 8
+		ship_armor_add = 20
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 180
+		}
+	}
+}
+
+# Mid: Command Center - PLAYER ONLY coordination hub
+ship_section_template = {
+	key = "PBSS_CRUISER_MID_COMMAND"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier artillery gunship }
+
+	prerequisites = { "tech_cruiser_hull_2" "tech_repeatable_weapon_type_strike_craft_fire_rate" }
+
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "large_hangar"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "large_hangar"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 16
+
+	ship_modifier = {
+		fleet_command_limit_add = 5
+		ship_hull_regen_add_perc = 0.3
+		ship_repair_mult = 0.4
+		sensor_range_mult = 0.2
+		ship_evasion_add = 10
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 160
+		}
+	}
+}
+
+# Stern: Ultra Defense Cruiser - PLAYER ONLY ultimate tank
+ship_section_template = {
+	key = "PBSS_CRUISER_STERN_ULTRA_DEFENSE"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+
+	ai_tags = { brawler screen }
+
+	prerequisites = { "tech_cruiser_hull_2" "tech_repeatable_weapon_type_kinetic_damage" "tech_repeatable_weapon_type_energy_damage" }
+
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 16
+
+	ship_modifier = {
+		ship_hull_add = 100
+		ship_armor_add = 70
+		ship_shield_add = 50
+		ship_hull_regen_add_perc = 1.0
+		ship_armor_regen_add_perc = 0.8
+		ship_shield_regen_add_perc = 0.6
+		ship_evasion_add = 20
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 170
+		}
+	}
+}
+
+# Stern: Titanic Sacrifice - PLAYER ONLY T-slot with armor trade-off
+ship_section_template = {
+	key = "PBSS_CRUISER_STERN_TITANIC_SACRIFICE"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_cruiser_hull_2" }
+
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	# T-slot weapon: massive firepower
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "PBSS_TITANIC_PLASMA_CANNON"
+		locatorname = "large_gun_01"
+	}
+
+	# No utility slots - all power to the weapon
+	small_utility_slots = 0
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.7
+		ship_weapon_range_mult = 0.3
+		ship_fire_rate_mult = 0.4
+		ship_armor_add = -50  # Armor sacrifice
+		ship_shield_add = -30  # Shield sacrifice
+		ship_evasion_add = 15  # Evasion bonus from reduced mass
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 200
+		}
+	}
+}
+
+# Bow: Plasma Storm - Advanced energy weapon cruiser
+ship_section_template = {
+	key = "PBSS_CRUISER_BOW_PLASMA_STORM"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship artillery }
+
+	prerequisites = { "tech_plasma_2" "tech_energy_torpedoes_1" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	medium_utility_slots = 5
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_weapon_range_mult = 0.15
+		ship_shield_regen_add_perc = 0.4
+		ship_hull_regen_add_perc = 0.2
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 75
+		}
+	}
+}
+
+# Bow: Kinetic Barrage - Mass driver cruiser
+ship_section_template = {
+	key = "PBSS_CRUISER_BOW_KINETIC_BARRAGE"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_railguns_1" "tech_mass_drivers_1" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	medium_utility_slots = 5
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.25
+		ship_weapon_range_mult = 0.2
+		ship_armor_penetration_mult = 0.6
+		ship_hull_regen_add_perc = 0.15
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 70
+		}
+	}
+}
+
+# Bow: Strike Carrier - Carrier-focused cruiser bow
+ship_section_template = {
+	key = "PBSS_CRUISER_BOW_STRIKE_CARRIER"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { carrier }
+
+	prerequisites = { "tech_strike_craft_3" "tech_cruisers" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "large_hangar"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "medium_hangar"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 6
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_weapon_range_mult = 0.1
+		fleet_command_limit_add = 8
+		ship_evasion_add = 10
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+# Bow: X-Slot Vanguard - Extra large weapon cruiser
+ship_section_template = {
+	key = "PBSS_CRUISER_BOW_X_SLOT_VANGUARD"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_battleships" "tech_repeatable_weapon_type_explosive_damage" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	# X-slot weapon: battleship firepower on cruiser
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 4
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.4
+		ship_weapon_range_mult = 0.25
+		ship_fire_rate_mult = 0.2
+		ship_armor_add = -20
+		ship_evasion_add = 15
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 110
+		}
+	}
+}
+
+# Stern: Plasma Defense - Energy weapon cruiser stern
+ship_section_template = {
+	key = "PBSS_CRUISER_STERN_PLASMA_DEFENSE"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery screen }
+
+	prerequisites = { "tech_plasma_1" "tech_cruisers" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_weapon_range_mult = 0.15
+		ship_shield_regen_add_perc = 0.3
+		ship_evasion_add = 10
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 85
+		}
+	}
+}
+
+# Mid: Shield Nexus - Enhanced shield cruiser core
+ship_section_template = {
+	key = "PBSS_CRUISER_MID_SHIELD_NEXUS"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { gunship artillery }
+
+	prerequisites = { "tech_shields_3" "tech_cruisers" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 6
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.15
+		ship_shield_add = 60
+		ship_shield_regen_add_perc = 0.8
+		ship_hull_regen_add_perc = 0.3
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 85
+		}
+	}
+}
+
+# Mid: Armor Citadel - Heavy armor cruiser core
+ship_section_template = {
+	key = "PBSS_CRUISER_MID_ARMOR_CITADEL"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { brawler artillery }
+
+	prerequisites = { "tech_nanocomposite_materials" "tech_cruisers" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 6
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.15
+		ship_hull_add = 80
+		ship_armor_add = 60
+		ship_hull_regen_add_perc = 0.5
+		ship_armor_regen_add_perc = 0.4
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 90
+		}
+	}
+}
+
+# Mid: Command Center - Fleet coordination cruiser core
+ship_section_template = {
+	key = "PBSS_CRUISER_MID_COMMAND_CENTER"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { gunship carrier artillery }
+
+	prerequisites = { "tech_cruisers" "tech_repeatable_improved_ship_fire_rate" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 6
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		fleet_command_limit_add = 12
+		ship_fire_rate_mult = 0.2
+		ship_evasion_add = 10
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 95
+		}
+	}
+}
+
+# Mid: Artillery Barrage - Long-range weapon cruiser core
+ship_section_template = {
+	key = "PBSS_CRUISER_MID_ARTILLERY_BARRAGE"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery gunship }
+
+	prerequisites = { "tech_mass_drivers_2" "tech_cruisers" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 6
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_weapon_range_mult = 0.25
+		ship_fire_rate_mult = 0.15
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+# Mid: Strike Craft Nexus - Carrier enhancement cruiser core
+ship_section_template = {
+	key = "PBSS_CRUISER_MID_STRIKE_CRAFT_NEXUS"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { carrier artillery }
+
+	prerequisites = { "tech_strike_craft_3" "tech_repeatable_weapon_type_strike_craft_fire_rate" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "large_hangar"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 7
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.25
+		ship_weapon_range_mult = 0.15
+		fleet_command_limit_add = 10
+		ship_evasion_add = 12
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 105
+		}
+	}
+}
+
+# Mid: Energy Matrix - Plasma and laser cruiser core
+ship_section_template = {
+	key = "PBSS_CRUISER_MID_ENERGY_MATRIX"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { gunship artillery }
+
+	prerequisites = { "tech_lasers_3" "tech_plasma_2" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 6
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.25
+		ship_weapon_range_mult = 0.2
+		ship_shield_regen_add_perc = 0.5
+		ship_fire_rate_mult = 0.18
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 110
+		}
+	}
+}

@@ -1,0 +1,486 @@
+# Perfectly Balanced Ship Sections - Ion Cannon Sections
+# Defense platforms with devastating T-slot ion weapons
+# 4-tier system: Common (default), Advanced (tech-locked), Pro (high-tier/player-only), Ultra (insane requirements)
+
+# ===== TIER 1: COMMON SECTIONS (Unlock by default) =====
+
+# Standard Ion Cannon - Basic T-slot ion weapon platform
+ship_section_template = {
+	key = "PBSS_ION_CANNON_STANDARD"
+	ship_size = ion_cannon
+	fits_on_slot = ship
+	entity = "ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	ai_weight = {
+		modifier = {
+			factor = 15.0
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 8
+	aux_utility_slots = 4
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.15
+		ship_weapon_range_mult = 0.1
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+
+# Enhanced Ion Cannon - Improved utility and efficiency
+ship_section_template = {
+	key = "PBSS_ION_CANNON_ENHANCED"
+	ship_size = ion_cannon
+	fits_on_slot = ship
+	entity = "ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_power_hub_2" }
+
+	ai_weight = {
+		modifier = {
+			factor = 16.0
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 10
+	aux_utility_slots = 5
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_weapon_range_mult = 0.15
+		ship_evasion_add = 5
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+
+# Rapid Fire Ion Cannon - Faster firing variant
+ship_section_template = {
+	key = "PBSS_ION_CANNON_RAPID_FIRE"
+	ship_size = ion_cannon
+	fits_on_slot = ship
+	entity = "ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_energy_fire_rate" }
+
+	ai_weight = {
+		modifier = {
+			factor = 17.0
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
+	aux_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.1
+		ship_fire_rate_mult = 0.25
+		ship_weapon_range_mult = 0.05
+		ship_evasion_add = 8
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+
+# ===== TIER 2: ADVANCED SECTIONS (Technology requirements) =====
+
+# High-Energy Ion Cannon - Advanced energy weapon platform
+ship_section_template = {
+	key = "PBSS_ION_CANNON_HIGH_ENERGY"
+	ship_size = ion_cannon
+	fits_on_slot = ship
+	entity = "ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_energy_lance_2" "tech_power_hub_2" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY - Too powerful for AI balance
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 12
+	aux_utility_slots = 6
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.3
+		ship_weapon_range_mult = 0.2
+		ship_fire_rate_mult = 0.1
+		ship_evasion_add = 10
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+
+# Plasma-Infused Ion Cannon - Plasma-enhanced energy weapon
+ship_section_template = {
+	key = "PBSS_ION_CANNON_PLASMA_INFUSED"
+	ship_size = ion_cannon
+	fits_on_slot = ship
+	entity = "ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_plasma_3" "tech_energy_lance_2" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY - Too powerful for AI balance
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 8
+	aux_utility_slots = 4
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.35
+		ship_weapon_range_mult = 0.15
+		ship_fire_rate_mult = 0.15
+		ship_evasion_add = 5
+		ship_armor_add = 20
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+
+# Overcharged Ion Cannon - Maximum power output variant
+ship_section_template = {
+	key = "PBSS_ION_CANNON_OVERCHARGED"
+	ship_size = ion_cannon
+	fits_on_slot = ship
+	entity = "ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_energy_damage" "tech_zero_point_power" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY - Too powerful for AI balance
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 4
+	aux_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.4
+		ship_weapon_range_mult = 0.1
+		ship_fire_rate_mult = 0.05
+		ship_evasion_add = 15
+		ship_armor_add = -30  # Overcharging sacrifices durability
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+
+# ===== TIER 3: PRO SECTIONS (High-tier tech, difficult requirements, player-only) =====
+
+# Quantum Ion Cannon - Quantum-enhanced energy weapon
+ship_section_template = {
+	key = "PBSS_ION_CANNON_QUANTUM"
+	ship_size = ion_cannon
+	fits_on_slot = ship
+	entity = "ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_energy_lance_2" "tech_zero_point_power" "tech_repeatable_weapon_type_energy_damage" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY - Too powerful
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
+	aux_utility_slots = 3
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.5
+		ship_weapon_range_mult = 0.25
+		ship_fire_rate_mult = 0.2
+		ship_evasion_add = 20
+		ship_shield_add = 30
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+
+# Void Ion Cannon - Reality-warping energy weapon
+ship_section_template = {
+	key = "PBSS_ION_CANNON_VOID"
+	ship_size = ion_cannon
+	fits_on_slot = ship
+	entity = "ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_energy_lance_2" "tech_zero_point_power" "tech_mega_engineering" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY - Too powerful
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 2
+	aux_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.6
+		ship_weapon_range_mult = 0.3
+		ship_fire_rate_mult = 0.1
+		ship_evasion_add = 25
+		ship_shield_add = 50
+		ship_armor_add = -20  # Void energy is unstable
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+
+# ===== ULTRA TIER: INSANE SECTIONS (Maximum requirements, player-only) =====
+
+# Apocalypse Ion Cannon - Ultimate energy devastation platform
+ship_section_template = {
+	key = "PBSS_ION_CANNON_APOCALYPSE"
+	ship_size = ion_cannon
+	fits_on_slot = ship
+	entity = "ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_energy_damage" "tech_repeatable_weapon_type_energy_fire_rate" "tech_zero_point_power" "tech_mega_engineering" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY - Maximum power
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 1
+	aux_utility_slots = 0
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.8
+		ship_weapon_range_mult = 0.4
+		ship_fire_rate_mult = 0.15
+		ship_evasion_add = 30
+		ship_shield_add = 80
+		ship_armor_add = -50  # Pure energy focus
+		ship_hull_add = -30
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+
+# Godkiller Ion Cannon - Reality-breaking energy weapon
+ship_section_template = {
+	key = "PBSS_ION_CANNON_GODKILLER"
+	ship_size = ion_cannon
+	fits_on_slot = ship
+	entity = "ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_energy_damage" "tech_repeatable_weapon_type_energy_fire_rate" "tech_zero_point_power" "tech_mega_engineering" "tech_repeatable_improved_armor" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY - Godlike power
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 0
+	aux_utility_slots = 0
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 1.0
+		ship_weapon_range_mult = 0.5
+		ship_fire_rate_mult = 0.2
+		ship_evasion_add = 40
+		ship_shield_add = 100
+		ship_armor_add = -80  # Complete focus on energy destruction
+		ship_hull_add = -60
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}

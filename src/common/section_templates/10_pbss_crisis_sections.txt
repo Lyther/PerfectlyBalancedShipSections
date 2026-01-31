@@ -1,0 +1,299 @@
+# Perfectly Balanced Ship Sections - Crisis Ship Sections
+# 3-tier system: Common (default), Advanced (tech-locked), Pro (high-tier/player-only)
+# Crisis ships are available during Become the Crisis ascension (Nemesis DLC)
+
+# ===== CRISIS CORVETTE SECTIONS =====
+
+# Menacing Corvette Combat - Enhanced crisis corvette
+ship_section_template = {
+	key = "PBSS_CRISIS_CORVETTE_COMBAT"
+	ship_size = crisis_corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_S3_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { gunship brawler }
+
+	ai_weight = {
+		modifier = {
+			factor = 18.0
+			has_crisis_level = crisis_level_2
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_crisis_level = crisis_level_2 }
+		}
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	small_utility_slots = 4
+
+	resources = {
+		category = ship_sections
+		cost = {
+			minerals = 400
+		}
+	}
+}
+
+# Menacing Corvette Strike - Crisis strike craft variant
+ship_section_template = {
+	key = "PBSS_CRISIS_CORVETTE_STRIKE"
+	ship_size = crisis_corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_S3_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier }
+
+	ai_weight = {
+		modifier = {
+			factor = 16.0
+			is_preferred_weapons = weapon_type_strike_craft
+			has_crisis_level = crisis_level_2
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_crisis_level = crisis_level_2 }
+		}
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "small_hangar"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "small_hangar"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	small_utility_slots = 4
+
+	resources = {
+		category = ship_sections
+		cost = {
+			minerals = 450
+		}
+	}
+}
+
+# ===== CRISIS DESTROYER SECTIONS =====
+
+# Menacing Destroyer Combat - Enhanced crisis destroyer
+ship_section_template = {
+	key = "PBSS_CRISIS_DESTROYER_COMBAT"
+	ship_size = crisis_destroyer
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+
+	ai_tags = { gunship artillery brawler }
+
+	ai_weight = {
+		modifier = {
+			factor = 17.0
+			has_crisis_level = crisis_level_3
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_crisis_level = crisis_level_3 }
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			minerals = 700
+		}
+	}
+}
+
+# Menacing Destroyer Artillery - Crisis bombardment variant
+ship_section_template = {
+	key = "PBSS_CRISIS_DESTROYER_ARTILLERY"
+	ship_size = crisis_destroyer
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+
+	ai_tags = { artillery }
+
+	ai_weight = {
+		modifier = {
+			factor = 15.0
+			has_crisis_level = crisis_level_3
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_crisis_level = crisis_level_3 }
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			minerals = 800
+		}
+	}
+}
+
+# ===== CRISIS CRUISER SECTIONS =====
+
+# Menacing Cruiser Command - Enhanced crisis cruiser
+ship_section_template = {
+	key = "PBSS_CRISIS_CRUISER_COMMAND"
+	ship_size = crisis_cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { gunship artillery carrier }
+
+	ai_weight = {
+		modifier = {
+			factor = 16.0
+			has_crisis_level = crisis_level_4
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_crisis_level = crisis_level_4 }
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 8
+
+	resources = {
+		category = ship_sections
+		cost = {
+			minerals = 1200
+		}
+	}
+}
+
+# Menacing Cruiser Carrier - Crisis strike craft command
+ship_section_template = {
+	key = "PBSS_CRISIS_CRUISER_CARRIER"
+	ship_size = crisis_cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier }
+
+	ai_weight = {
+		modifier = {
+			factor = 18.0
+			is_preferred_weapons = weapon_type_strike_craft
+			has_crisis_level = crisis_level_4
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_crisis_level = crisis_level_4 }
+		}
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "large_hangar"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "small_hangar"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 8
+
+	resources = {
+		category = ship_sections
+		cost = {
+			minerals = 1300
+		}
+	}
+}

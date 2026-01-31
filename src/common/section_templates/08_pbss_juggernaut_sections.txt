@@ -1,0 +1,586 @@
+# Perfectly Balanced Ship Sections - Juggernaut Sections
+# 3-tier system: Common (default), Advanced (tech-locked), Pro (high-tier/player-only)
+# Juggernaut has single core section - mobile shipyard and command center
+
+# ===== TIER 1: COMMON SECTIONS (Unlock by default) =====
+
+# Standard Command Core - Basic fleet coordination
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMAND"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier artillery }
+
+	ai_weight = {
+		modifier = {
+			factor = 20.0
+			has_technology = tech_juggernaut
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_juggernaut }
+		}
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "large_hangar"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 16
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 250
+		}
+	}
+}
+
+# Assault Carrier Core - Strike craft focused
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_ASSAULT"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier }
+
+	ai_weight = {
+		modifier = {
+			factor = 18.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "extra_large_hangar"
+		locatorname = "extra_large_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "extra_large_hangar"
+		locatorname = "extra_large_gun_02"
+	}
+
+	component_slot = {
+		name = "HANGAR_03"
+		template = "large_hangar"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 16
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 260
+		}
+	}
+}
+
+# ===== TIER 2: ADVANCED SECTIONS (Technology requirements) =====
+
+# Plasma Command Core - Advanced energy coordination
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_PLASMA"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier artillery }
+
+	prerequisites = { "tech_plasma_3" "tech_juggernaut" }
+
+	ai_weight = {
+		modifier = {
+			factor = 22.0
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "extra_large_hangar"
+		locatorname = "extra_large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "extra_large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 18
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_shield_regen_add_perc = 0.3
+		fleet_command_limit_add = 5
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 320
+		}
+	}
+}
+
+# Guided Assault Nexus - Missile coordination center
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_GUIDED"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier artillery }
+
+	prerequisites = { "tech_guided_weapons" "tech_strike_craft_3" "tech_juggernaut" }
+
+	ai_weight = {
+		modifier = {
+			factor = 20.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "extra_large_hangar"
+		locatorname = "extra_large_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "extra_large_hangar"
+		locatorname = "extra_large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_missile_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 18
+
+	ship_modifier = {
+		ship_weapon_range_mult = 0.25
+		ship_fire_rate_mult = 0.2
+		fleet_command_limit_add = 8
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 340
+		}
+	}
+}
+
+# ===== TIER 3: PRO SECTIONS (High-tier tech, difficult requirements, player-only) =====
+
+# Apocalypse Command Nexus - PLAYER ONLY ultimate mobile fortress
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_APOCALYPSE"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_juggernaut_hull_2" }
+
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "titanic_hangar"
+		locatorname = "extra_large_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "titanic_hangar"
+		locatorname = "extra_large_gun_02"
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "titanic_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 20
+
+	ship_modifier = {
+		fleet_command_limit_add = 15
+		ship_hull_regen_add_perc = 0.4
+		ship_repair_mult = 0.5
+		sensor_range_mult = 0.3
+		ship_weapon_damage_mult = 0.3
+		ship_hull_add = 100
+		ship_armor_add = 60
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 450
+		}
+	}
+}
+
+# Divine Wrath Carrier - PLAYER ONLY ultimate strike craft platform
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_DIVINE_WRATH"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier }
+
+	prerequisites = { "tech_repeatable_weapon_type_strike_craft_damage" "tech_juggernaut_hull_2" }
+
+	possible = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "titanic_hangar"
+		locatorname = "extra_large_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "titanic_hangar"
+		locatorname = "extra_large_gun_02"
+	}
+
+	component_slot = {
+		name = "HANGAR_03"
+		template = "titanic_hangar"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 24
+
+	ship_modifier = {
+		fleet_command_limit_add = 12
+		ship_evasion_add = 20
+		ship_weapon_damage_mult = 0.25
+		ship_hull_add = 80
+		ship_shield_add = 60
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 420
+		}
+	}
+}
+
+# Apocalypse Artillery - PLAYER ONLY ultimate bombardment platform
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_APOCALYPSE_ARTILLERY"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_juggernaut_hull_2" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "extra_large_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "extra_large_turret"
+		locatorname = "extra_large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	small_utility_slots = 20
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.4
+		ship_weapon_range_mult = 0.3
+		ship_fire_rate_mult = 0.25
+		ship_evasion_add = 15
+		fleet_command_limit_add = 8
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 400
+		}
+	}
+}
+
+# Omega Carrier - PLAYER ONLY ultimate strike craft command
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_OMEGA_CARRIER"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier }
+
+	prerequisites = { "tech_repeatable_weapon_type_strike_craft_fire_rate" "tech_juggernaut_hull_2" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "titanic_hangar"
+		locatorname = "extra_large_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "titanic_hangar"
+		locatorname = "extra_large_gun_02"
+	}
+
+	component_slot = {
+		name = "HANGAR_03"
+		template = "titanic_hangar"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_04"
+		template = "titanic_hangar"
+		locatorname = "large_gun_02"
+	}
+
+	small_utility_slots = 28
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.35
+		ship_weapon_range_mult = 0.2
+		fleet_command_limit_add = 15
+		ship_evasion_add = 25
+		ship_hull_add = 60
+		ship_shield_add = 40
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 430
+		}
+	}
+}
+
+# ===== ADDITIONAL ADVANCED SECTIONS =====
+
+# Siege Platform - PLAYER ONLY heavy artillery command center
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_SIEGE_PLATFORM"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_juggernaut" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY - Too powerful
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "PBSS_TITANIC_MISSILE_LAUNCHER"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 24
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.4
+		ship_weapon_range_mult = 0.25
+		ship_fire_rate_mult = 0.15
+		ship_evasion_add = 15
+		ship_hull_add = 40
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 450
+		}
+	}
+}
+
+# Omega Carrier - PLAYER ONLY ultimate strike craft command center
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_OMEGA_CARRIER"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { carrier }
+
+	prerequisites = { "tech_repeatable_weapon_type_strike_craft_damage" "tech_repeatable_weapon_type_strike_craft_fire_rate" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY - Too powerful
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	component_slot = {
+		name = "HANGAR_01"
+		template = "extra_large_hangar"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "HANGAR_02"
+		template = "extra_large_hangar"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "HANGAR_03"
+		template = "large_hangar"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 32
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.3
+		ship_weapon_range_mult = 0.15
+		fleet_command_limit_add = 20
+		ship_evasion_add = 30
+		ship_hull_add = 50
+		ship_shield_add = 30
+		sensor_range_mult = 0.3
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 460
+		}
+	}
+}

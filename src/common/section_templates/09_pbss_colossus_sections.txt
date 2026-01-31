@@ -1,0 +1,640 @@
+# Perfectly Balanced Ship Sections - Colossus Sections
+# 4-tier system: Common (default), Advanced (tech-locked), Pro (high-tier/player-only), Ultra (insane/player-only)
+# Colossus has single ship section - planet-killing superweapon platform with additional regular weapons
+
+# ===== TIER 1: COMMON SECTIONS (Unlock by default) =====
+
+# Standard Planet Cracker - Basic planetary destruction with defensive weapons
+ship_section_template = {
+	key = "PBSS_COLOSSUS_SHIP_CRACKER"
+	ship_size = colossus
+	fits_on_slot = ship
+	should_draw_components = yes
+	entity = "colossus_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	ai_weight = {
+		modifier = {
+			factor = 15.0
+			has_technology = tech_colossus
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_colossus }
+		}
+	}
+
+	# Planet-killer weapon - key feature
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "planet_killer_gun_01"
+	}
+
+	# Regular defensive weapons
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	large_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+	}
+}
+
+# Shielded World Pacifier - Planet modification weapon with enhanced defenses
+ship_section_template = {
+	key = "PBSS_COLOSSUS_SHIP_PACIFIER"
+	ship_size = colossus
+	fits_on_slot = ship
+	should_draw_components = yes
+	entity = "colossus_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	ai_weight = {
+		modifier = {
+			factor = 12.0
+			has_technology = tech_colossus
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_colossus }
+		}
+	}
+
+	# Planet-killer weapon - key feature
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "planet_killer_gun_01"
+	}
+
+	# Enhanced defensive weapons
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_03"
+		template = "point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+
+	large_utility_slots = 5
+
+	ship_modifier = {
+		ship_shield_add = 50  # Enhanced shielding for pacifier
+	}
+
+	resources = {
+		category = ship_sections
+	}
+}
+
+# Nanocomposite Devastator - Planet destruction with advanced materials
+ship_section_template = {
+	key = "PBSS_COLOSSUS_SHIP_DEVASTATOR"
+	ship_size = colossus
+	fits_on_slot = ship
+	should_draw_components = yes
+	entity = "colossus_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_nanocomposite_materials" }
+
+	ai_weight = {
+		modifier = {
+			factor = 14.0
+			has_technology = tech_colossus
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_technology = tech_colossus }
+		}
+	}
+
+	# Planet-killer weapon - key feature
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "planet_killer_gun_01"
+	}
+
+	# Advanced weaponry
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	large_utility_slots = 6
+
+	ship_modifier = {
+		ship_hull_add = 30
+		ship_armor_add = 20
+	}
+
+	resources = {
+		category = ship_sections
+	}
+}
+
+# ===== TIER 2: ADVANCED SECTIONS (Technology requirements) =====
+
+# Plasma Apocalypse - Energy-based planet destruction
+ship_section_template = {
+	key = "PBSS_COLOSSUS_SHIP_PLASMA_APOCALYPSE"
+	ship_size = colossus
+	fits_on_slot = ship
+	should_draw_components = yes
+	entity = "colossus_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_plasma_2" "tech_energy_torpedoes_2" }
+
+	ai_weight = {
+		modifier = {
+			factor = 16.0
+			is_preferred_weapons = weapon_type_energy
+			has_technology = tech_colossus
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+
+	# Planet-killer weapon - key feature
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "planet_killer_gun_01"
+	}
+
+	# Energy-focused weaponry
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	large_utility_slots = 5
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.15
+		ship_shield_regen_add_perc = 0.4
+	}
+
+	resources = {
+		category = ship_sections
+	}
+}
+
+# Kinetic Armageddon - Mass driver-based planet destruction
+ship_section_template = {
+	key = "PBSS_COLOSSUS_SHIP_KINETIC_ARMAGEDDON"
+	ship_size = colossus
+	fits_on_slot = ship
+	should_draw_components = yes
+	entity = "colossus_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_railguns_3" "tech_mass_drivers_3" }
+
+	ai_weight = {
+		modifier = {
+			factor = 17.0
+			is_preferred_weapons = weapon_type_kinetic
+			has_technology = tech_colossus
+		}
+		modifier = {
+			factor = 0.4
+			NOT = { is_preferred_weapons = weapon_type_kinetic }
+		}
+	}
+
+	# Planet-killer weapon - key feature
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "planet_killer_gun_01"
+	}
+
+	# Kinetic-focused weaponry
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	large_utility_slots = 4
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.2
+		ship_weapon_range_mult = 0.15
+		ship_armor_add = 40
+	}
+
+	resources = {
+		category = ship_sections
+	}
+}
+
+# ===== TIER 3: PRO SECTIONS (High-tier tech, difficult requirements, player-only) =====
+
+# Divine Wrath - PLAYER ONLY ultimate planet destruction
+ship_section_template = {
+	key = "PBSS_COLOSSUS_SHIP_DIVINE_WRATH"
+	ship_size = colossus
+	fits_on_slot = ship
+	should_draw_components = yes
+	entity = "colossus_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_energy_damage" "tech_repeatable_weapon_type_kinetic_damage" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	# Planet-killer weapon - key feature
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "planet_killer_gun_01"
+	}
+
+	# Maximum regular weaponry
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	large_utility_slots = 3
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.3
+		ship_weapon_range_mult = 0.2
+		ship_fire_rate_mult = 0.15
+		ship_hull_add = 60
+		ship_armor_add = 40
+		ship_shield_add = 30
+	}
+
+	resources = {
+		category = ship_sections
+	}
+}
+
+# Cosmic Annihilator - PLAYER ONLY multi-weapon planet destroyer
+ship_section_template = {
+	key = "PBSS_COLOSSUS_SHIP_COSMIC_ANNIHILATOR"
+	ship_size = colossus
+	fits_on_slot = ship
+	should_draw_components = yes
+	entity = "colossus_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_energy_damage" "tech_colossus_project" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	# Planet-killer weapon - key feature
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "planet_killer_gun_01"
+	}
+
+	# Ultimate weapon array
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	large_utility_slots = 2
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.4
+		ship_weapon_range_mult = 0.25
+		ship_fire_rate_mult = 0.2
+		ship_hull_add = 80
+		ship_armor_add = 60
+		ship_shield_add = 50
+		ship_evasion_add = 15
+	}
+
+	resources = {
+		category = ship_sections
+	}
+}
+
+# ===== TIER 4: ULTRA SECTIONS (Insane requirements, player-only) =====
+
+# Godkiller - PLAYER ONLY maximum devastation platform
+ship_section_template = {
+	key = "PBSS_COLOSSUS_SHIP_GODKILLER"
+	ship_size = colossus
+	fits_on_slot = ship
+	should_draw_components = yes
+	entity = "colossus_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ai_tags = { artillery }
+
+	prerequisites = { "tech_repeatable_weapon_type_explosive_damage" "tech_repeatable_weapon_type_energy_damage" "tech_repeatable_weapon_type_kinetic_damage" "tech_repeatable_weapon_type_strike_craft_fire_rate" }
+
+	possible = {
+		is_ai = no  # PLAYER ONLY
+	}
+
+	ai_weight = {
+		factor = 0.0
+	}
+
+	# Planet-killer weapon - key feature
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "planet_killer_gun_01"
+	}
+
+	# Insane weapon array
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_03"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_03"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "POINT_DEFENSE_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	large_utility_slots = 1
+
+	ship_modifier = {
+		ship_weapon_damage_mult = 0.6
+		ship_weapon_range_mult = 0.4
+		ship_fire_rate_mult = 0.3
+		ship_hull_add = 120
+		ship_armor_add = 90
+		ship_shield_add = 80
+		ship_evasion_add = 25
+		ship_hull_regen_add_perc = 0.5
+		ship_armor_regen_add_perc = 0.4
+		ship_shield_regen_add_perc = 0.3
+	}
+
+	resources = {
+		category = ship_sections
+	}
+}
