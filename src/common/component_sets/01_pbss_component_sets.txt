@@ -1,0 +1,7 @@
+# Perfectly Balanced Ship Sections - Component Sets
+# Universal Penetrator - T-slot with 100% shield/armor penetration
+component_set = {
+	key = "PBSS_PENETRATOR"
+	icon = "GFX_ship_part_arc_emitter_2"
+	icon_frame = 1
+}

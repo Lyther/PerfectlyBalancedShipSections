@@ -1,0 +1,26 @@
+#####################
+# Penetration Boost #
+#####################
+utility_component_template = {
+	key = "PBSS_PENETRATION_BOOST"
+	size = aux
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
+	ship_modifier = {
+		ship_armor_penetration_add = 0.5
+		ship_shield_penetration_add = 0.5
+	}
+	prerequisites = {
+		tech_auxiliary_fire_control
+	}
+	component_set = "PBSS_PENETRATOR"
+	ai_weight = {
+		weight = 0
+	}
+}
