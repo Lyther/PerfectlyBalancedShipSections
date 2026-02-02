@@ -1,0 +1,125 @@
+# PBSS Offspring_Mauler_Stage_1 Mid Sections
+# Generated designs: G1S1US2AUX1, G2S2US4AUX2, G3S3US6AUX3
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_1_MID_COMMON_G1S1US2AUX1"
+	ship_size = offspring_mauler_stage_1
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_1_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { gunship }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	small_utility_slots = 2
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_1_MID_COMMON_G2S2US4AUX2"
+	ship_size = offspring_mauler_stage_1
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_1_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { gunship }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	small_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_MAULER_STAGE_1_MID_ADVANCED_G3S3US6AUX3"
+	ship_size = offspring_mauler_stage_1
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_1_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { gunship }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "medium_missile_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	small_utility_slots = 6
+	aux_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}

@@ -1,0 +1,172 @@
+# PBSS Crisis_Destroyer Mid Sections
+# Generated designs: L1S2UL3AUX2, L2S2UL3AUX2, X1S2UL3AUX2, X1L1UL4AUX2, T1UL4AUX2
+
+ship_section_template = {
+	key = "PBSS_CRISIS_DESTROYER_MID_ADVANCED_L1S2UL3AUX2"
+	ship_size = crisis_destroyer
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "crisis_destroyer_1L2S_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery gunship }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_CRISIS_DESTROYER_MID_ADVANCED_L2S2UL3AUX2"
+	ship_size = crisis_destroyer
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "crisis_destroyer_1L2S_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery gunship }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_CRISIS_DESTROYER_MID_ADVANCED_X1S2UL3AUX2"
+	ship_size = crisis_destroyer
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "crisis_destroyer_1M2S1M_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery gunship }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "medium_gun_02"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_CRISIS_DESTROYER_MID_PRO_X1L1UL4AUX2"
+	ship_size = crisis_destroyer
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "crisis_destroyer_1M2S1M_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_CRISIS_DESTROYER_MID_PRO_T1UL4AUX2"
+	ship_size = crisis_destroyer
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "crisis_destroyer_1M2S1M_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}

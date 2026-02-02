@@ -1,0 +1,107 @@
+# PBSS Offspring_Battleship Stern Sections
+# Generated designs: L1AUX2, M2AUX3, X1AUX3, T1AUX3
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_COMMON_L1AUX2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_L1_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_COMMON_M2AUX3"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { gunship }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	aux_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_COMMON_X1AUX3"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	aux_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ADVANCED_T1AUX3"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	aux_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}

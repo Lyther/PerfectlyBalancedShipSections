@@ -1,0 +1,345 @@
+# PBSS Frigate Mid Sections
+# Generated designs: G1S1US3AUX1, G2US3AUX1, G1M1US3AUX1, G2S1US4AUX1, G1L1US3AUX1, G3US4AUX1, G2L1US4AUX2, G1X1US4AUX1, G2X1US4AUX2, G1T1US4AUX2
+ship_section_template = {
+	key = "PBSS_FRIGATE_MID_COMMON_G1S1US3AUX1"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_FRIGATE_MID_COMMON_G2US3AUX1"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_FRIGATE_MID_COMMON_G1M1US3AUX1"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_FRIGATE_MID_COMMON_G2S1US4AUX1"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	small_utility_slots = 4
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_FRIGATE_MID_COMMON_G1L1US3AUX1"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_01"
+	}
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_FRIGATE_MID_COMMON_G3US4AUX1"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	small_utility_slots = 4
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_FRIGATE_MID_COMMON_G2L1US4AUX2"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_01"
+	}
+	small_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_FRIGATE_MID_COMMON_G1X1US4AUX1"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_01"
+	}
+	small_utility_slots = 4
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_FRIGATE_MID_COMMON_G2X1US4AUX2"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_01"
+	}
+	small_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_FRIGATE_MID_COMMON_G1T1US4AUX2"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_01"
+	}
+	small_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
