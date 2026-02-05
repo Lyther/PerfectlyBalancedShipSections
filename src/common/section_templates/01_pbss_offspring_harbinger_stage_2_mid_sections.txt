@@ -1,14 +1,15 @@
 # PBSS Offspring_Harbinger_Stage_2 Mid Sections
-# Generated designs: HB3PD6UL6AUX2, HB4PD8UL8AUX3, HB5PD10UL10AUX4
-
+# Generated designs: HB3PD6UL6AUX2, HB4PD8UL8AUX3, HB5PD10UL10AUX4, L4UL3, X2UL3, T1UL3
 ship_section_template = {
-	key = "PBSS_OFFSPRING_HARBINGER_STAGE_2_MID_ULTRA_HB3PD6UL6AUX2"
+	key = "PBSS_OFFSPRING_HARBINGER_STAGE_2_MID_ADVANCED_HB3PD6UL6AUX2"
 	ship_size = offspring_harbinger_stage_2
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "harbinger_stage_2_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier }
+	ai_tags = {
+		carrier
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -71,13 +72,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_OFFSPRING_HARBINGER_STAGE_2_MID_ULTIMATE_HB4PD8UL8AUX3"
+	key = "PBSS_OFFSPRING_HARBINGER_STAGE_2_MID_PRO_HB4PD8UL8AUX3"
 	ship_size = offspring_harbinger_stage_2
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "harbinger_stage_2_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier }
+	ai_tags = {
+		carrier
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -156,13 +159,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_OFFSPRING_HARBINGER_STAGE_2_MID_ULTIMATE_HB5PD10UL10AUX4"
+	key = "PBSS_OFFSPRING_HARBINGER_STAGE_2_MID_ULTRA_HB5PD10UL10AUX4"
 	ship_size = offspring_harbinger_stage_2
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "harbinger_stage_2_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier }
+	ai_tags = {
+		carrier
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -252,6 +257,107 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_HARBINGER_STAGE_2_MID_COMMON_L4UL3"
+	ship_size = offspring_harbinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "harbinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_HARBINGER_STAGE_2_MID_COMMON_X2UL3"
+	ship_size = offspring_harbinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "harbinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_HARBINGER_STAGE_2_MID_COMMON_T1UL3"
+	ship_size = offspring_harbinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "harbinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
 		}
 	}
 }

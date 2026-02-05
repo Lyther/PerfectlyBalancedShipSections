@@ -1,14 +1,15 @@
 # PBSS Bio_Titan Bow Sections
-# Generated designs: T1UL4, T1UL5, T1UL6, T2UL4, T2UL6, T3UL4
-
+# Generated designs: T1UL4, T1UL5, T1UL6, T2UL4, T2UL6, T3UL4, L3UL3, L4UL3, X2UL3, HB3UL3, T1UL3, T2UL4AUX2, X4UL4AUX2, L6UL4AUX2, HB4UL4AUX2, T3UL5AUX2
 ship_section_template = {
-	key = "PBSS_BIO_TITAN_BOW_ADVANCED_T1UL4"
+	key = "PBSS_BIO_TITAN_BOW_COMMON_T1UL4"
 	ship_size = bio_titan
 	fits_on_slot = bow
 	should_draw_components = yes
 	entity = "titan_bow_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -27,13 +28,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_BIO_TITAN_BOW_PRO_T1UL5"
+	key = "PBSS_BIO_TITAN_BOW_COMMON_T1UL5"
 	ship_size = bio_titan
 	fits_on_slot = bow
 	should_draw_components = yes
 	entity = "titan_bow_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -52,13 +55,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_BIO_TITAN_BOW_PRO_T1UL6"
+	key = "PBSS_BIO_TITAN_BOW_COMMON_T1UL6"
 	ship_size = bio_titan
 	fits_on_slot = bow
 	should_draw_components = yes
 	entity = "titan_bow_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -77,13 +82,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_BIO_TITAN_BOW_ULTRA_T2UL4"
+	key = "PBSS_BIO_TITAN_BOW_COMMON_T2UL4"
 	ship_size = bio_titan
 	fits_on_slot = bow
 	should_draw_components = yes
 	entity = "titan_bow_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -107,13 +114,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_BIO_TITAN_BOW_ULTIMATE_T2UL6"
+	key = "PBSS_BIO_TITAN_BOW_ADVANCED_T2UL6"
 	ship_size = bio_titan
 	fits_on_slot = bow
 	should_draw_components = yes
 	entity = "titan_bow_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -137,13 +146,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_BIO_TITAN_BOW_ULTIMATE_T3UL4"
+	key = "PBSS_BIO_TITAN_BOW_ADVANCED_T3UL4"
 	ship_size = bio_titan
 	fits_on_slot = bow
 	should_draw_components = yes
 	entity = "titan_bow_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -163,6 +174,398 @@ ship_section_template = {
 		locatorname = "xl_gun_01"
 	}
 	large_utility_slots = 4
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BIO_TITAN_BOW_COMMON_L3UL3"
+	ship_size = bio_titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BIO_TITAN_BOW_COMMON_L4UL3"
+	ship_size = bio_titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BIO_TITAN_BOW_COMMON_X2UL3"
+	ship_size = bio_titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BIO_TITAN_BOW_COMMON_HB3UL3"
+	ship_size = bio_titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BIO_TITAN_BOW_COMMON_T1UL3"
+	ship_size = bio_titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BIO_TITAN_BOW_ADVANCED_T2UL4AUX2"
+	ship_size = bio_titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BIO_TITAN_BOW_ADVANCED_X4UL4AUX2"
+	ship_size = bio_titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BIO_TITAN_BOW_COMMON_L6UL4AUX2"
+	ship_size = bio_titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BIO_TITAN_BOW_COMMON_HB4UL4AUX2"
+	ship_size = bio_titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BIO_TITAN_BOW_PRO_T3UL5AUX2"
+	ship_size = bio_titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
 	resources = {
 		category = ship_sections
 		cost = {

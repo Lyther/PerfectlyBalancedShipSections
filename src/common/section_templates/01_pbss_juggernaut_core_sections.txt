@@ -1,14 +1,17 @@
 # PBSS Juggernaut Mid Sections
 # Generated designs: X2HB6M5UL21AUX4, T2HB6M5UL21AUX4, T2X2HB6M4UL21AUX5, T4HB8L4UL21AUX6, T4X4HB6L4UL21AUX6
-
 ship_section_template = {
-	key = "PBSS_JUGGERNAUT_CORE_ULTIMATE_X2HB6M5UL21AUX4"
+	key = "PBSS_JUGGERNAUT_CORE_PRO_X2HB6M5UL21AUX4"
 	ship_size = juggernaut
 	fits_on_slot = core
 	should_draw_components = yes
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery gunship }
+	ai_tags = {
+		carrier
+		artillery
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -94,13 +97,17 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_JUGGERNAUT_CORE_ULTIMATE_T2HB6M5UL21AUX4"
+	key = "PBSS_JUGGERNAUT_CORE_PRO_T2HB6M5UL21AUX4"
 	ship_size = juggernaut
 	fits_on_slot = core
 	should_draw_components = yes
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery gunship }
+	ai_tags = {
+		carrier
+		artillery
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -186,13 +193,17 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_JUGGERNAUT_CORE_ULTIMATE_T2X2HB6M4UL21AUX5"
+	key = "PBSS_JUGGERNAUT_CORE_ULTRA_T2X2HB6M4UL21AUX5"
 	ship_size = juggernaut
 	fits_on_slot = core
 	should_draw_components = yes
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery gunship }
+	ai_tags = {
+		carrier
+		artillery
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -283,13 +294,16 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_JUGGERNAUT_CORE_ULTIMATE_T4HB8L4UL21AUX6"
+	key = "PBSS_JUGGERNAUT_CORE_ULTRA_T4HB8L4UL21AUX6"
 	ship_size = juggernaut
 	fits_on_slot = core
 	should_draw_components = yes
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery }
+	ai_tags = {
+		carrier
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -392,13 +406,16 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_JUGGERNAUT_CORE_ULTIMATE_T4X4HB6L4UL21AUX6"
+	key = "PBSS_JUGGERNAUT_CORE_ULTRA_T4X4HB6L4UL21AUX6"
 	ship_size = juggernaut
 	fits_on_slot = core
 	should_draw_components = yes
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery }
+	ai_tags = {
+		carrier
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -500,6 +517,247 @@ ship_section_template = {
 	}
 	large_utility_slots = 21
 	aux_utility_slots = 6
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_L5UL5"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_X3UL5"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_X4UL5"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_HB4UL5"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "strike_craft_locator_04"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_T2UL5"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_T3UL5"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 5
 	resources = {
 		category = ship_sections
 		cost = {

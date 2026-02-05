@@ -1,14 +1,15 @@
 # PBSS Offspring_Stinger_Stage_2 Mid Sections
-# Generated designs: X3L3UL7AUX2, X4L6UL8AUX3, X6L8UL10AUX4
-
+# Generated designs: X3L3UL7AUX2, X4L6UL8AUX3, X6L8UL10AUX4, S5UL1, M3UL1, L2UL1
 ship_section_template = {
-	key = "PBSS_OFFSPRING_STINGER_STAGE_2_MID_ULTIMATE_X3L3UL7AUX2"
+	key = "PBSS_OFFSPRING_STINGER_STAGE_2_MID_COMMON_X3L3UL7AUX2"
 	ship_size = offspring_stinger_stage_2
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "stinger_stage_2_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -53,13 +54,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_OFFSPRING_STINGER_STAGE_2_MID_ULTIMATE_X4L6UL8AUX3"
+	key = "PBSS_OFFSPRING_STINGER_STAGE_2_MID_ADVANCED_X4L6UL8AUX3"
 	ship_size = offspring_stinger_stage_2
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "stinger_stage_2_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -124,13 +127,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_OFFSPRING_STINGER_STAGE_2_MID_ULTIMATE_X6L8UL10AUX4"
+	key = "PBSS_OFFSPRING_STINGER_STAGE_2_MID_PRO_X6L8UL10AUX4"
 	ship_size = offspring_stinger_stage_2
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "stinger_stage_2_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -210,6 +215,122 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_2_MID_COMMON_S5UL1"
+	ship_size = offspring_stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_2_MID_COMMON_M3UL1"
+	ship_size = offspring_stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_STINGER_STAGE_2_MID_COMMON_L2UL1"
+	ship_size = offspring_stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
 		}
 	}
 }

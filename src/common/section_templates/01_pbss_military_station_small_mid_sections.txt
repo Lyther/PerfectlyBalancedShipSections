@@ -1,8 +1,7 @@
 # PBSS Military_Station_Small Mid Sections
-# Generated designs: S4UL3AUX1, PD4UL3AUX1, M2UL3AUX1, L1UL3AUX1, HB1UL3AUX1, L2UL3AUX1, X1UL3AUX1, X1L1UL3AUX2, HB2UL3AUX2, T1UL3AUX2
-
+# Generated designs: S4UL3AUX1, PD4UL3AUX1, M2UL3AUX1, L1UL3AUX1, HB1UL3AUX1, L2UL3AUX1, X1UL3AUX1, X1L1UL3AUX2, HB2UL3AUX2, T1UL3AUX2, L7UL6AUX2, X4UL6AUX2, HB5UL6AUX2, X3L1UL6AUX2, T3AUX2
 ship_section_template = {
-	key = "PBSS_MILITARY_STATION_SMALL_NORTH_COMMON_S4UL3AUX1"
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ADVANCED_S4UL3AUX1"
 	ship_size = military_station_small
 	ship_size = military_station_medium
 	fits_on_slot = north
@@ -12,7 +11,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "military_station_section_light_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -47,7 +48,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_MILITARY_STATION_SMALL_NORTH_COMMON_PD4UL3AUX1"
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ADVANCED_PD4UL3AUX1"
 	ship_size = military_station_small
 	ship_size = military_station_medium
 	fits_on_slot = north
@@ -91,7 +92,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_MILITARY_STATION_SMALL_NORTH_COMMON_M2UL3AUX1"
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ADVANCED_M2UL3AUX1"
 	ship_size = military_station_small
 	ship_size = military_station_medium
 	fits_on_slot = north
@@ -101,7 +102,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "military_station_section_medium_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -126,7 +129,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_MILITARY_STATION_SMALL_NORTH_COMMON_L1UL3AUX1"
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ADVANCED_L1UL3AUX1"
 	ship_size = military_station_small
 	ship_size = military_station_medium
 	fits_on_slot = north
@@ -136,7 +139,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "military_station_section_heavy_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -156,7 +161,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_MILITARY_STATION_SMALL_NORTH_COMMON_HB1UL3AUX1"
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ADVANCED_HB1UL3AUX1"
 	ship_size = military_station_small
 	ship_size = military_station_medium
 	fits_on_slot = north
@@ -166,7 +171,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "military_station_section_light_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier }
+	ai_tags = {
+		carrier
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -187,7 +194,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_MILITARY_STATION_SMALL_NORTH_COMMON_L2UL3AUX1"
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ADVANCED_L2UL3AUX1"
 	ship_size = military_station_small
 	ship_size = military_station_medium
 	fits_on_slot = north
@@ -197,7 +204,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "military_station_section_heavy_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -222,7 +231,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_MILITARY_STATION_SMALL_NORTH_COMMON_X1UL3AUX1"
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ADVANCED_X1UL3AUX1"
 	ship_size = military_station_small
 	ship_size = military_station_medium
 	fits_on_slot = north
@@ -232,7 +241,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "military_station_section_light_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -252,7 +263,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_MILITARY_STATION_SMALL_NORTH_ADVANCED_X1L1UL3AUX2"
+	key = "PBSS_MILITARY_STATION_SMALL_MID_PRO_X1L1UL3AUX2"
 	ship_size = military_station_small
 	ship_size = military_station_medium
 	fits_on_slot = north
@@ -262,7 +273,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "military_station_section_light_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -287,7 +300,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_MILITARY_STATION_SMALL_NORTH_ADVANCED_HB2UL3AUX2"
+	key = "PBSS_MILITARY_STATION_SMALL_MID_PRO_HB2UL3AUX2"
 	ship_size = military_station_small
 	ship_size = military_station_medium
 	fits_on_slot = north
@@ -297,7 +310,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "military_station_section_light_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier }
+	ai_tags = {
+		carrier
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -324,7 +339,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_MILITARY_STATION_SMALL_NORTH_PRO_T1UL3AUX2"
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ULTRA_T1UL3AUX2"
 	ship_size = military_station_small
 	ship_size = military_station_medium
 	fits_on_slot = north
@@ -334,7 +349,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "military_station_section_light_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -349,6 +366,260 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ULTIMATE_L7UL6AUX2"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	fits_on_slot = north
+	fits_on_slot = west
+	fits_on_slot = east
+	fits_on_slot = south
+	should_draw_components = yes
+	entity = "military_station_section_heavy_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 6
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ULTIMATE_X4UL6AUX2"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	fits_on_slot = north
+	fits_on_slot = west
+	fits_on_slot = east
+	fits_on_slot = south
+	should_draw_components = yes
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 6
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ULTIMATE_HB5UL6AUX2"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	fits_on_slot = north
+	fits_on_slot = west
+	fits_on_slot = east
+	fits_on_slot = south
+	should_draw_components = yes
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 6
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ULTIMATE_X3L1UL6AUX2"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	fits_on_slot = north
+	fits_on_slot = west
+	fits_on_slot = east
+	fits_on_slot = south
+	should_draw_components = yes
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 6
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MILITARY_STATION_SMALL_MID_ULTIMATE_T3AUX2"
+	ship_size = military_station_small
+	ship_size = military_station_medium
+	fits_on_slot = north
+	fits_on_slot = west
+	fits_on_slot = east
+	fits_on_slot = south
+	should_draw_components = yes
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "small_gun_01"
+	}
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
 		}
 	}
 }

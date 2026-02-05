@@ -1,14 +1,15 @@
 # PBSS Ion_Cannon Mid Sections
 # Generated designs: T1UL6AUX3, T2UL6AUX3, T1X1UL6AUX3, T2X1UL6AUX4, T1X2UL6AUX4, T3UL6AUX4
-
 ship_section_template = {
-	key = "PBSS_ION_CANNON_SHIP_ULTRA_T1UL6AUX3"
+	key = "PBSS_ION_CANNON_SHIP_COMMON_T1UL6AUX3"
 	ship_size = ion_cannon
 	fits_on_slot = ship
 	should_draw_components = yes
 	entity = "ion_cannon_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -28,13 +29,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_ION_CANNON_SHIP_ULTIMATE_T2UL6AUX3"
+	key = "PBSS_ION_CANNON_SHIP_COMMON_T2UL6AUX3"
 	ship_size = ion_cannon
 	fits_on_slot = ship
 	should_draw_components = yes
 	entity = "ion_cannon_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -59,13 +62,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_ION_CANNON_SHIP_ULTIMATE_T1X1UL6AUX3"
+	key = "PBSS_ION_CANNON_SHIP_COMMON_T1X1UL6AUX3"
 	ship_size = ion_cannon
 	fits_on_slot = ship
 	should_draw_components = yes
 	entity = "ion_cannon_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -90,13 +95,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_ION_CANNON_SHIP_ULTIMATE_T2X1UL6AUX4"
+	key = "PBSS_ION_CANNON_SHIP_ADVANCED_T2X1UL6AUX4"
 	ship_size = ion_cannon
 	fits_on_slot = ship
 	should_draw_components = yes
 	entity = "ion_cannon_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -126,13 +133,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_ION_CANNON_SHIP_ULTIMATE_T1X2UL6AUX4"
+	key = "PBSS_ION_CANNON_SHIP_COMMON_T1X2UL6AUX4"
 	ship_size = ion_cannon
 	fits_on_slot = ship
 	should_draw_components = yes
 	entity = "ion_cannon_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -162,13 +171,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_ION_CANNON_SHIP_ULTIMATE_T3UL6AUX4"
+	key = "PBSS_ION_CANNON_SHIP_ADVANCED_T3UL6AUX4"
 	ship_size = ion_cannon
 	fits_on_slot = ship
 	should_draw_components = yes
 	entity = "ion_cannon_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}

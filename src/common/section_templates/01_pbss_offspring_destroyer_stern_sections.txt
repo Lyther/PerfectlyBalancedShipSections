@@ -1,6 +1,5 @@
 # PBSS Offspring_Destroyer Stern Sections
-# Generated designs: S2AUX2, M1AUX1, L1AUX2, X1AUX2
-
+# Generated designs: S2AUX2, M1AUX1, L1AUX2, X1AUX2, S3UL1, M2UL1, L1UL1, X1UL1, L4UL3AUX2, X2UL3AUX2, X3UL3AUX2, X1L2UL3AUX2, X4UL5AUX2, L6UL5AUX2, X3L1UL5AUX2, X5UL6AUX2
 ship_section_template = {
 	key = "PBSS_OFFSPRING_DESTROYER_STERN_COMMON_S2AUX2"
 	ship_size = offspring_destroyer
@@ -8,7 +7,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -38,7 +39,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -57,13 +60,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_OFFSPRING_DESTROYER_STERN_COMMON_L1AUX2"
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_ADVANCED_L1AUX2"
 	ship_size = offspring_destroyer
 	fits_on_slot = stern
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -82,13 +87,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_OFFSPRING_DESTROYER_STERN_COMMON_X1AUX2"
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_PRO_X1AUX2"
 	ship_size = offspring_destroyer
 	fits_on_slot = stern
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -102,6 +109,468 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_COMMON_S3UL1"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_COMMON_M2UL1"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_M1_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_COMMON_L1UL1"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_ADVANCED_X1UL1"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_ULTIMATE_L4UL3AUX2"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_ULTIMATE_X2UL3AUX2"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_ULTIMATE_X3UL3AUX2"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_ULTIMATE_X1L2UL3AUX2"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_ULTIMATE_X4UL5AUX2"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_ULTIMATE_L6UL5AUX2"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_ULTIMATE_X3L1UL5AUX2"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_DESTROYER_STERN_ULTIMATE_X5UL6AUX2"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 6
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
 		}
 	}
 }

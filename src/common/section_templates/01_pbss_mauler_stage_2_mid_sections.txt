@@ -1,6 +1,5 @@
 # PBSS Mauler_Stage_2 Mid Sections
-# Generated designs: G1S2US4AUX1, G2S4US6AUX2, G4S6US8AUX3
-
+# Generated designs: G1S2US4AUX1, G2S4US6AUX2, G4S6US8AUX3, L4UL3, X2UL3, T1UL3, L4UL3, X2UL3, T1UL3, T2UL5AUX2, X4UL5AUX2, T1X2UL5AUX2, T3UL6AUX2
 ship_section_template = {
 	key = "PBSS_MAULER_STAGE_2_MID_COMMON_G1S2US4AUX1"
 	ship_size = mauler_stage_2
@@ -8,7 +7,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "mauler_stage_2_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -38,13 +39,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_MAULER_STAGE_2_MID_COMMON_G2S4US6AUX2"
+	key = "PBSS_MAULER_STAGE_2_MID_PRO_G2S4US6AUX2"
 	ship_size = mauler_stage_2
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "mauler_stage_2_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -89,13 +92,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_MAULER_STAGE_2_MID_PRO_G4S6US8AUX3"
+	key = "PBSS_MAULER_STAGE_2_MID_ULTRA_G4S6US8AUX3"
 	ship_size = mauler_stage_2
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "mauler_stage_2_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -155,6 +160,353 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MAULER_STAGE_2_MID_ULTRA_L4UL3"
+	ship_size = mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MAULER_STAGE_2_MID_ULTRA_X2UL3"
+	ship_size = mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MAULER_STAGE_2_MID_ULTRA_T1UL3"
+	ship_size = mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MAULER_STAGE_2_MID_ULTRA_L4UL3"
+	ship_size = mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MAULER_STAGE_2_MID_ULTRA_X2UL3"
+	ship_size = mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MAULER_STAGE_2_MID_ULTRA_T1UL3"
+	ship_size = mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+
+ship_section_template = {
+	key = "PBSS_MAULER_STAGE_2_MID_ULTIMATE_T2UL5AUX2"
+	ship_size = mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MAULER_STAGE_2_MID_ULTIMATE_X4UL5AUX2"
+	ship_size = mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MAULER_STAGE_2_MID_ULTIMATE_T1X2UL5AUX2"
+	ship_size = mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_MAULER_STAGE_2_MID_ULTIMATE_T3UL6AUX2"
+	ship_size = mauler_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "mauler_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "root"
+	}
+	large_utility_slots = 6
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
 		}
 	}
 }

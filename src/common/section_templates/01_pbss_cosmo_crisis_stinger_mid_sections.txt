@@ -1,14 +1,15 @@
 # PBSS Cosmo_Crisis_Stinger Mid Sections
-# Generated designs: T2X4L4UL12AUX3, T3X4L4UL12AUX4, T4X6L4UL12AUX5
-
+# Generated designs: T2X4L4UL12AUX3, T3X4L4UL12AUX4, T4X6L4UL12AUX5, S5UL2, M3UL2, L2UL2, X1UL2
 ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_STINGER_MID_ULTIMATE_T2X4L4UL12AUX3"
+	key = "PBSS_COSMO_CRISIS_STINGER_MID_COMMON_T2X4L4UL12AUX3"
 	ship_size = cosmo_crisis_stinger
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "biogenesis_01_fallen_empire_stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -73,13 +74,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_STINGER_MID_ULTIMATE_T3X4L4UL12AUX4"
+	key = "PBSS_COSMO_CRISIS_STINGER_MID_COMMON_T3X4L4UL12AUX4"
 	ship_size = cosmo_crisis_stinger
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "biogenesis_01_fallen_empire_stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -149,13 +152,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_STINGER_MID_ULTIMATE_T4X6L4UL12AUX5"
+	key = "PBSS_COSMO_CRISIS_STINGER_MID_ADVANCED_T4X6L4UL12AUX5"
 	ship_size = cosmo_crisis_stinger
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "biogenesis_01_fallen_empire_stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -235,6 +240,149 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_STINGER_MID_COMMON_S5UL2"
+	ship_size = cosmo_crisis_stinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_stinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "small_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_STINGER_MID_COMMON_M3UL2"
+	ship_size = cosmo_crisis_stinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_stinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_STINGER_MID_COMMON_L2UL2"
+	ship_size = cosmo_crisis_stinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_stinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_STINGER_MID_COMMON_X1UL2"
+	ship_size = cosmo_crisis_stinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_stinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
 		}
 	}
 }

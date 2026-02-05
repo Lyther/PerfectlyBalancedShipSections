@@ -1,14 +1,16 @@
 # PBSS Starbase_Deep_Space_Citadel_1 Mid Sections
 # Generated designs: PD9L3HB3UL8AUX1, X2L3HB3UL8AUX1, T1L3HB3UL8AUX1, X4HB3UL8AUX1, T2HB3UL8AUX1, T1X2HB3UL8AUX2
-
 ship_section_template = {
-	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_ULTIMATE_PD9L3HB3UL8AUX1"
+	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_COMMON_PD9L3HB3UL8AUX1"
 	ship_size = starbase_deep_space_citadel_1
 	fits_on_slot = core
 	should_draw_components = yes
 	entity = "deep_space_01_starbase_citadel_section_1_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery }
+	ai_tags = {
+		carrier
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -101,13 +103,16 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_ULTIMATE_X2L3HB3UL8AUX1"
+	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_COMMON_X2L3HB3UL8AUX1"
 	ship_size = starbase_deep_space_citadel_1
 	fits_on_slot = core
 	should_draw_components = yes
 	entity = "deep_space_01_starbase_citadel_section_1_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery }
+	ai_tags = {
+		carrier
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -165,13 +170,16 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_ULTIMATE_T1L3HB3UL8AUX1"
+	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_COMMON_T1L3HB3UL8AUX1"
 	ship_size = starbase_deep_space_citadel_1
 	fits_on_slot = core
 	should_draw_components = yes
 	entity = "deep_space_01_starbase_citadel_section_1_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery }
+	ai_tags = {
+		carrier
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -224,13 +232,16 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_ULTIMATE_X4HB3UL8AUX1"
+	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_COMMON_X4HB3UL8AUX1"
 	ship_size = starbase_deep_space_citadel_1
 	fits_on_slot = core
 	should_draw_components = yes
 	entity = "deep_space_01_starbase_citadel_section_1_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery }
+	ai_tags = {
+		carrier
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -283,13 +294,16 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_ULTIMATE_T2HB3UL8AUX1"
+	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_COMMON_T2HB3UL8AUX1"
 	ship_size = starbase_deep_space_citadel_1
 	fits_on_slot = core
 	should_draw_components = yes
 	entity = "deep_space_01_starbase_citadel_section_1_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery }
+	ai_tags = {
+		carrier
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -332,13 +346,16 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_ULTIMATE_T1X2HB3UL8AUX2"
+	key = "PBSS_STARBASE_DEEP_SPACE_CITADEL_1_CORE_COMMON_T1X2HB3UL8AUX2"
 	ship_size = starbase_deep_space_citadel_1
 	fits_on_slot = core
 	should_draw_components = yes
 	entity = "deep_space_01_starbase_citadel_section_1_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery }
+	ai_tags = {
+		carrier
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}

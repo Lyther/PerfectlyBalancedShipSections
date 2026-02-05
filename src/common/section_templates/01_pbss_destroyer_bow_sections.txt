@@ -1,6 +1,5 @@
 # PBSS Destroyer Bow Sections
-# Generated designs: L1US6, M1S2US6, L2US6, X1US6, X1L1US6, HB1S2US6
-
+# Generated designs: L1US6, M1S2US6, L2US6, X1US6, X1L1US6, HB1S2US6, S4UL1, S5UL1, M3UL1, M4UL1, L2UL1, L3UL1, PD5UL1, L4UL2, X1L1UL2, L3M2UL2, X2UL2, M5L1UL2, L4UL3AUX2, L5UL3AUX2, X2UL3AUX2, X3UL3AUX2, X1L2UL3AUX2, X4UL4AUX3, L6UL4AUX3, X2L2UL4AUX3, X4UL4AUX2, L6UL4AUX2, X3L1UL4AUX2
 ship_section_template = {
 	key = "PBSS_DESTROYER_BOW_COMMON_L1US6"
 	ship_size = destroyer
@@ -8,7 +7,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_bow_L1_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -33,7 +34,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -62,13 +65,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_DESTROYER_BOW_COMMON_L2US6"
+	key = "PBSS_DESTROYER_BOW_ADVANCED_L2US6"
 	ship_size = destroyer
 	fits_on_slot = bow
 	should_draw_components = yes
 	entity = "destroyer_bow_L1_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -92,13 +97,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_DESTROYER_BOW_COMMON_X1US6"
+	key = "PBSS_DESTROYER_BOW_ADVANCED_X1US6"
 	ship_size = destroyer
 	fits_on_slot = bow
 	should_draw_components = yes
 	entity = "destroyer_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -117,13 +124,15 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_DESTROYER_BOW_COMMON_X1L1US6"
+	key = "PBSS_DESTROYER_BOW_PRO_X1L1US6"
 	ship_size = destroyer
 	fits_on_slot = bow
 	should_draw_components = yes
 	entity = "destroyer_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -147,13 +156,16 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_DESTROYER_BOW_COMMON_HB1S2US6"
+	key = "PBSS_DESTROYER_BOW_ADVANCED_HB1S2US6"
 	ship_size = destroyer
 	fits_on_slot = bow
 	should_draw_components = yes
 	entity = "destroyer_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { carrier gunship }
+	ai_tags = {
+		carrier
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -178,6 +190,972 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_COMMON_S4UL1"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_S3_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_COMMON_S5UL1"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_S3_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_COMMON_M3UL1"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ADVANCED_M4UL1"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ADVANCED_L2UL1"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_PRO_L3UL1"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_COMMON_PD5UL1"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_S3_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_05"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTRA_L4UL2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTRA_X1L1UL2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTRA_L3M2UL2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTRA_X2UL2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTRA_M5L1UL2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+		gunship
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_05"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTIMATE_L4UL3AUX2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTIMATE_L5UL3AUX2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTIMATE_X2UL3AUX2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTIMATE_X3UL3AUX2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTIMATE_X1L2UL3AUX2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTIMATE_X4UL4AUX3"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTIMATE_L6UL4AUX3"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTIMATE_X2L2UL4AUX3"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTIMATE_X4UL4AUX2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTIMATE_L6UL4AUX2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_DESTROYER_BOW_ULTIMATE_X3L1UL4AUX2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 4
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
 		}
 	}
 }

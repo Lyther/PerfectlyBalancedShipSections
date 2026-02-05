@@ -1,6 +1,5 @@
 # PBSS Colossus Ship Sections
 # Generated designs: W1UL6, W1UL5AUX1, W1UL4AUX2, W1L1UL5AUX1, W1L2UL4AUX1, W1M4UL4AUX1, W1L2UL5AUX2, W1X1UL4AUX2, W1L4UL3AUX2, W1X1L2UL4AUX2, W1X2UL3AUX2, W1T1UL3AUX2, W1T1L2UL3AUX3, W1X2L2UL3AUX3, W1T1X1UL2AUX3
-
 ship_section_template = {
 	key = "PBSS_COLOSSUS_SHIP_COMMON_W1UL6"
 	ship_size = colossus
@@ -82,7 +81,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -113,7 +114,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -149,7 +152,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -195,7 +200,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -231,7 +238,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -262,7 +271,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -308,7 +319,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -349,7 +362,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -385,7 +400,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -416,7 +433,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -457,7 +476,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -503,7 +524,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}

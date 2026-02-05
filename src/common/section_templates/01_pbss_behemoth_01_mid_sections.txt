@@ -1,14 +1,16 @@
 # PBSS Behemoth_01 Mid Sections
-# Generated designs: X1L2M4PD2UL11, X2L4M6PD4UL15, X3L6M8PD6UL20
-
+# Generated designs: X1L2M4PD2UL11, X2L4M6PD4UL15, X3L6M8PD6UL20, L4UL4, X2UL4, T1UL4, T2UL4
 ship_section_template = {
-	key = "PBSS_BEHEMOTH_01_MID_ULTIMATE_X1L2M4PD2UL11"
+	key = "PBSS_BEHEMOTH_01_MID_COMMON_X1L2M4PD2UL11"
 	ship_size = behemoth_01
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "kaiju_01_hatchling_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery gunship }
+	ai_tags = {
+		artillery
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -67,13 +69,16 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_BEHEMOTH_01_MID_ULTIMATE_X2L4M6PD4UL15"
+	key = "PBSS_BEHEMOTH_01_MID_ADVANCED_X2L4M6PD4UL15"
 	ship_size = behemoth_01
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "kaiju_01_hatchling_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery gunship }
+	ai_tags = {
+		artillery
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -167,13 +172,16 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_BEHEMOTH_01_MID_ULTIMATE_X3L6M8PD6UL20"
+	key = "PBSS_BEHEMOTH_01_MID_PRO_X3L6M8PD6UL20"
 	ship_size = behemoth_01
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "kaiju_01_hatchling_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery gunship }
+	ai_tags = {
+		artillery
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -297,6 +305,139 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BEHEMOTH_01_MID_COMMON_L4UL4"
+	ship_size = behemoth_01
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "kaiju_01_hatchling_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "turret_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "turret_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "turret_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "turret_01"
+	}
+	large_utility_slots = 4
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BEHEMOTH_01_MID_COMMON_X2UL4"
+	ship_size = behemoth_01
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "kaiju_01_hatchling_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "turret_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "turret_01"
+	}
+	large_utility_slots = 4
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BEHEMOTH_01_MID_COMMON_T1UL4"
+	ship_size = behemoth_01
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "kaiju_01_hatchling_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "turret_01"
+	}
+	large_utility_slots = 4
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_BEHEMOTH_01_MID_COMMON_T2UL4"
+	ship_size = behemoth_01
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "kaiju_01_hatchling_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "turret_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "turret_01"
+	}
+	large_utility_slots = 4
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
 		}
 	}
 }

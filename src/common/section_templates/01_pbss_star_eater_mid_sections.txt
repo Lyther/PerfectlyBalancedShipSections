@@ -1,14 +1,17 @@
 # PBSS Star_Eater Mid Sections
-# Generated designs: W1HB4L3M7S5PD6UL20AUX4, W1T2HB4L4M4UL20AUX5, W1T2X4HB4L4UL20AUX6, W1T4X4HB6L4UL20AUX6
-
+# Generated designs: W1HB4L3M7S5PD6UL20AUX4, W1T2HB4L4M4UL20AUX5, W1T2X4HB4L4UL20AUX6, W1T4X4HB6L4UL20AUX6, X4UL6, T2UL6, T3UL6, T4UL6, W1T10UL16AUX4
 ship_section_template = {
-	key = "PBSS_STAR_EATER_MID_ULTIMATE_W1HB4L3M7S5PD6UL20AUX4"
+	key = "PBSS_STAR_EATER_MID_COMMON_W1HB4L3M7S5PD6UL20AUX4"
 	ship_size = star_eater
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "star_eater_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery gunship }
+	ai_tags = {
+		carrier
+		artillery
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -148,22 +151,20 @@ ship_section_template = {
 	}
 	large_utility_slots = 20
 	aux_utility_slots = 4
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 128
-		}
-	}
 }
 
 ship_section_template = {
-	key = "PBSS_STAR_EATER_MID_ULTIMATE_W1T2HB4L4M4UL20AUX5"
+	key = "PBSS_STAR_EATER_MID_COMMON_W1T2HB4L4M4UL20AUX5"
 	ship_size = star_eater
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "star_eater_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery gunship }
+	ai_tags = {
+		carrier
+		artillery
+		gunship
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -248,22 +249,19 @@ ship_section_template = {
 	}
 	large_utility_slots = 20
 	aux_utility_slots = 5
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 128
-		}
-	}
 }
 
 ship_section_template = {
-	key = "PBSS_STAR_EATER_MID_ULTIMATE_W1T2X4HB4L4UL20AUX6"
+	key = "PBSS_STAR_EATER_MID_ADVANCED_W1T2X4HB4L4UL20AUX6"
 	ship_size = star_eater
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "star_eater_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery }
+	ai_tags = {
+		carrier
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -348,22 +346,19 @@ ship_section_template = {
 	}
 	large_utility_slots = 20
 	aux_utility_slots = 6
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 128
-		}
-	}
 }
 
 ship_section_template = {
-	key = "PBSS_STAR_EATER_MID_ULTIMATE_W1T4X4HB6L4UL20AUX6"
+	key = "PBSS_STAR_EATER_MID_ADVANCED_W1T4X4HB6L4UL20AUX6"
 	ship_size = star_eater
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "star_eater_ship_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery }
+	ai_tags = {
+		carrier
+		artillery
+	}
 	ai_weight = {
 		factor = 0
 	}
@@ -470,10 +465,76 @@ ship_section_template = {
 	}
 	large_utility_slots = 20
 	aux_utility_slots = 6
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 128
-		}
+}
+
+ship_section_template = {
+	key = "PBSS_STAR_EATER_MID_ADVANCED_W1T10UL16AUX4"
+	ship_size = star_eater
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "star_eater_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
 	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "core"
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "core"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "core"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "core"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "core"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "core"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "core"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "core"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "core"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "core"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "core"
+	}
+	large_utility_slots = 16
+	aux_utility_slots = 4
 }
