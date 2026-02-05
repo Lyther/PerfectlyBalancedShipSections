@@ -1,0 +1,187 @@
+# ============================================================================
+# PBSS Ship Behaviors - Custom Combat AI Patterns
+# ============================================================================
+# Reloadable with console: "reload behavior"
+# Debug visualization: "debuglines"
+#
+# ============================================================================
+# SHIP BEHAVIOR MECHANISM OVERVIEW
+# ============================================================================
+#
+# DISTANCE SYSTEM (all distances in game units):
+# ┌────────────────────────────────────────────────────────────────────────────┐
+# │                                                                            │
+# │  FLEET ANCHOR (root)              COMBAT POSITION                 TARGET   │
+# │       ◉ ─────────────────────────────── ◎ ───────────────────────── X     │
+# │       │                                 │                            │     │
+# │       │<──── formation_distance ───────>│                            │     │
+# │       │                                 │<─ preferred_attack_range ─>│     │
+# │       │                                                              │     │
+# │       │<────────── return_to_formation_distance ────────────────────>│     │
+# │                                                                            │
+# └────────────────────────────────────────────────────────────────────────────┘
+#
+# ANCHOR SYSTEM:
+# ┌────────────────────────────────────────────────────────────────────────────┐
+# │  source_target_anchor_factor = 0.0 to 1.0                                  │
+# │                                                                            │
+# │  0.0 = Stay at source (fleet leader)                                       │
+# │  0.5 = Midpoint between source and target                                  │
+# │  1.0 = Push toward target (aggressive)                                     │
+# │                                                                            │
+# │  combat_source_anchor: 'parent' (immediate parent) or 'root' (leader)      │
+# │  combat_target_anchor: 'parent' or 'root' (root = actual enemy target)     │
+# └────────────────────────────────────────────────────────────────────────────┘
+#
+# MOVEMENT PATTERNS:
+# ┌────────────────────────────────────────────────────────────────────────────┐
+# │  attack_move_pattern (when engaging):                                      │
+# │    - charge          : Rush directly at target                             │
+# │    - orbit           : Circle around combat position                       │
+# │    - stay_at_range   : Maintain preferred_attack_range to target           │
+# │    - maintain_distance: Keep distance, strafe sideways                     │
+# │    - stationary      : Don't move (platforms/stations)                     │
+# │    - none            : No specific pattern                                 │
+# │                                                                            │
+# │  passive_move_pattern (when not engaging/returning):                       │
+# │    - charge          : Move toward formation position                      │
+# │    - orbit           : Orbit around formation position                     │
+# │    - stay_at_range   : Maintain formation_distance                         │
+# │    - none            : Stay in place                                       │
+# └────────────────────────────────────────────────────────────────────────────┘
+#
+# COLLISION PARAMETERS:
+# ┌────────────────────────────────────────────────────────────────────────────┐
+# │  collision_awareness : 0.0-1.0, how much to avoid other ships              │
+# │  collision_strafe    : Allows lateral movement during collision            │
+# │  collision_radius    : Multiplier on ship_size radius                      │
+# └────────────────────────────────────────────────────────────────────────────┘
+#
+# RANGE CALCULATION:
+# ┌────────────────────────────────────────────────────────────────────────────┐
+# │  range_components = 'weapon' (default) or 'strike_craft'                   │
+# │                                                                            │
+# │  Values for distance fields:                                               │
+# │    - max    : Longest weapon range on ship                                 │
+# │    - min    : Shortest weapon range on ship                                │
+# │    - median : Middle weapon range                                          │
+# │    - <num>  : Fixed distance (e.g., 10, 50, 100)                           │
+# └────────────────────────────────────────────────────────────────────────────┘
+#
+# ============================================================================
+# PBSS BEHAVIOR PROFILES
+# ============================================================================
+#
+# COMPARISON CHART:
+# ┌──────────────────┬─────────────┬─────────────┬─────────────┬─────────────┐
+# │ Behavior         │ default     │ free_fire   │ lock_target │ sniper      │
+# ├──────────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+# │ Attack Range     │ MIN (close) │ MIN (close) │ MEDIAN      │ MAX (far)   │
+# │ Formation Dist   │ MEDIAN      │ MIN         │ MEDIAN      │ MAX         │
+# │ Return Dist      │ MAX         │ MEDIAN      │ MEDIAN      │ MAX         │
+# │ Attack Pattern   │ flee        │ maintain    │ orbit       │ maintain    │
+# │ Passive Pattern  │ charge      │ charge      │ charge      │ stay_at_rng │
+# │ Collision Aware  │ 0.75 (high) │ 0.2 (low)   │ 0.5 (med)   │ 0.75 (high) │
+# │ Best For         │ Hit & Run   │ Brawlers    │ Skirmishers │ Artillery   │
+# └──────────────────┴─────────────┴─────────────┴─────────────┴─────────────┘
+#
+# ============================================================================
+# ----------------------------------------------------------------------------
+# PBSS_DEFAULT - Hit-and-Run Kiting Behavior
+# ----------------------------------------------------------------------------
+# Ideal for: Ships that need to engage close but retreat when threatened
+# Tactics: Charge in, attack at minimum range, flee when taking fire
+#
+#     FLEET              SHIP ──────> TARGET
+#       ◉ ───────────────> ◉ ═══════> ✕
+#                          <────────── (flee when damaged)
+#
+ship_behavior = {
+	name = "pbss_default"
+	preferred_attack_range = min
+	formation_distance = median
+	return_to_formation_distance = max
+	source_target_anchor_factor = 1
+	combat_target_anchor = root
+	collision_awareness = 0.75
+	collision_strafe = 1
+	collision_radius = 2
+	attack_move_pattern = flee
+	passive_move_pattern = charge
+	desc = "PBSS_DEFAULT_BEHAVIOR_DESC"
+}
+
+# ----------------------------------------------------------------------------
+# PBSS_FREE_FIRE - Aggressive Close-Range Brawler
+# ----------------------------------------------------------------------------
+# Ideal for: Corvettes, destroyers with short-range weapons (autocannons, PD)
+# Tactics: Rush in, low collision avoidance, maintains minimum distance
+#
+#     FLEET                    SHIP        TARGET
+#       ◉ ─────────────────────> ◉ ══════> ✕
+#                               ↑↓ (maintain_distance)
+#
+ship_behavior = {
+	name = "pbss_free_fire"
+	preferred_attack_range = min
+	formation_distance = min
+	return_to_formation_distance = median
+	source_target_anchor_factor = 1
+	combat_target_anchor = root
+	collision_awareness = 0.2
+	collision_strafe = 0.75
+	collision_radius = 2
+	attack_move_pattern = maintain_distance
+	passive_move_pattern = charge
+	desc = "PBSS_FREE_FIRE_BEHAVIOR_DESC"
+}
+
+# ----------------------------------------------------------------------------
+# PBSS_LOCK_TARGET - Medium-Range Orbital Skirmisher
+# ----------------------------------------------------------------------------
+# Ideal for: Cruisers, mixed loadouts with medium weapons
+# Tactics: Orbit target at medium range, balanced aggression
+#
+#     FLEET              SHIP ─────┐       TARGET
+#       ◉ ───────────────> ◎      │         ✕
+#                           └──────┘ (orbit)
+#
+ship_behavior = {
+	name = "pbss_lock_target"
+	preferred_attack_range = median
+	formation_distance = median
+	return_to_formation_distance = median
+	source_target_anchor_factor = 1
+	combat_target_anchor = root
+	collision_awareness = 0.5
+	collision_strafe = 0.75
+	collision_radius = 2
+	attack_move_pattern = orbit
+	passive_move_pattern = charge
+	desc = "PBSS_LOCK_TARGET_BEHAVIOR_DESC"
+}
+
+# ----------------------------------------------------------------------------
+# PBSS_SNIPER - Long-Range Artillery Position
+# ----------------------------------------------------------------------------
+# Ideal for: Battleships, titans with X/L weapons, carriers
+# Tactics: Stay at maximum range, high collision avoidance, minimal movement
+#
+#     FLEET                                          TARGET
+#       ◉ ═══════════════════ ◉ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ✕
+#                            SHIP (stay_at_range / maintain_distance)
+#
+ship_behavior = {
+	name = "pbss_sniper"
+	preferred_attack_range = max
+	formation_distance = max
+	return_to_formation_distance = max
+	source_target_anchor_factor = 1
+	combat_target_anchor = root
+	collision_awareness = 0.75
+	collision_strafe = 2
+	collision_radius = 2.5
+	attack_move_pattern = maintain_distance
+	passive_move_pattern = stay_at_range
+	desc = "PBSS_SNIPER_BEHAVIOR_DESC"
+}

@@ -1,0 +1,1028 @@
+@cost0 = 0
+@cost1 = 5
+@cost2 = 10
+@cost3 = 20
+@cost4 = 40
+@power0 = -5
+@power1 = -10
+@power2 = -15
+@power3 = -25
+@power4 = -40
+####################
+# DEFAULT COMPUTER #
+####################
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	ship_behavior = "pbss_default"
+	upgrade_path = default
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			is_ship_class = shipclass_military
+			is_ship_class = shipclass_entropy_conduit
+			is_ship_size = juggernaut
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ai_weight = {
+		weight = 0
+	}
+}
+
+########################
+# BASIC SHIP COMPUTERS #
+########################
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_FREE_FIRE_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	ship_behavior = "pbss_free_fire"
+	upgrade_path = swarm
+	hidden = yes
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	upgrades_to = "PBSS_COMBAT_COMPUTER_FREE_FIRE_BASIC"
+	ai_tags = {
+		gunship
+		gunship_stealth
+	}
+	ai_tag_weight = 0
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_LOCK_TARGET_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	ship_behavior = "pbss_lock_target"
+	upgrade_path = line
+	hidden = yes
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	upgrades_to = "PBSS_COMBAT_COMPUTER_LOCK_TARGET_BASIC"
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+	ai_tag_weight = 0
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_SNIPER_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	ship_behavior = "pbss_sniper"
+	upgrade_path = artillery
+	hidden = yes
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	upgrades_to = "PBSS_COMBAT_COMPUTER_SNIPER_BASIC"
+	ai_tags = {
+		gunship
+		gunship_stealth
+	}
+	ai_tag_weight = 0
+	ai_weight = {
+		weight = 0
+	}
+}
+
+##############################
+# PBSS 'FREE FIRE' COMPUTERS #
+##############################
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_FREE_FIRE_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_basic"
+	icon_frame = 1
+	power = @power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_free_fire"
+	upgrade_path = swarm
+	prerequisites = {
+		"tech_combat_computers_1"
+	}
+	upgrades_to = "PBSS_COMBAT_COMPUTER_FREE_FIRE_ADVANCED"
+	ai_tags = {
+		gunship
+		gunship_stealth
+		brawler
+		brawler_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_evasion_mult = 0.1
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.1
+		ship_accuracy_add = 0.1
+		ship_tracking_add = 0.1
+		ship_damage_reduction_add = 0.05
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_FREE_FIRE_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_advanced"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_free_fire"
+	upgrade_path = swarm
+	prerequisites = {
+		"tech_combat_computers_2"
+	}
+	upgrades_to = "PBSS_COMBAT_COMPUTER_FREE_FIRE_SAPIENT"
+	ai_tags = {
+		gunship
+		gunship_stealth
+		brawler
+		brawler_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_evasion_mult = 0.2
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_accuracy_add = 0.2
+		ship_tracking_add = 0.2
+		ship_damage_reduction_add = 0.1
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_FREE_FIRE_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon_frame = 1
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_free_fire"
+	upgrade_path = swarm
+	prerequisites = {
+		"tech_combat_computers_3"
+	}
+	ai_tags = {
+		gunship
+		gunship_stealth
+		brawler
+		brawler_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_evasion_mult = 0.35
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.3
+		ship_accuracy_add = 0.35
+		ship_tracking_add = 0.35
+		ship_damage_reduction_add = 0.15
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_FREE_FIRE_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon_frame = 1
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_free_fire"
+	upgrade_path = swarm
+	prerequisites = {
+		"tech_combat_computers_autonomous"
+	}
+	ai_tags = {
+		gunship
+		gunship_stealth
+		brawler
+		brawler_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_evasion_mult = 0.35
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.3
+		ship_accuracy_add = 0.35
+		ship_tracking_add = 0.35
+		ship_damage_reduction_add = 0.15
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_FREE_FIRE_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_precog"
+	icon_frame = 1
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_free_fire"
+	upgrade_path = swarm
+	prerequisites = {
+		"tech_precognition_interface"
+	}
+	ai_tags = {
+		gunship
+		gunship_stealth
+		brawler
+		brawler_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_evasion_mult = 0.3
+		ship_speed_mult = 0.4
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.3
+		ship_accuracy_add = 0.3
+		ship_tracking_add = 0.3
+		ship_damage_reduction_add = 0.15
+		ship_steal_defeated_ship_chance = 0.1
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+################################
+# PBSS 'LOCK TARGET' COMPUTERS #
+################################
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_LOCK_TARGET_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_basic"
+	icon_frame = 1
+	power = @power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_lock_target"
+	upgrade_path = line
+	prerequisites = {
+		tech_combat_computers_1
+	}
+	upgrades_to = "PBSS_COMBAT_COMPUTER_LOCK_TARGET_ADVANCED"
+	ai_tags = {
+		explosive
+		explosive_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_speed_mult = 0.15
+	}
+	ship_modifier = {
+		ship_armor_penetration_add = 0.1
+		ship_hull_damage_mult = 0.1
+		ship_shield_penetration_add = 0.1
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_LOCK_TARGET_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_advanced"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_lock_target"
+	upgrade_path = line
+	prerequisites = {
+		tech_combat_computers_2
+	}
+	upgrades_to = "PBSS_COMBAT_COMPUTER_LOCK_TARGET_SAPIENT"
+	ai_tags = {
+		explosive
+		explosive_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_speed_mult = 0.3
+	}
+	ship_modifier = {
+		ship_armor_penetration_add = 0.2
+		ship_hull_damage_mult = 0.2
+		ship_shield_penetration_add = 0.2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_LOCK_TARGET_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon_frame = 1
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_lock_target"
+	upgrade_path = line
+	prerequisites = {
+		tech_combat_computers_3
+	}
+	ai_tags = {
+		explosive
+		explosive_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_speed_mult = 0.45
+		ship_armor_regen_add_perc = 0.2
+		ship_hull_regen_add_perc = 0.1
+		ship_shield_regen_add_perc = 0.2
+	}
+	ship_modifier = {
+		ship_armor_penetration_add = 0.3
+		ship_hull_damage_mult = 0.3
+		ship_shield_penetration_add = 0.3
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_LOCK_TARGET_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon_frame = 1
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_lock_target"
+	upgrade_path = line
+	prerequisites = {
+		tech_combat_computers_autonomous
+	}
+	ai_tags = {
+		explosive
+		explosive_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_speed_mult = 0.45
+		ship_armor_regen_add_perc = 0.2
+		ship_hull_regen_add_perc = 0.1
+		ship_shield_regen_add_perc = 0.2
+	}
+	ship_modifier = {
+		ship_armor_penetration_add = 0.3
+		ship_hull_damage_mult = 0.3
+		ship_shield_penetration_add = 0.3
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_LOCK_TARGET_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_precog"
+	icon_frame = 1
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_lock_target"
+	upgrade_path = line
+	prerequisites = {
+		tech_precognition_interface
+	}
+	ai_tags = {
+		explosive
+		explosive_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_speed_mult = 0.45
+	}
+	ship_modifier = {
+		ship_tracking_add = 20
+		ship_armor_penetration_add = 0.3
+		ship_hull_damage_mult = 0.3
+		ship_shield_penetration_add = 0.3
+		ship_armor_hardening_add = 0.5
+		ship_shield_hardening_add = 0.5
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+###########################
+# PBSS 'SNIPER' COMPUTERS #
+###########################
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_SNIPER_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_picket_basic"
+	icon_frame = 1
+	power = @power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_sniper"
+	upgrade_path = artillery
+	prerequisites = {
+		"tech_combat_computers_1"
+	}
+	upgrades_to = "PBSS_COMBAT_COMPUTER_SNIPER_ADVANCED"
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_speed_mult = 0.25
+		ship_disengage_chance_mult = 0.33
+		ship_disengage_opportunities_add = 2
+		ship_emergency_ftl_min_days_mult = -0.33
+		ship_emergency_ftl_mult = -0.33
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.1
+		ship_weapon_range_mult = 0.2
+		ship_accuracy_add = 0.1
+		ship_tracking_add = 0.1
+		ship_engagement_range_mult = 0.5
+		ship_hull_damage_mult = 0.25
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_SNIPER_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_picket_advanced"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_sniper"
+	upgrade_path = artillery
+	prerequisites = {
+		"tech_combat_computers_2"
+	}
+	upgrades_to = "PBSS_COMBAT_COMPUTER_SNIPER_SAPIENT"
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_speed_mult = 0.5
+		ship_disengage_chance_mult = 0.67
+		ship_disengage_opportunities_add = 4
+		ship_emergency_ftl_min_days_mult = -0.67
+		ship_emergency_ftl_mult = -0.67
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_weapon_range_mult = 0.4
+		ship_accuracy_add = 0.2
+		ship_tracking_add = 0.2
+		ship_engagement_range_mult = 1
+		ship_hull_damage_mult = 0.5
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_SNIPER_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_computer_picket_sapient"
+	icon_frame = 1
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_sniper"
+	upgrade_path = artillery
+	prerequisites = {
+		"tech_combat_computers_3"
+	}
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_speed_mult = 0.75
+		ship_disengage_chance_mult = 1
+		ship_disengage_opportunities_add = 6
+		ship_emergency_ftl_min_days_mult = -1
+		ship_emergency_ftl_mult = -1
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.3
+		ship_weapon_range_mult = 0.6
+		ship_accuracy_add = 0.3
+		ship_tracking_add = 0.3
+		ship_engagement_range_mult = 1.5
+		ship_hull_damage_mult = 0.75
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_SNIPER_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_picket_sapient"
+	icon_frame = 1
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_sniper"
+	upgrade_path = artillery
+	prerequisites = {
+		"tech_combat_computers_autonomous"
+	}
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_speed_mult = 0.75
+		ship_disengage_chance_mult = 1
+		ship_disengage_opportunities_add = 6
+		ship_emergency_ftl_min_days_mult = -1
+		ship_emergency_ftl_mult = -1
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.3
+		ship_weapon_range_mult = 0.6
+		ship_accuracy_add = 0.3
+		ship_tracking_add = 0.3
+		ship_engagement_range_mult = 1.5
+		ship_hull_damage_mult = 0.75
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_COMBAT_COMPUTER_SNIPER_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_picket_precog"
+	icon_frame = 1
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			ship_uses_artillery_role = yes
+			ship_uses_carrier_role = yes
+			ship_uses_line_role = yes
+			ship_uses_picket_role = yes
+			ship_uses_swarm_role = yes
+			ship_uses_torpedo_role = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "pbss_sniper"
+	upgrade_path = artillery
+	prerequisites = {
+		"tech_precognition_interface"
+	}
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+	ai_tag_weight = 0
+	modifier = {
+		ship_speed_mult = 0.75
+		ship_disengage_chance_mult = 1
+		ship_disengage_opportunities_add = 6
+		ship_emergency_ftl_min_days_mult = -1
+		ship_emergency_ftl_mult = -1
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_weapon_range_mult = 0.8
+		ship_accuracy_add = 0.25
+		ship_tracking_add = 0.25
+		ship_engagement_range_mult = 1.5
+		ship_hull_damage_mult = 1
+		ship_armor_penetration_add = 0.25
+		ship_shield_penetration_add = 0.25
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
