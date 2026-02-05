@@ -19,7 +19,7 @@ weapon_component_template = {
 	prerequisites = {
 		"tech_titans"
 	}
-	component_set = "PERDITION_BEAM"
+	component_set = "PBSS_PERDITION_BEAM"
 	projectile_gfx = "perdition_beam"
 	# Available to all ships EXCEPT those using titan/ion/DSC components
 	potential = {
@@ -85,12 +85,6 @@ weapon_component_template = {
 	size_damage_factor = 1
 	ai_weight = {
 		weight = 0
-		modifier = {
-			factor = 0
-			no_resource_for_component = {
-				RESOURCE = rare_crystals
-			}
-		}
 	}
 }
 
@@ -180,12 +174,6 @@ weapon_component_template = {
 	size_damage_factor = 1
 	ai_weight = {
 		weight = 0
-		modifier = {
-			factor = 0
-			no_resource_for_component = {
-				RESOURCE = minor_artifacts
-			}
-		}
 	}
 }
 
@@ -209,13 +197,13 @@ weapon_component_template = {
 		"tech_titans"
 		"tech_arc_emitter_2"
 	}
-	component_set = "PBSS_PENETRATOR"
+	component_set = "PBSS_PENETRATOR_TITANIC"
 	projectile_gfx = "gatebuilder_titan_weapon"
-	# Available to all ships EXCEPT those using titan/ion/DSC components
+	# Available to all ships EXCEPT AI ships
 	potential = {
-		ship_uses_titan_components = no
-		ship_uses_ion_cannon_components = no
-		ship_uses_dsc_components = no
+		from = {
+			is_ai = no
+		}
 	}
 	show_tech_unlock_if = {
 		always = yes
@@ -278,12 +266,6 @@ weapon_component_template = {
 	size_damage_factor = 1
 	ai_weight = {
 		weight = 0
-		modifier = {
-			factor = 0
-			no_resource_for_component = {
-				RESOURCE = sr_dark_matter
-			}
-		}
 	}
 }
 
@@ -307,7 +289,7 @@ weapon_component_template = {
 	prerequisites = {
 		"tech_titans"
 	}
-	component_set = "PERDITION_BEAM"
+	component_set = "PBSS_PERDITION_BEAM_ENHANCED"
 	projectile_gfx = "perdition_beam"
 	# Available to all ships EXCEPT those using titan/ion/DSC components
 	potential = {
@@ -373,12 +355,6 @@ weapon_component_template = {
 	size_damage_factor = 1
 	ai_weight = {
 		weight = 0
-		modifier = {
-			factor = 0
-			no_resource_for_component = {
-				RESOURCE = rare_crystals
-			}
-		}
 	}
 }
 
@@ -403,7 +379,7 @@ weapon_component_template = {
 	prerequisites = {
 		"tech_archaeo_titan_beam"
 	}
-	component_set = "ARCHAEO_TITAN"
+	component_set = "PBSS_ARCHAEO_TITAN_ENHANCED"
 	projectile_gfx = "perdition_beam"
 	# Available to all ships EXCEPT those using titan/ion/DSC components
 	potential = {
@@ -469,12 +445,6 @@ weapon_component_template = {
 	size_damage_factor = 1
 	ai_weight = {
 		weight = 0
-		modifier = {
-			factor = 0
-			no_resource_for_component = {
-				RESOURCE = minor_artifacts
-			}
-		}
 	}
 }
 
@@ -499,13 +469,13 @@ weapon_component_template = {
 		"tech_titans"
 		"tech_arc_emitter_2"
 	}
-	component_set = "PBSS_PENETRATOR"
+	component_set = "PBSS_PENETRATOR_TITANIC_ENHANCED"
 	projectile_gfx = "gatebuilder_titan_weapon"
-	# Available to all ships EXCEPT those using titan/ion/DSC components
+	# Available to all ships EXCEPT AI ships
 	potential = {
-		ship_uses_titan_components = no
-		ship_uses_ion_cannon_components = no
-		ship_uses_dsc_components = no
+		from = {
+			is_ai = no
+		}
 	}
 	show_tech_unlock_if = {
 		always = yes
@@ -568,11 +538,5 @@ weapon_component_template = {
 	size_damage_factor = 1
 	ai_weight = {
 		weight = 0
-		modifier = {
-			factor = 0
-			no_resource_for_component = {
-				RESOURCE = sr_dark_matter
-			}
-		}
 	}
 }
