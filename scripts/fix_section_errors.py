@@ -8,22 +8,52 @@ Strategy:
 
 import json
 import re
+import sys
 from pathlib import Path
 from collections import defaultdict
+
+# Add scripts directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent))
+
+# Import tier calculation from generate_sections
+from generate_sections import parse_notation, TIER_MULTIPLIERS, DEFAULT_BASE_POINTS
+import generate_sections
 
 SCRIPT_DIR = Path(__file__).parent
 SECTION_DIR = SCRIPT_DIR.parent / "src" / "common" / "section_templates"
 VANILLA_DATA_PATH = SCRIPT_DIR / "vanilla_ship_data.json"
 
+# Valid tier names for detection
+VALID_TIERS = {"COMMON", "ADVANCED", "PRO", "ULTRA", "ULTIMATE"}
+
+# Ship base points (populated from vanilla data)
+SHIP_BASE_POINTS: dict[str, int] = {}
+
 
 def load_vanilla_data() -> dict:
-    """Load vanilla ship data from JSON."""
+    """Load vanilla ship data from JSON and populate SHIP_BASE_POINTS."""
+    global SHIP_BASE_POINTS
+
     if not VANILLA_DATA_PATH.exists():
         raise FileNotFoundError(
             f"Vanilla data not found: {VANILLA_DATA_PATH}\n"
             "Run extract_vanilla_data.py first."
         )
-    return json.loads(VANILLA_DATA_PATH.read_text(encoding="utf-8"))
+
+    data = json.loads(VANILLA_DATA_PATH.read_text(encoding="utf-8"))
+
+    # Populate SHIP_BASE_POINTS from vanilla data
+    base_points_data = data.get("ship_base_points", {})
+    for ship_type, info in base_points_data.items():
+        if isinstance(info, dict):
+            SHIP_BASE_POINTS[ship_type] = info.get("base_points", DEFAULT_BASE_POINTS)
+        else:
+            SHIP_BASE_POINTS[ship_type] = info
+
+    # Also update generate_sections module's SHIP_BASE_POINTS
+    generate_sections.SHIP_BASE_POINTS.update(SHIP_BASE_POINTS)
+
+    return data
 
 
 def build_entity_locator_map(vanilla_data: dict) -> dict[str, set[str]]:
@@ -459,6 +489,66 @@ def fix_section(
     return section_content, changes
 
 
+def fix_section_tiers(content: str) -> tuple[str, list[str]]:
+    """Fix section tier names based on calculated points vs base points."""
+    changes = []
+
+    def fix_key(match):
+        full_key = match.group(1)
+
+        # Parse key: PBSS_<SHIP_TYPE>_<SLOT>_<TIER>_<NOTATION>
+        # Example: PBSS_CORVETTE_MID_COMMON_S3UL1
+        parts = full_key.split("_")
+        if len(parts) < 5 or parts[0] != "PBSS":
+            return match.group(0)
+
+        # Find tier position (it's after PBSS, ship_type, slot)
+        tier_idx = None
+        for i, part in enumerate(parts):
+            if part in VALID_TIERS:
+                tier_idx = i
+                break
+
+        if tier_idx is None:
+            return match.group(0)
+
+        current_tier = parts[tier_idx]
+        notation = "_".join(parts[tier_idx + 1 :])
+
+        # Reconstruct ship_type from parts between PBSS and tier
+        # Handle multi-word ship types like "CRISIS_CORVETTE" or "OFFSPRING_BATTLESHIP"
+        ship_type_parts = parts[1 : tier_idx - 1]  # Exclude slot
+        slot = parts[tier_idx - 1].lower()
+
+        # Build ship_type by joining and lowercasing
+        ship_type = "_".join(ship_type_parts).lower()
+
+        # Skip if we can't determine ship type
+        if ship_type not in SHIP_BASE_POINTS:
+            # Try without the slot part
+            ship_type = "_".join(parts[1:tier_idx]).lower()
+            if ship_type not in SHIP_BASE_POINTS:
+                return match.group(0)
+
+        try:
+            design = parse_notation(notation, ship_type)
+            correct_tier = design.tier.upper()
+
+            if correct_tier != current_tier:
+                new_key = full_key.replace(f"_{current_tier}_", f"_{correct_tier}_")
+                changes.append(
+                    f"Tier fix: {full_key} -> {new_key} ({design.total_points}pts, {design.total_points / SHIP_BASE_POINTS.get(ship_type, 12):.1f}x base)"
+                )
+                return f'key = "{new_key}"'
+        except Exception:
+            pass
+
+        return match.group(0)
+
+    new_content = re.sub(r'key\s*=\s*"(PBSS_[^"]+)"', fix_key, content)
+    return new_content, changes
+
+
 def fix_slot_names(content: str, valid_slots: dict) -> tuple[str, list[str]]:
     """Fix invalid slot names in sections."""
     changes = []
@@ -531,7 +621,13 @@ def process_file(
     original = content
     all_changes = []
 
-    # Fix slot names first
+    # Fix section tiers first (based on new multiplier calculation)
+    new_content, tier_changes = fix_section_tiers(content)
+    if tier_changes:
+        all_changes.extend(tier_changes)
+        content = new_content
+
+    # Fix slot names
     new_content, slot_changes = fix_slot_names(content, valid_slots)
     if slot_changes:
         all_changes.extend(slot_changes)

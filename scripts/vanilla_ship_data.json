@@ -467,19 +467,6 @@
                 "small_turret"
               ]
             },
-            "battleship_bow_L1S4_entity": {
-              "locators": [
-                "large_gun_01",
-                "small_gun_01",
-                "small_gun_02",
-                "small_gun_03",
-                "small_gun_04"
-              ],
-              "templates": [
-                "large_turret",
-                "small_turret"
-              ]
-            },
             "battleship_bow_L2_entity": {
               "locators": [
                 "large_gun_01",
@@ -509,59 +496,17 @@
               "templates": [
                 "invisible_extra_large_fixed"
               ]
-            },
-            "battleship_bow_M3S2_entity": {
-              "locators": [
-                "medium_gun_01",
-                "medium_gun_02",
-                "medium_gun_03",
-                "small_gun_01",
-                "small_gun_02"
-              ],
-              "templates": [
-                "medium_turret",
-                "small_turret"
-              ]
             }
           },
           "section_keys": [
             "BATTLESHIP_BOW_L1M1S2",
-            "BATTLESHIP_BOW_L1S4",
             "BATTLESHIP_BOW_L2",
             "BATTLESHIP_BOW_M1S2SHB",
-            "BATTLESHIP_BOW_M2S4",
-            "BATTLESHIP_BOW_M3S2"
+            "BATTLESHIP_BOW_M2S4"
           ]
         },
         "mid": {
           "entities": {
-            "battleship_mid_L2S4_entity": {
-              "locators": [
-                "large_gun_01",
-                "large_gun_02",
-                "small_gun_01",
-                "small_gun_02",
-                "small_gun_03",
-                "small_gun_04"
-              ],
-              "templates": [
-                "large_turret",
-                "small_turret"
-              ]
-            },
-            "battleship_mid_L1M4_entity": {
-              "locators": [
-                "large_gun_01",
-                "medium_gun_01",
-                "medium_gun_02",
-                "medium_gun_03",
-                "medium_gun_04"
-              ],
-              "templates": [
-                "large_turret",
-                "medium_turret"
-              ]
-            },
             "battleship_mid_L2M2_entity": {
               "locators": [
                 "large_gun_01",
@@ -614,8 +559,6 @@
             }
           },
           "section_keys": [
-            "BATTLESHIP_MID_L2S4",
-            "BATTLESHIP_MID_L1M4",
             "BATTLESHIP_MID_L2M2",
             "BATTLESHIP_MID_L3",
             "BATTLESHIP_MID_M4SHB",
@@ -624,17 +567,6 @@
         },
         "stern": {
           "entities": {
-            "battleship_stern_M1S2_entity": {
-              "locators": [
-                "medium_gun_01",
-                "small_gun_01",
-                "small_gun_02"
-              ],
-              "templates": [
-                "medium_turret",
-                "small_turret"
-              ]
-            },
             "battleship_stern_L1_entity": {
               "locators": [
                 "large_gun_01"
@@ -651,24 +583,11 @@
               "templates": [
                 "medium_turret"
               ]
-            },
-            "battleship_stern_S4_entity": {
-              "locators": [
-                "small_gun_01",
-                "small_gun_02",
-                "strike_craft_locator_01"
-              ],
-              "templates": [
-                "point_defence_turret",
-                "large_strike_craft"
-              ]
             }
           },
           "section_keys": [
-            "BATTLESHIP_STERN_M1S2",
             "BATTLESHIP_STERN_L1",
-            "BATTLESHIP_STERN_M2",
-            "BATTLESHIP_STERN_S4"
+            "BATTLESHIP_STERN_M2"
           ]
         }
       },
@@ -1629,20 +1548,11 @@
                 "small_turret",
                 "point_defence_turret"
               ]
-            },
-            "corvette_S1_entity": {
-              "locators": [
-                "small_gun_01"
-              ],
-              "templates": [
-                "small_turret"
-              ]
             }
           },
           "section_keys": [
             "CORVETTE_MID_S3",
-            "CORVETTE_MID_S2PD1",
-            "CORVETTE_MID_S1"
+            "CORVETTE_MID_S2PD1"
           ]
         }
       },
@@ -1941,7 +1851,6 @@
               "templates": [
                 "invisible_planet_killer_fixed",
                 "large_strike_craft",
-                "invisible_extra_large_fixed",
                 "invisible_large_turret",
                 "invisible_medium_turret",
                 "invisible_small_turret",
@@ -2738,14 +2647,10 @@
             "leviathan_01_scavenger_bot_section_entity": {
               "locators": [
                 "xl_gun_01",
-                "bot_1_locator",
-                "bot_2_locator",
-                "bot_3_locator",
                 "root"
               ],
               "templates": [
                 "invisible_titanic_fixed",
-                "medium_missile_turret",
                 "invisible_missile_fixed"
               ]
             }
@@ -2849,7 +2754,7 @@
       "slots": {
         "mid": {
           "entities": {
-            "guardian_01_space_dragon_red_entity": {
+            "nanite_space_dragon_baby_section_entity": {
               "locators": [
                 "xl_gun_01",
                 "wing_1_3",
@@ -4466,7 +4371,7 @@
       "slots": {
         "mid": {
           "entities": {
-            "guardian_01_space_dragon_red_entity": {
+            "space_dragon_red_section_entity": {
               "locators": [
                 "xl_gun_01",
                 "wing_1_3",
@@ -4564,7 +4469,6 @@
             },
             "npf_01_dirty_npc_warship_01_hull_entity": {
               "locators": [
-                "root",
                 "large_gun_01",
                 "large_gun_02",
                 "small_gun_01",
@@ -4582,7 +4486,6 @@
                 "small_gun_10"
               ],
               "templates": [
-                "invisible_extra_large_fixed",
                 "large_turret",
                 "small_turret"
               ]
@@ -4852,7 +4755,7 @@
       "slots": {
         "mid": {
           "entities": {
-            "guardian_01_space_dragon_red_entity": {
+            "space_dragon_baby_section_entity": {
               "locators": [
                 "xl_gun_01",
                 "wing_1_3",
@@ -4930,7 +4833,7 @@
       "slots": {
         "mid": {
           "entities": {
-            "guardian_01_space_dragon_red_entity": {
+            "aquatic_dragon_baby_section_entity": {
               "locators": [
                 "xl_gun_01",
                 "xl_gun_01_1_r",
@@ -5005,12 +4908,8 @@
         "mid": {
           "entities": {
             "caravaneer_cargoship_01_section_entity": {
-              "locators": [
-                "root"
-              ],
-              "templates": [
-                "small_turret"
-              ]
+              "locators": [],
+              "templates": []
             }
           },
           "section_keys": [
@@ -6509,7 +6408,7 @@
       "slots": {
         "mid": {
           "entities": {
-            "guardian_01_space_dragon_red_entity": {
+            "space_dragon_reanimated_section_entity": {
               "locators": [
                 "xl_gun_01",
                 "wing_1_3",
@@ -7666,6 +7565,1821 @@
         }
       },
       "description": ""
+    }
+  },
+  "ship_base_points": {
+    "large_ship_ai": {
+      "base_points": 59,
+      "avg_section_points": 59.0,
+      "section_count": 2,
+      "min_points": 59,
+      "max_points": 59
+    },
+    "small_ship_ai": {
+      "base_points": 28,
+      "avg_section_points": 28.0,
+      "section_count": 2,
+      "min_points": 28,
+      "max_points": 28
+    },
+    "starbase_ai": {
+      "base_points": 26,
+      "avg_section_points": 26.0,
+      "section_count": 1,
+      "min_points": 26,
+      "max_points": 26
+    },
+    "military_station_large_ai": {
+      "base_points": 40,
+      "avg_section_points": 40.0,
+      "section_count": 1,
+      "min_points": 40,
+      "max_points": 40
+    },
+    "military_station_small_ai": {
+      "base_points": 19,
+      "avg_section_points": 19.0,
+      "section_count": 1,
+      "min_points": 19,
+      "max_points": 19
+    },
+    "core_ai": {
+      "base_points": 150,
+      "avg_section_points": 150.0,
+      "section_count": 2,
+      "min_points": 142,
+      "max_points": 158
+    },
+    "colony_ship_ai": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 1,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "transport_ship_ai": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 1,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "construction_ship_ai": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 1,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "ancient_mining_expansion_barge": {
+      "base_points": 4,
+      "avg_section_points": 2.0,
+      "section_count": 1,
+      "min_points": 2,
+      "max_points": 2
+    },
+    "ancient_mining_drone": {
+      "base_points": 8,
+      "avg_section_points": 8.0,
+      "section_count": 1,
+      "min_points": 8,
+      "max_points": 8
+    },
+    "ancient_corvette": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "ancient_destroyer": {
+      "base_points": 16,
+      "avg_section_points": 16.0,
+      "section_count": 1,
+      "min_points": 16,
+      "max_points": 16
+    },
+    "homebase": {
+      "base_points": 28,
+      "avg_section_points": 28.0,
+      "section_count": 1,
+      "min_points": 28,
+      "max_points": 28
+    },
+    "station_xl": {
+      "base_points": 96,
+      "avg_section_points": 96.0,
+      "section_count": 1,
+      "min_points": 96,
+      "max_points": 96
+    },
+    "station_l": {
+      "base_points": 62,
+      "avg_section_points": 62.0,
+      "section_count": 1,
+      "min_points": 62,
+      "max_points": 62
+    },
+    "station_m": {
+      "base_points": 37,
+      "avg_section_points": 37.0,
+      "section_count": 1,
+      "min_points": 37,
+      "max_points": 37
+    },
+    "station_s": {
+      "base_points": 26,
+      "avg_section_points": 26.0,
+      "section_count": 1,
+      "min_points": 26,
+      "max_points": 26
+    },
+    "station_xs": {
+      "base_points": 17,
+      "avg_section_points": 17.0,
+      "section_count": 1,
+      "min_points": 17,
+      "max_points": 17
+    },
+    "battleship": {
+      "base_points": 19,
+      "avg_section_points": 18.8,
+      "section_count": 10,
+      "min_points": 12,
+      "max_points": 24
+    },
+    "bio_titan": {
+      "base_points": 33,
+      "avg_section_points": 33.3,
+      "section_count": 3,
+      "min_points": 20,
+      "max_points": 40
+    },
+    "behemoth_01": {
+      "base_points": 66,
+      "avg_section_points": 66.0,
+      "section_count": 1,
+      "min_points": 66,
+      "max_points": 66
+    },
+    "behemoth_02": {
+      "base_points": 148,
+      "avg_section_points": 148.0,
+      "section_count": 1,
+      "min_points": 148,
+      "max_points": 148
+    },
+    "behemoth_03": {
+      "base_points": 344,
+      "avg_section_points": 344.0,
+      "section_count": 1,
+      "min_points": 344,
+      "max_points": 344
+    },
+    "behemoth_04": {
+      "base_points": 344,
+      "avg_section_points": 344.0,
+      "section_count": 1,
+      "min_points": 344,
+      "max_points": 344
+    },
+    "voidspawn_boss": {
+      "base_points": 286,
+      "avg_section_points": 286.0,
+      "section_count": 1,
+      "min_points": 286,
+      "max_points": 286
+    },
+    "harbinger_stage_1": {
+      "base_points": 26,
+      "avg_section_points": 26.0,
+      "section_count": 2,
+      "min_points": 24,
+      "max_points": 28
+    },
+    "harbinger_stage_2": {
+      "base_points": 31,
+      "avg_section_points": 31.0,
+      "section_count": 2,
+      "min_points": 28,
+      "max_points": 34
+    },
+    "harbinger_stage_3": {
+      "base_points": 40,
+      "avg_section_points": 40.0,
+      "section_count": 2,
+      "min_points": 36,
+      "max_points": 44
+    },
+    "large_fallen_harbinger": {
+      "base_points": 36,
+      "avg_section_points": 36.0,
+      "section_count": 1,
+      "min_points": 36,
+      "max_points": 36
+    },
+    "mauler_stage_1": {
+      "base_points": 7,
+      "avg_section_points": 7.0,
+      "section_count": 2,
+      "min_points": 7,
+      "max_points": 7
+    },
+    "mauler_stage_2": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 2,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "mauler_stage_3": {
+      "base_points": 16,
+      "avg_section_points": 16.0,
+      "section_count": 2,
+      "min_points": 16,
+      "max_points": 16
+    },
+    "large_fallen_mauler": {
+      "base_points": 20,
+      "avg_section_points": 20.0,
+      "section_count": 1,
+      "min_points": 20,
+      "max_points": 20
+    },
+    "offspring_harbinger_stage_1": {
+      "base_points": 26,
+      "avg_section_points": 26.0,
+      "section_count": 2,
+      "min_points": 24,
+      "max_points": 28
+    },
+    "offspring_harbinger_stage_2": {
+      "base_points": 31,
+      "avg_section_points": 31.0,
+      "section_count": 2,
+      "min_points": 28,
+      "max_points": 34
+    },
+    "offspring_harbinger_stage_3": {
+      "base_points": 40,
+      "avg_section_points": 40.0,
+      "section_count": 2,
+      "min_points": 36,
+      "max_points": 44
+    },
+    "offspring_mauler_stage_1": {
+      "base_points": 7,
+      "avg_section_points": 7.0,
+      "section_count": 2,
+      "min_points": 7,
+      "max_points": 7
+    },
+    "offspring_mauler_stage_2": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 2,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "offspring_mauler_stage_3": {
+      "base_points": 16,
+      "avg_section_points": 16.0,
+      "section_count": 2,
+      "min_points": 16,
+      "max_points": 16
+    },
+    "offspring_stinger_stage_1": {
+      "base_points": 44,
+      "avg_section_points": 44.0,
+      "section_count": 2,
+      "min_points": 40,
+      "max_points": 48
+    },
+    "offspring_stinger_stage_2": {
+      "base_points": 66,
+      "avg_section_points": 66.0,
+      "section_count": 2,
+      "min_points": 60,
+      "max_points": 72
+    },
+    "offspring_stinger_stage_3": {
+      "base_points": 88,
+      "avg_section_points": 88.0,
+      "section_count": 2,
+      "min_points": 80,
+      "max_points": 96
+    },
+    "offspring_weaver_stage_1": {
+      "base_points": 20,
+      "avg_section_points": 20.0,
+      "section_count": 2,
+      "min_points": 20,
+      "max_points": 20
+    },
+    "offspring_weaver_stage_2": {
+      "base_points": 25,
+      "avg_section_points": 25.0,
+      "section_count": 2,
+      "min_points": 25,
+      "max_points": 25
+    },
+    "offspring_weaver_stage_3": {
+      "base_points": 34,
+      "avg_section_points": 34.0,
+      "section_count": 2,
+      "min_points": 34,
+      "max_points": 34
+    },
+    "stinger_stage_1": {
+      "base_points": 44,
+      "avg_section_points": 44.0,
+      "section_count": 2,
+      "min_points": 40,
+      "max_points": 48
+    },
+    "stinger_stage_2": {
+      "base_points": 66,
+      "avg_section_points": 66.0,
+      "section_count": 2,
+      "min_points": 60,
+      "max_points": 72
+    },
+    "stinger_stage_3": {
+      "base_points": 88,
+      "avg_section_points": 88.0,
+      "section_count": 2,
+      "min_points": 80,
+      "max_points": 96
+    },
+    "large_fallen_stinger": {
+      "base_points": 124,
+      "avg_section_points": 124.0,
+      "section_count": 1,
+      "min_points": 124,
+      "max_points": 124
+    },
+    "weaver_stage_1": {
+      "base_points": 20,
+      "avg_section_points": 20.0,
+      "section_count": 2,
+      "min_points": 20,
+      "max_points": 20
+    },
+    "weaver_stage_2": {
+      "base_points": 25,
+      "avg_section_points": 25.0,
+      "section_count": 2,
+      "min_points": 25,
+      "max_points": 25
+    },
+    "weaver_stage_3": {
+      "base_points": 34,
+      "avg_section_points": 34.0,
+      "section_count": 2,
+      "min_points": 34,
+      "max_points": 34
+    },
+    "small_fallen_weaver": {
+      "base_points": 24,
+      "avg_section_points": 24.0,
+      "section_count": 1,
+      "min_points": 24,
+      "max_points": 24
+    },
+    "large_fallen_weaver": {
+      "base_points": 40,
+      "avg_section_points": 40.0,
+      "section_count": 1,
+      "min_points": 40,
+      "max_points": 40
+    },
+    "colonizer": {
+      "base_points": 4,
+      "avg_section_points": 3.0,
+      "section_count": 1,
+      "min_points": 3,
+      "max_points": 3
+    },
+    "lithoid_colonizer": {
+      "base_points": 4,
+      "avg_section_points": 3.0,
+      "section_count": 1,
+      "min_points": 3,
+      "max_points": 3
+    },
+    "colossus": {
+      "base_points": 24,
+      "avg_section_points": 24.0,
+      "section_count": 1,
+      "min_points": 24,
+      "max_points": 24
+    },
+    "constructor": {
+      "base_points": 4,
+      "avg_section_points": 3.5,
+      "section_count": 2,
+      "min_points": 3,
+      "max_points": 4
+    },
+    "frigate": {
+      "base_points": 11,
+      "avg_section_points": 11.0,
+      "section_count": 1,
+      "min_points": 11,
+      "max_points": 11
+    },
+    "corvette": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 2,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "cosmo_crisis_destroyer": {
+      "base_points": 35,
+      "avg_section_points": 35.0,
+      "section_count": 2,
+      "min_points": 34,
+      "max_points": 36
+    },
+    "cosmo_crisis_battlecruiser": {
+      "base_points": 76,
+      "avg_section_points": 76.0,
+      "section_count": 2,
+      "min_points": 76,
+      "max_points": 76
+    },
+    "cosmo_crisis_titan": {
+      "base_points": 168,
+      "avg_section_points": 168.0,
+      "section_count": 1,
+      "min_points": 168,
+      "max_points": 168
+    },
+    "monadic_qerr": {
+      "base_points": 80,
+      "avg_section_points": 80.0,
+      "section_count": 1,
+      "min_points": 80,
+      "max_points": 80
+    },
+    "cosmo_crisis_mauler": {
+      "base_points": 20,
+      "avg_section_points": 20.0,
+      "section_count": 1,
+      "min_points": 20,
+      "max_points": 20
+    },
+    "cosmo_crisis_weaver": {
+      "base_points": 40,
+      "avg_section_points": 40.0,
+      "section_count": 1,
+      "min_points": 40,
+      "max_points": 40
+    },
+    "cosmo_crisis_harbinger": {
+      "base_points": 36,
+      "avg_section_points": 36.0,
+      "section_count": 1,
+      "min_points": 36,
+      "max_points": 36
+    },
+    "cosmo_crisis_stinger": {
+      "base_points": 124,
+      "avg_section_points": 124.0,
+      "section_count": 1,
+      "min_points": 124,
+      "max_points": 124
+    },
+    "crisis_corvette": {
+      "base_points": 14,
+      "avg_section_points": 14.0,
+      "section_count": 2,
+      "min_points": 14,
+      "max_points": 14
+    },
+    "crisis_destroyer": {
+      "base_points": 20,
+      "avg_section_points": 20.0,
+      "section_count": 2,
+      "min_points": 20,
+      "max_points": 20
+    },
+    "crisis_cruiser": {
+      "base_points": 30,
+      "avg_section_points": 30.0,
+      "section_count": 1,
+      "min_points": 30,
+      "max_points": 30
+    },
+    "star_eater": {
+      "base_points": 133,
+      "avg_section_points": 133.0,
+      "section_count": 1,
+      "min_points": 133,
+      "max_points": 133
+    },
+    "cruiser": {
+      "base_points": 12,
+      "avg_section_points": 12.4,
+      "section_count": 9,
+      "min_points": 10,
+      "max_points": 14
+    },
+    "crystal_ship_small_blue": {
+      "base_points": 9,
+      "avg_section_points": 9.0,
+      "section_count": 1,
+      "min_points": 9,
+      "max_points": 9
+    },
+    "crystal_ship_medium_blue": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "crystal_ship_large_blue": {
+      "base_points": 18,
+      "avg_section_points": 18.0,
+      "section_count": 1,
+      "min_points": 18,
+      "max_points": 18
+    },
+    "crystal_ship_small_green": {
+      "base_points": 9,
+      "avg_section_points": 9.0,
+      "section_count": 1,
+      "min_points": 9,
+      "max_points": 9
+    },
+    "crystal_ship_medium_green": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "crystal_ship_large_green": {
+      "base_points": 18,
+      "avg_section_points": 18.0,
+      "section_count": 1,
+      "min_points": 18,
+      "max_points": 18
+    },
+    "crystal_ship_small_yellow": {
+      "base_points": 9,
+      "avg_section_points": 9.0,
+      "section_count": 1,
+      "min_points": 9,
+      "max_points": 9
+    },
+    "crystal_ship_medium_yellow": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "crystal_ship_large_yellow": {
+      "base_points": 18,
+      "avg_section_points": 18.0,
+      "section_count": 1,
+      "min_points": 18,
+      "max_points": 18
+    },
+    "crystal_ship_small_red": {
+      "base_points": 9,
+      "avg_section_points": 9.0,
+      "section_count": 1,
+      "min_points": 9,
+      "max_points": 9
+    },
+    "crystal_ship_medium_red": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "crystal_ship_large_red": {
+      "base_points": 18,
+      "avg_section_points": 18.0,
+      "section_count": 1,
+      "min_points": 18,
+      "max_points": 18
+    },
+    "crystal_ship_small_blue_elite": {
+      "base_points": 9,
+      "avg_section_points": 9.0,
+      "section_count": 1,
+      "min_points": 9,
+      "max_points": 9
+    },
+    "crystal_ship_medium_blue_elite": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "crystal_ship_large_blue_elite": {
+      "base_points": 18,
+      "avg_section_points": 18.0,
+      "section_count": 1,
+      "min_points": 18,
+      "max_points": 18
+    },
+    "crystal_ship_small_green_elite": {
+      "base_points": 9,
+      "avg_section_points": 9.0,
+      "section_count": 1,
+      "min_points": 9,
+      "max_points": 9
+    },
+    "crystal_ship_medium_green_elite": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "crystal_ship_large_green_elite": {
+      "base_points": 18,
+      "avg_section_points": 18.0,
+      "section_count": 1,
+      "min_points": 18,
+      "max_points": 18
+    },
+    "crystal_ship_small_yellow_elite": {
+      "base_points": 9,
+      "avg_section_points": 9.0,
+      "section_count": 1,
+      "min_points": 9,
+      "max_points": 9
+    },
+    "crystal_ship_medium_yellow_elite": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "crystal_ship_large_yellow_elite": {
+      "base_points": 18,
+      "avg_section_points": 18.0,
+      "section_count": 1,
+      "min_points": 18,
+      "max_points": 18
+    },
+    "crystal_ship_small_red_elite": {
+      "base_points": 9,
+      "avg_section_points": 9.0,
+      "section_count": 1,
+      "min_points": 9,
+      "max_points": 9
+    },
+    "crystal_ship_medium_red_elite": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "crystal_ship_large_red_elite": {
+      "base_points": 18,
+      "avg_section_points": 18.0,
+      "section_count": 1,
+      "min_points": 18,
+      "max_points": 18
+    },
+    "crystal_station_large": {
+      "base_points": 54,
+      "avg_section_points": 54.0,
+      "section_count": 1,
+      "min_points": 54,
+      "max_points": 54
+    },
+    "destroyer": {
+      "base_points": 8,
+      "avg_section_points": 8.5,
+      "section_count": 6,
+      "min_points": 6,
+      "max_points": 10
+    },
+    "eventship_04": {
+      "base_points": 56,
+      "avg_section_points": 56.0,
+      "section_count": 6,
+      "min_points": 56,
+      "max_points": 56
+    },
+    "leviathan_01_scavenger_bot": {
+      "base_points": 108,
+      "avg_section_points": 108.0,
+      "section_count": 1,
+      "min_points": 108,
+      "max_points": 108
+    },
+    "leviathan_01_elder_tiyanki": {
+      "base_points": 76,
+      "avg_section_points": 76.0,
+      "section_count": 1,
+      "min_points": 76,
+      "max_points": 76
+    },
+    "leviathan_01_voidspawn": {
+      "base_points": 60,
+      "avg_section_points": 60.0,
+      "section_count": 1,
+      "min_points": 60,
+      "max_points": 60
+    },
+    "nanite_space_dragon_baby": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 1,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "space_amoeba_centenarian": {
+      "base_points": 38,
+      "avg_section_points": 38.0,
+      "section_count": 1,
+      "min_points": 38,
+      "max_points": 38
+    },
+    "large_ship_ed": {
+      "base_points": 44,
+      "avg_section_points": 44.0,
+      "section_count": 3,
+      "min_points": 44,
+      "max_points": 44
+    },
+    "medium_ship_ed": {
+      "base_points": 23,
+      "avg_section_points": 23.0,
+      "section_count": 4,
+      "min_points": 23,
+      "max_points": 23
+    },
+    "small_ship_ed": {
+      "base_points": 11,
+      "avg_section_points": 11.0,
+      "section_count": 3,
+      "min_points": 11,
+      "max_points": 11
+    },
+    "construction_ship_ed": {
+      "base_points": 4,
+      "avg_section_points": 2.0,
+      "section_count": 3,
+      "min_points": 2,
+      "max_points": 2
+    },
+    "starbase_exd_0": {
+      "base_points": 66,
+      "avg_section_points": 66.0,
+      "section_count": 1,
+      "min_points": 66,
+      "max_points": 66
+    },
+    "starbase_exd": {
+      "base_points": 88,
+      "avg_section_points": 88.0,
+      "section_count": 3,
+      "min_points": 88,
+      "max_points": 88
+    },
+    "massive_ship_fallen_empire": {
+      "base_points": 168,
+      "avg_section_points": 168.0,
+      "section_count": 1,
+      "min_points": 168,
+      "max_points": 168
+    },
+    "large_ship_fallen_empire": {
+      "base_points": 76,
+      "avg_section_points": 76.0,
+      "section_count": 2,
+      "min_points": 76,
+      "max_points": 76
+    },
+    "small_ship_fallen_empire": {
+      "base_points": 35,
+      "avg_section_points": 35.0,
+      "section_count": 2,
+      "min_points": 34,
+      "max_points": 36
+    },
+    "military_station_small_fallen_empire": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 1,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "military_station_large_fallen_empire": {
+      "base_points": 160,
+      "avg_section_points": 160.0,
+      "section_count": 1,
+      "min_points": 160,
+      "max_points": 160
+    },
+    "lesser_messenger_01": {
+      "base_points": 8,
+      "avg_section_points": 8.0,
+      "section_count": 1,
+      "min_points": 8,
+      "max_points": 8
+    },
+    "wenkwort_drone": {
+      "base_points": 4,
+      "avg_section_points": 3.0,
+      "section_count": 1,
+      "min_points": 3,
+      "max_points": 3
+    },
+    "payback_warship": {
+      "base_points": 104,
+      "avg_section_points": 104.0,
+      "section_count": 1,
+      "min_points": 104,
+      "max_points": 104
+    },
+    "pre_ftl_chemical_ship": {
+      "base_points": 5,
+      "avg_section_points": 5.0,
+      "section_count": 1,
+      "min_points": 5,
+      "max_points": 5
+    },
+    "pre_ftl_laser_ship": {
+      "base_points": 5,
+      "avg_section_points": 5.0,
+      "section_count": 1,
+      "min_points": 5,
+      "max_points": 5
+    },
+    "engineer_vessel": {
+      "base_points": 4,
+      "avg_section_points": 2.0,
+      "section_count": 1,
+      "min_points": 2,
+      "max_points": 2
+    },
+    "colony_vessel": {
+      "base_points": 4,
+      "avg_section_points": 2.0,
+      "section_count": 1,
+      "min_points": 2,
+      "max_points": 2
+    },
+    "explorer_vessel": {
+      "base_points": 4,
+      "avg_section_points": 2.0,
+      "section_count": 1,
+      "min_points": 2,
+      "max_points": 2
+    },
+    "eventship_01": {
+      "base_points": 37,
+      "avg_section_points": 37.0,
+      "section_count": 1,
+      "min_points": 37,
+      "max_points": 37
+    },
+    "eventship_02": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "eventship_03": {
+      "base_points": 48,
+      "avg_section_points": 48.0,
+      "section_count": 1,
+      "min_points": 48,
+      "max_points": 48
+    },
+    "eventship_05": {
+      "base_points": 29,
+      "avg_section_points": 29.0,
+      "section_count": 2,
+      "min_points": 27,
+      "max_points": 31
+    },
+    "eventship_06": {
+      "base_points": 18,
+      "avg_section_points": 18.0,
+      "section_count": 1,
+      "min_points": 18,
+      "max_points": 18
+    },
+    "eventship_07": {
+      "base_points": 18,
+      "avg_section_points": 18.0,
+      "section_count": 1,
+      "min_points": 18,
+      "max_points": 18
+    },
+    "civilian_freighter": {
+      "base_points": 21,
+      "avg_section_points": 21.0,
+      "section_count": 1,
+      "min_points": 21,
+      "max_points": 21
+    },
+    "civilian_tanker": {
+      "base_points": 25,
+      "avg_section_points": 25.0,
+      "section_count": 1,
+      "min_points": 25,
+      "max_points": 25
+    },
+    "ark_ship": {
+      "base_points": 14,
+      "avg_section_points": 14.0,
+      "section_count": 1,
+      "min_points": 14,
+      "max_points": 14
+    },
+    "passenger_liner": {
+      "base_points": 11,
+      "avg_section_points": 11.0,
+      "section_count": 2,
+      "min_points": 11,
+      "max_points": 11
+    },
+    "primitive_space_station": {
+      "base_points": 5,
+      "avg_section_points": 5.0,
+      "section_count": 1,
+      "min_points": 5,
+      "max_points": 5
+    },
+    "station_generic_01": {
+      "base_points": 77,
+      "avg_section_points": 77.0,
+      "section_count": 2,
+      "min_points": 56,
+      "max_points": 98
+    },
+    "sensor_station_01": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 1,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "gravity_snare": {
+      "base_points": 4,
+      "avg_section_points": 4.0,
+      "section_count": 1,
+      "min_points": 4,
+      "max_points": 4
+    },
+    "voidworms_small": {
+      "base_points": 7,
+      "avg_section_points": 7.0,
+      "section_count": 1,
+      "min_points": 7,
+      "max_points": 7
+    },
+    "voidworms_medium": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 1,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "voidworms_large": {
+      "base_points": 20,
+      "avg_section_points": 20.0,
+      "section_count": 1,
+      "min_points": 20,
+      "max_points": 20
+    },
+    "voidworms_titan": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 1,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "voidworm_nest": {
+      "base_points": 24,
+      "avg_section_points": 24.0,
+      "section_count": 1,
+      "min_points": 24,
+      "max_points": 24
+    },
+    "cutholoids_hatchling": {
+      "base_points": 8,
+      "avg_section_points": 8.0,
+      "section_count": 1,
+      "min_points": 8,
+      "max_points": 8
+    },
+    "cutholoids_juvenile": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "cutholoids": {
+      "base_points": 20,
+      "avg_section_points": 20.0,
+      "section_count": 1,
+      "min_points": 20,
+      "max_points": 20
+    },
+    "galleon": {
+      "base_points": 69,
+      "avg_section_points": 69.0,
+      "section_count": 2,
+      "min_points": 56,
+      "max_points": 82
+    },
+    "large_ship_swarm": {
+      "base_points": 31,
+      "avg_section_points": 31.0,
+      "section_count": 2,
+      "min_points": 8,
+      "max_points": 54
+    },
+    "graygoo_mothership": {
+      "base_points": 86,
+      "avg_section_points": 86.0,
+      "section_count": 2,
+      "min_points": 72,
+      "max_points": 100
+    },
+    "graygoo_interdictor": {
+      "base_points": 20,
+      "avg_section_points": 20.0,
+      "section_count": 1,
+      "min_points": 20,
+      "max_points": 20
+    },
+    "graygoo_factory": {
+      "base_points": 64,
+      "avg_section_points": 64.0,
+      "section_count": 1,
+      "min_points": 64,
+      "max_points": 64
+    },
+    "starbase_gatebuilders": {
+      "base_points": 4,
+      "avg_section_points": 4.0,
+      "section_count": 1,
+      "min_points": 4,
+      "max_points": 4
+    },
+    "ember_cruiser": {
+      "base_points": 12,
+      "avg_section_points": 12.4,
+      "section_count": 9,
+      "min_points": 10,
+      "max_points": 14
+    },
+    "ember_battleship": {
+      "base_points": 19,
+      "avg_section_points": 18.8,
+      "section_count": 10,
+      "min_points": 12,
+      "max_points": 24
+    },
+    "entropy_conduit": {
+      "base_points": 8,
+      "avg_section_points": 8.0,
+      "section_count": 1,
+      "min_points": 8,
+      "max_points": 8
+    },
+    "starfire_cannon": {
+      "base_points": 20,
+      "avg_section_points": 20.0,
+      "section_count": 1,
+      "min_points": 20,
+      "max_points": 20
+    },
+    "juggernaut": {
+      "base_points": 118,
+      "avg_section_points": 118.0,
+      "section_count": 1,
+      "min_points": 118,
+      "max_points": 118
+    },
+    "enclave_station": {
+      "base_points": 150,
+      "avg_section_points": 150.0,
+      "section_count": 3,
+      "min_points": 150,
+      "max_points": 150
+    },
+    "space_dragon_red": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 2,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "stellarite": {
+      "base_points": 56,
+      "avg_section_points": 56.0,
+      "section_count": 1,
+      "min_points": 56,
+      "max_points": 56
+    },
+    "npc_warship_01": {
+      "base_points": 147,
+      "avg_section_points": 147.3,
+      "section_count": 3,
+      "min_points": 128,
+      "max_points": 162
+    },
+    "dimensional_horror": {
+      "base_points": 38,
+      "avg_section_points": 38.0,
+      "section_count": 1,
+      "min_points": 38,
+      "max_points": 38
+    },
+    "toxic_god": {
+      "base_points": 28,
+      "avg_section_points": 28.0,
+      "section_count": 1,
+      "min_points": 28,
+      "max_points": 28
+    },
+    "toxic_demigod": {
+      "base_points": 28,
+      "avg_section_points": 28.0,
+      "section_count": 1,
+      "min_points": 28,
+      "max_points": 28
+    },
+    "hive_asteroid": {
+      "base_points": 4,
+      "avg_section_points": 4.0,
+      "section_count": 1,
+      "min_points": 4,
+      "max_points": 4
+    },
+    "sphere": {
+      "base_points": 141,
+      "avg_section_points": 141.0,
+      "section_count": 1,
+      "min_points": 141,
+      "max_points": 141
+    },
+    "wraith_01_blue": {
+      "base_points": 32,
+      "avg_section_points": 32.0,
+      "section_count": 1,
+      "min_points": 32,
+      "max_points": 32
+    },
+    "wraith_01_red": {
+      "base_points": 32,
+      "avg_section_points": 32.0,
+      "section_count": 1,
+      "min_points": 32,
+      "max_points": 32
+    },
+    "wraith_01_yellow": {
+      "base_points": 32,
+      "avg_section_points": 32.0,
+      "section_count": 1,
+      "min_points": 32,
+      "max_points": 32
+    },
+    "space_dragon_baby": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 1,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "space_dragon_blue": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 1,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "space_dragon_origin": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 1,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "space_dragon_origin_baby": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 1,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "starbase_caravaneer": {
+      "base_points": 28,
+      "avg_section_points": 28.0,
+      "section_count": 1,
+      "min_points": 28,
+      "max_points": 28
+    },
+    "caravaneer_station_01": {
+      "base_points": 150,
+      "avg_section_points": 150.0,
+      "section_count": 1,
+      "min_points": 150,
+      "max_points": 150
+    },
+    "caravaneer_cargoship_01": {
+      "base_points": 11,
+      "avg_section_points": 11.0,
+      "section_count": 1,
+      "min_points": 11,
+      "max_points": 11
+    },
+    "caravaneer_cruiser_01": {
+      "base_points": 27,
+      "avg_section_points": 27.0,
+      "section_count": 1,
+      "min_points": 27,
+      "max_points": 27
+    },
+    "caravaneer_destroyer_01": {
+      "base_points": 14,
+      "avg_section_points": 14.0,
+      "section_count": 1,
+      "min_points": 14,
+      "max_points": 14
+    },
+    "nomad_destroyer": {
+      "base_points": 12,
+      "avg_section_points": 12.0,
+      "section_count": 1,
+      "min_points": 12,
+      "max_points": 12
+    },
+    "orbital_ring_tier_1": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 3,
+      "min_points": 4,
+      "max_points": 22
+    },
+    "orbital_ring_tier_2": {
+      "base_points": 40,
+      "avg_section_points": 40.0,
+      "section_count": 1,
+      "min_points": 40,
+      "max_points": 40
+    },
+    "orbital_ring_tier_3": {
+      "base_points": 58,
+      "avg_section_points": 58.0,
+      "section_count": 1,
+      "min_points": 58,
+      "max_points": 58
+    },
+    "military_station_small": {
+      "base_points": 13,
+      "avg_section_points": 13.3,
+      "section_count": 6,
+      "min_points": 10,
+      "max_points": 14
+    },
+    "military_station_large": {
+      "base_points": 24,
+      "avg_section_points": 24.0,
+      "section_count": 4,
+      "min_points": 18,
+      "max_points": 26
+    },
+    "abandoned_ship": {
+      "base_points": 24,
+      "avg_section_points": 24.0,
+      "section_count": 1,
+      "min_points": 24,
+      "max_points": 24
+    },
+    "probe": {
+      "base_points": 11,
+      "avg_section_points": 11.0,
+      "section_count": 1,
+      "min_points": 11,
+      "max_points": 11
+    },
+    "alien_racing_ship": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 1,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "nanite_swarmer": {
+      "base_points": 6,
+      "avg_section_points": 6.0,
+      "section_count": 4,
+      "min_points": 4,
+      "max_points": 8
+    },
+    "nanite_interdictor": {
+      "base_points": 21,
+      "avg_section_points": 21.0,
+      "section_count": 2,
+      "min_points": 20,
+      "max_points": 22
+    },
+    "offspring_corvette": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 3,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "offspring_destroyer": {
+      "base_points": 8,
+      "avg_section_points": 8.5,
+      "section_count": 6,
+      "min_points": 6,
+      "max_points": 10
+    },
+    "offspring_cruiser": {
+      "base_points": 12,
+      "avg_section_points": 12.4,
+      "section_count": 9,
+      "min_points": 10,
+      "max_points": 14
+    },
+    "offspring_battleship": {
+      "base_points": 19,
+      "avg_section_points": 18.8,
+      "section_count": 10,
+      "min_points": 12,
+      "max_points": 24
+    },
+    "enclave_salvager_station": {
+      "base_points": 150,
+      "avg_section_points": 150.0,
+      "section_count": 1,
+      "min_points": 150,
+      "max_points": 150
+    },
+    "enclave_shroudwalker_station": {
+      "base_points": 144,
+      "avg_section_points": 144.0,
+      "section_count": 1,
+      "min_points": 144,
+      "max_points": 144
+    },
+    "enclave_mercenary_station": {
+      "base_points": 142,
+      "avg_section_points": 142.0,
+      "section_count": 1,
+      "min_points": 142,
+      "max_points": 142
+    },
+    "first_claw": {
+      "base_points": 133,
+      "avg_section_points": 133.0,
+      "section_count": 1,
+      "min_points": 133,
+      "max_points": 133
+    },
+    "maven_cruiser_01": {
+      "base_points": 27,
+      "avg_section_points": 27.0,
+      "section_count": 1,
+      "min_points": 27,
+      "max_points": 27
+    },
+    "temple_of_whispers": {
+      "base_points": 80,
+      "avg_section_points": 80.0,
+      "section_count": 1,
+      "min_points": 80,
+      "max_points": 80
+    },
+    "azaryn_dome": {
+      "base_points": 40,
+      "avg_section_points": 40.0,
+      "section_count": 1,
+      "min_points": 40,
+      "max_points": 40
+    },
+    "pirate_corvette": {
+      "base_points": 14,
+      "avg_section_points": 14.0,
+      "section_count": 2,
+      "min_points": 14,
+      "max_points": 14
+    },
+    "pirate_destroyer": {
+      "base_points": 20,
+      "avg_section_points": 20.0,
+      "section_count": 2,
+      "min_points": 20,
+      "max_points": 20
+    },
+    "pirate_cruiser": {
+      "base_points": 30,
+      "avg_section_points": 30.0,
+      "section_count": 1,
+      "min_points": 30,
+      "max_points": 30
+    },
+    "pirate_station": {
+      "base_points": 19,
+      "avg_section_points": 19.0,
+      "section_count": 1,
+      "min_points": 19,
+      "max_points": 19
+    },
+    "starbase_marauder": {
+      "base_points": 28,
+      "avg_section_points": 28.0,
+      "section_count": 1,
+      "min_points": 28,
+      "max_points": 28
+    },
+    "unknown": {
+      "base_points": 10,
+      "avg_section_points": 9.8,
+      "section_count": 10,
+      "min_points": 6,
+      "max_points": 14
+    },
+    "psionic_avatar": {
+      "base_points": 19,
+      "avg_section_points": 19.0,
+      "section_count": 1,
+      "min_points": 19,
+      "max_points": 19
+    },
+    "corrupted_avatar": {
+      "base_points": 19,
+      "avg_section_points": 19.0,
+      "section_count": 1,
+      "min_points": 19,
+      "max_points": 19
+    },
+    "tooth_eater": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 1,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "reanimated_space_whale_1": {
+      "base_points": 16,
+      "avg_section_points": 16.0,
+      "section_count": 1,
+      "min_points": 16,
+      "max_points": 16
+    },
+    "reanimated_space_whale_2": {
+      "base_points": 16,
+      "avg_section_points": 16.0,
+      "section_count": 1,
+      "min_points": 16,
+      "max_points": 16
+    },
+    "reanimated_space_whale_3": {
+      "base_points": 7,
+      "avg_section_points": 7.0,
+      "section_count": 1,
+      "min_points": 7,
+      "max_points": 7
+    },
+    "reanimated_space_whale_4": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 1,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "reanimated_leviathan_01_elder_tiyanki": {
+      "base_points": 76,
+      "avg_section_points": 76.0,
+      "section_count": 1,
+      "min_points": 76,
+      "max_points": 76
+    },
+    "reanimated_leviathan_01_voidspawn": {
+      "base_points": 60,
+      "avg_section_points": 60.0,
+      "section_count": 1,
+      "min_points": 60,
+      "max_points": 60
+    },
+    "reanimated_space_amoeba_centenarian": {
+      "base_points": 38,
+      "avg_section_points": 38.0,
+      "section_count": 1,
+      "min_points": 38,
+      "max_points": 38
+    },
+    "reanimated_space_amoeba_mother": {
+      "base_points": 7,
+      "avg_section_points": 7.0,
+      "section_count": 1,
+      "min_points": 7,
+      "max_points": 7
+    },
+    "reanimated_space_amoeba": {
+      "base_points": 7,
+      "avg_section_points": 7.0,
+      "section_count": 1,
+      "min_points": 7,
+      "max_points": 7
+    },
+    "reanimated_space_dragon_red": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 1,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "reanimated_space_dragon_blue": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 1,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "reanimated_space_dragon_origin": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 1,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "science": {
+      "base_points": 4,
+      "avg_section_points": 3.0,
+      "section_count": 1,
+      "min_points": 3,
+      "max_points": 3
+    },
+    "ghost_ship": {
+      "base_points": 4,
+      "avg_section_points": 3.0,
+      "section_count": 1,
+      "min_points": 3,
+      "max_points": 3
+    },
+    "enclave_mindwarden_station": {
+      "base_points": 120,
+      "avg_section_points": 120.0,
+      "section_count": 1,
+      "min_points": 120,
+      "max_points": 120
+    },
+    "starbase_deep_space_citadel_1": {
+      "base_points": 57,
+      "avg_section_points": 57.0,
+      "section_count": 1,
+      "min_points": 57,
+      "max_points": 57
+    },
+    "starbase_deep_space_citadel_2": {
+      "base_points": 105,
+      "avg_section_points": 105.0,
+      "section_count": 1,
+      "min_points": 105,
+      "max_points": 105
+    },
+    "starbase_deep_space_citadel_3": {
+      "base_points": 145,
+      "avg_section_points": 145.0,
+      "section_count": 1,
+      "min_points": 145,
+      "max_points": 145
+    },
+    "space_cloud": {
+      "base_points": 32,
+      "avg_section_points": 32.0,
+      "section_count": 1,
+      "min_points": 32,
+      "max_points": 32
+    },
+    "lesser_space_cloud": {
+      "base_points": 16,
+      "avg_section_points": 16.0,
+      "section_count": 1,
+      "min_points": 16,
+      "max_points": 16
+    },
+    "space_amoeba_mother": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 4,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "space_amoeba": {
+      "base_points": 7,
+      "avg_section_points": 7.0,
+      "section_count": 4,
+      "min_points": 7,
+      "max_points": 7
+    },
+    "lost_swarm_adult": {
+      "base_points": 4,
+      "avg_section_points": 4.0,
+      "section_count": 1,
+      "min_points": 4,
+      "max_points": 4
+    },
+    "space_whale_1": {
+      "base_points": 16,
+      "avg_section_points": 16.0,
+      "section_count": 1,
+      "min_points": 16,
+      "max_points": 16
+    },
+    "space_whale_2": {
+      "base_points": 16,
+      "avg_section_points": 16.0,
+      "section_count": 1,
+      "min_points": 16,
+      "max_points": 16
+    },
+    "space_whale_3": {
+      "base_points": 7,
+      "avg_section_points": 7.0,
+      "section_count": 1,
+      "min_points": 7,
+      "max_points": 7
+    },
+    "space_whale_4": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 1,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "space_whale_5": {
+      "base_points": 28,
+      "avg_section_points": 28.0,
+      "section_count": 2,
+      "min_points": 28,
+      "max_points": 28
+    },
+    "starbase_outpost": {
+      "base_points": 7,
+      "avg_section_points": 7.3,
+      "section_count": 3,
+      "min_points": 4,
+      "max_points": 14
+    },
+    "starbase_starport": {
+      "base_points": 34,
+      "avg_section_points": 34.0,
+      "section_count": 1,
+      "min_points": 34,
+      "max_points": 34
+    },
+    "starbase_starhold": {
+      "base_points": 54,
+      "avg_section_points": 54.0,
+      "section_count": 1,
+      "min_points": 54,
+      "max_points": 54
+    },
+    "starbase_starfortress": {
+      "base_points": 74,
+      "avg_section_points": 74.0,
+      "section_count": 1,
+      "min_points": 74,
+      "max_points": 74
+    },
+    "starbase_citadel": {
+      "base_points": 134,
+      "avg_section_points": 134.0,
+      "section_count": 1,
+      "min_points": 134,
+      "max_points": 134
+    },
+    "ion_cannon": {
+      "base_points": 52,
+      "avg_section_points": 52.0,
+      "section_count": 1,
+      "min_points": 52,
+      "max_points": 52
+    },
+    "large_ship_carrier_swarm": {
+      "base_points": 6,
+      "avg_section_points": 6.0,
+      "section_count": 1,
+      "min_points": 6,
+      "max_points": 6
+    },
+    "small_ship_swarm": {
+      "base_points": 6,
+      "avg_section_points": 6.0,
+      "section_count": 1,
+      "min_points": 6,
+      "max_points": 6
+    },
+    "starbase_swarm": {
+      "base_points": 14,
+      "avg_section_points": 14.0,
+      "section_count": 1,
+      "min_points": 14,
+      "max_points": 14
+    },
+    "queen_swarm": {
+      "base_points": 10,
+      "avg_section_points": 10.0,
+      "section_count": 1,
+      "min_points": 10,
+      "max_points": 10
+    },
+    "colony_ship_swarm": {
+      "base_points": 4,
+      "avg_section_points": 4.0,
+      "section_count": 1,
+      "min_points": 4,
+      "max_points": 4
+    },
+    "transport_ship_swarm": {
+      "base_points": 4,
+      "avg_section_points": 4.0,
+      "section_count": 1,
+      "min_points": 4,
+      "max_points": 4
+    },
+    "construction_ship_swarm": {
+      "base_points": 4,
+      "avg_section_points": 4.0,
+      "section_count": 1,
+      "min_points": 4,
+      "max_points": 4
+    },
+    "synth_queen_titan": {
+      "base_points": 264,
+      "avg_section_points": 264.0,
+      "section_count": 1,
+      "min_points": 264,
+      "max_points": 264
+    },
+    "small_ship_synth_queen": {
+      "base_points": 35,
+      "avg_section_points": 35.0,
+      "section_count": 1,
+      "min_points": 35,
+      "max_points": 35
+    },
+    "large_ship_synth_queen": {
+      "base_points": 128,
+      "avg_section_points": 128.0,
+      "section_count": 1,
+      "min_points": 128,
+      "max_points": 128
+    },
+    "starbase_synth_queen": {
+      "base_points": 30,
+      "avg_section_points": 30.0,
+      "section_count": 1,
+      "min_points": 30,
+      "max_points": 30
+    },
+    "big_starbase_synth_queen": {
+      "base_points": 146,
+      "avg_section_points": 146.0,
+      "section_count": 1,
+      "min_points": 146,
+      "max_points": 146
+    },
+    "defense_platform_synth_queen": {
+      "base_points": 50,
+      "avg_section_points": 50.0,
+      "section_count": 1,
+      "min_points": 50,
+      "max_points": 50
+    },
+    "titan": {
+      "base_points": 33,
+      "avg_section_points": 33.3,
+      "section_count": 3,
+      "min_points": 20,
+      "max_points": 40
+    },
+    "transport": {
+      "base_points": 4,
+      "avg_section_points": 3.0,
+      "section_count": 1,
+      "min_points": 3,
+      "max_points": 3
     }
   },
   "modifiers": {

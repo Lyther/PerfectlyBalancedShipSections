@@ -18,6 +18,11 @@ OUTPUT_PATH = Path(__file__).parent / "vanilla_ship_data.json"
 def extract_blocks(content: str, block_type: str) -> list[str]:
     """Extract all blocks of a given type using brace counting."""
     blocks = []
+    # Filter out commented lines before parsing
+    lines = content.split("\n")
+    filtered_lines = [line for line in lines if not line.strip().startswith("#")]
+    content = "\n".join(filtered_lines)
+
     pattern = rf"{block_type}\s*=\s*\{{"
 
     for match in re.finditer(pattern, content):
@@ -78,13 +83,24 @@ def parse_section_template(content: str) -> list[dict]:
                 locators.append(loc)
         section["locators"] = locators
 
-        # Extract component slot templates (for reference)
+        # Extract component slot templates (count all occurrences for point calculation)
         templates = []
         for tmpl_match in re.finditer(r'template\s*=\s*"([^"]+)"', block):
-            tmpl = tmpl_match.group(1)
-            if tmpl not in templates:
-                templates.append(tmpl)
+            templates.append(tmpl_match.group(1))
         section["templates"] = templates
+
+        # Also extract utility slot counts
+        large_util = re.search(r"large_utility_slots\s*=\s*(\d+)", block)
+        medium_util = re.search(r"medium_utility_slots\s*=\s*(\d+)", block)
+        small_util = re.search(r"small_utility_slots\s*=\s*(\d+)", block)
+        aux_util = re.search(r"aux_utility_slots\s*=\s*(\d+)", block)
+
+        section["large_utility_slots"] = int(large_util.group(1)) if large_util else 0
+        section["medium_utility_slots"] = (
+            int(medium_util.group(1)) if medium_util else 0
+        )
+        section["small_utility_slots"] = int(small_util.group(1)) if small_util else 0
+        section["aux_utility_slots"] = int(aux_util.group(1)) if aux_util else 0
 
         if section.get("key"):
             sections.append(section)
@@ -180,6 +196,101 @@ def extract_modifiers() -> dict:
     }
 
 
+# Weapon cost mapping (template -> point cost)
+TEMPLATE_COSTS = {
+    # Small weapons (1 pt)
+    "small_turret": 1,
+    "point_defence_turret": 1,
+    # Medium weapons (2 pts)
+    "medium_turret": 2,
+    "medium_missile_turret": 2,  # G/Torpedo
+    # Large weapons (4 pts)
+    "large_turret": 4,
+    # Hangar/Strike craft (4 pts)
+    "strike_craft_locator": 4,
+    # Extra-large weapons (8 pts)
+    "extra_large_turret": 8,
+    "invisible_extra_large_fixed": 8,
+    # Titanic weapons (16 pts)
+    "titanic_turret": 16,
+    "titanic_fixed": 16,
+    # Planet killer (special)
+    "planet_killer_weapon": 0,
+}
+
+# Utility slot costs
+UTILITY_LARGE_COST = 4  # UL
+UTILITY_MEDIUM_COST = 2  # UM
+UTILITY_SMALL_COST = 1  # US
+AUX_BASE_COST = 4  # Base aux cost
+
+
+def calculate_section_points(section: dict) -> int:
+    """Calculate total points for a section (weapons + utility + aux)."""
+    total = 0
+
+    # Weapon points from templates
+    for template in section.get("templates", []):
+        for tmpl_key, cost in TEMPLATE_COSTS.items():
+            if tmpl_key in template:
+                total += cost
+                break
+
+    # Utility slot points
+    total += section.get("large_utility_slots", 0) * UTILITY_LARGE_COST
+    total += section.get("medium_utility_slots", 0) * UTILITY_MEDIUM_COST
+    total += section.get("small_utility_slots", 0) * UTILITY_SMALL_COST
+
+    # Aux slot points (using base cost)
+    total += section.get("aux_utility_slots", 0) * AUX_BASE_COST
+
+    return total
+
+
+def calculate_base_points_per_ship(all_sections: list[dict]) -> dict[str, dict]:
+    """
+    Calculate base points for each ship type based on vanilla sections.
+    Uses raw section data to include all slots (weapons, utility, aux).
+    Returns dict with ship_type -> {base_points, avg_section_points, section_count}
+    """
+    from collections import defaultdict
+
+    ship_sections = defaultdict(list)
+
+    # Group sections by ship type
+    for section in all_sections:
+        ship_type = section.get("ship_size", "unknown")
+        points = calculate_section_points(section)
+        if points > 0:
+            ship_sections[ship_type].append(points)
+
+    ship_base_points = {}
+
+    for ship_type, points_list in ship_sections.items():
+        if points_list:
+            avg_points = sum(points_list) / len(points_list)
+            base_points = round(avg_points)
+            base_points = max(4, base_points)
+
+            ship_base_points[ship_type] = {
+                "base_points": base_points,
+                "avg_section_points": round(avg_points, 1),
+                "section_count": len(points_list),
+                "min_points": min(points_list),
+                "max_points": max(points_list),
+            }
+        else:
+            ship_base_points[ship_type] = {
+                "base_points": 8,
+                "avg_section_points": 0,
+                "section_count": 0,
+                "min_points": 0,
+                "max_points": 0,
+            }
+
+    return ship_base_points
+
+
 def extract_technologies() -> dict:
     """Extract valid technology references."""
     return {
@@ -249,6 +360,17 @@ def main():
     # Build hierarchy
     hierarchy = build_hierarchy(all_sections)
 
+    # Calculate base points per ship type (using raw sections for full slot data)
+    ship_base_points = calculate_base_points_per_ship(all_sections)
+    print(f"\nBase points calculated for {len(ship_base_points)} ship types:")
+    for ship_type, data in sorted(ship_base_points.items()):
+        if data["section_count"] > 0:
+            print(
+                f"  {ship_type}: {data['base_points']} pts "
+                f"(avg={data['avg_section_points']}, n={data['section_count']}, "
+                f"range={data['min_points']}-{data['max_points']})"
+            )
+
     # Build final output
     output = {
         "_metadata": {
@@ -257,6 +379,7 @@ def main():
             "hierarchy": "ship_type -> slot -> entity -> locators",
         },
         "ship_types": hierarchy,
+        "ship_base_points": ship_base_points,
         "modifiers": extract_modifiers(),
         "technologies": extract_technologies(),
     }

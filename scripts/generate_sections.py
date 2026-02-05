@@ -49,20 +49,33 @@ SHIP_AUX_COST = {
     "destroyer": 2,
     "cruiser": 4,
     "battleship": 8,
+    "star_eater": 8,
     "titan": 16,
-    "juggernaut": 16,
-    "colossus": 16,
-    "star_eater": 32,
+    "juggernaut": 32,
+    "colossus": 32,
 }
 
-# Tier thresholds (min, max points)
-TIER_THRESHOLDS = [
-    ("common", 0, 24),
-    ("advanced", 25, 32),
-    ("pro", 33, 40),
-    ("ultra", 41, 52),
-    ("ultimate", 53, 999),
+# Base points loaded from vanilla data (populated by load_vanilla_data)
+SHIP_BASE_POINTS: dict[str, int] = {}
+DEFAULT_BASE_POINTS = 8  # Fallback for unknown ship types
+
+# Tier thresholds as multipliers of base points
+# (tier_name, min_multiplier, max_multiplier)
+TIER_MULTIPLIERS = [
+    ("common", 0.0, 1.5),  # 0-1.5x base
+    ("advanced", 1.5, 2.0),  # 1.5-2x base
+    ("pro", 2.0, 2.5),  # 2-2.5x base
+    ("ultra", 2.5, 3.5),  # 2.5-3.5x base
+    ("ultimate", 3.5, 999),  # 3.5x+ base
 ]
+
+# Ships with no section cost (crisis ships, star eater, etc.)
+NO_COST_SHIPS = {
+    "crisis_corvette",
+    "crisis_destroyer",
+    "crisis_cruiser",
+    "star_eater",
+}
 
 TIER_COST_MULT = {
     "common": 1.0,
@@ -152,10 +165,13 @@ def parse_notation(notation: str, ship_type: str = "battleship") -> ParsedDesign
     aux_pts = aux * aux_cost
     total_points = weapon_pts + utility_pts + aux_pts
 
-    # Determine tier
+    # Determine tier based on multiplier of ship's base points
+    base_points = SHIP_BASE_POINTS.get(ship_type, DEFAULT_BASE_POINTS)
+    multiplier = total_points / base_points if base_points > 0 else 1.0
+
     tier = "common"
-    for tier_name, min_pts, max_pts in TIER_THRESHOLDS:
-        if min_pts <= total_points <= max_pts:
+    for tier_name, min_mult, max_mult in TIER_MULTIPLIERS:
+        if min_mult <= multiplier < max_mult:
             tier = tier_name
             break
 
@@ -171,13 +187,26 @@ def parse_notation(notation: str, ship_type: str = "battleship") -> ParsedDesign
 
 
 def load_vanilla_data() -> dict:
-    """Load vanilla ship data."""
+    """Load vanilla ship data and populate SHIP_BASE_POINTS."""
+    global SHIP_BASE_POINTS
+
     if not VANILLA_DATA_PATH.exists():
         print(
             f"ERROR: {VANILLA_DATA_PATH} not found. Run extract_vanilla_data.py first."
         )
         return {}
-    return json.loads(VANILLA_DATA_PATH.read_text(encoding="utf-8"))
+
+    data = json.loads(VANILLA_DATA_PATH.read_text(encoding="utf-8"))
+
+    # Populate SHIP_BASE_POINTS from vanilla data
+    base_points_data = data.get("ship_base_points", {})
+    for ship_type, info in base_points_data.items():
+        if isinstance(info, dict):
+            SHIP_BASE_POINTS[ship_type] = info.get("base_points", DEFAULT_BASE_POINTS)
+        else:
+            SHIP_BASE_POINTS[ship_type] = info
+
+    return data
 
 
 def find_entity_for_design(
@@ -318,11 +347,26 @@ def generate_section_template(
     lines = [
         "ship_section_template = {",
         f'\tkey = "{key}"',
-        f"\tship_size = {ship_type}",
-        f"\tfits_on_slot = {slot}",
-        "\tshould_draw_components = yes",
-        f'\tentity = "{entity}"',
     ]
+
+    # Special handling for military stations - they need multiple ship_size and fits_on_slot
+    if ship_type == "military_station_small":
+        lines.append("\tship_size = military_station_small")
+        lines.append("\tship_size = military_station_medium")
+        lines.append("\tfits_on_slot = north")
+        lines.append("\tfits_on_slot = west")
+        lines.append("\tfits_on_slot = east")
+        lines.append("\tfits_on_slot = south")
+    else:
+        lines.append(f"\tship_size = {ship_type}")
+        lines.append(f"\tfits_on_slot = {slot}")
+
+    lines.extend(
+        [
+            "\tshould_draw_components = yes",
+            f'\tentity = "{entity}"',
+        ]
+    )
 
     # Icon
     icon_map = {
@@ -415,14 +459,15 @@ def generate_section_template(
     if design.aux > 0:
         lines.append(f"\taux_utility_slots = {design.aux}")
 
-    # Resources
-    base_cost = int(80 * TIER_COST_MULT[design.tier])
-    lines.append("\tresources = {")
-    lines.append("\t\tcategory = ship_sections")
-    lines.append("\t\tcost = {")
-    lines.append(f"\t\t\talloys = {base_cost}")
-    lines.append("\t\t}")
-    lines.append("\t}")
+    # Resources - some ships have no section cost
+    if ship_type not in NO_COST_SHIPS:
+        base_cost = int(80 * TIER_COST_MULT[design.tier])
+        lines.append("\tresources = {")
+        lines.append("\t\tcategory = ship_sections")
+        lines.append("\t\tcost = {")
+        lines.append(f"\t\t\talloys = {base_cost}")
+        lines.append("\t\t}")
+        lines.append("\t}")
 
     lines.append("}")
     return "\n".join(lines)
@@ -456,13 +501,16 @@ def cmd_design(args: list[str]) -> int:
     print(f"Generating: {ship_type} {slot}")
     print(f"{'=' * 60}")
 
+    # Military stations use "north" slot in vanilla data - remap for entity lookup only
+    lookup_slot = "north" if ship_type == "military_station_small" else slot
+
     sections = []
     for notation in notations:
         design = parse_notation(notation, ship_type)
 
         # Find entity
         entity, locator_map = find_entity_for_design(
-            vanilla_data, ship_type, slot, design.weapons
+            vanilla_data, ship_type, lookup_slot, design.weapons
         )
         if not entity:
             print(f"  SKIP: {notation} - no suitable entity found")
