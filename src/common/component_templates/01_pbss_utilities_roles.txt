@@ -18,6 +18,7 @@ utility_component_template = {
 	icon_frame = 1
 	ship_behavior = "pbss_default"
 	upgrade_path = default
+	hidden = yes
 	potential = {
 		from = {
 			country_uses_bio_ships = no

@@ -1,9 +1,9 @@
 {
-	"mod_name": "Perfectly Balanced Ship Sections",
-	"namespace_prefix": "PBSS",
-	"stellaris_user_dir": "c:/Users/ender/Documents/Paradox Interactive/Stellaris/mod",
-	"stellaris_game_path": "C:/Program Files (x86)/Steam/steamapps/common/Stellaris",
-	"workshop_path": "C:/Program Files (x86)/Steam/steamapps/workshop/content/281990",
-	"supported_version": "4.2.*",
-	"description": "Provides more ship sections for Stellaris ships, supporting original ships and planning to support ACOT's ships in the future"
+  "mod_name": "Perfectly Balanced Ship Sections",
+  "namespace_prefix": "PBSS",
+  "stellaris_user_dir": "c:/Users/ender/Documents/Paradox Interactive/Stellaris/mod",
+  "stellaris_game_path": "C:/Program Files (x86)/Steam/steamapps/common/Stellaris",
+  "workshop_path": "C:/Program Files (x86)/Steam/steamapps/workshop/content/281990",
+  "supported_version": "4.2.*",
+  "description": "Provides more ship sections for Stellaris ships, supporting original ships and planning to support ACOT's ships in the future"
 }
