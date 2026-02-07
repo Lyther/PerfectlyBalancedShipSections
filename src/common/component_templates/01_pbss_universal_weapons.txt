@@ -540,3 +540,30 @@ weapon_component_template = {
 		weight = 0
 	}
 }
+
+# Universal Planet Killer Star Cracker - Destroys stars
+# Based on PLANET_KILLER_STAR_CRACKER but available to all planet types
+weapon_component_template = {
+	key = "PLANET_KILLER_STAR_CRACKER_PBSS"
+	size = planet_killer
+	type = planet_killer
+	use_ship_main_target = no
+	can_destroy_stars = yes
+	icon = GFX_ship_part_nanobot_diffuser
+	icon_frame = 1
+	potential = {
+		ship_uses_star_eater_components = yes
+	}
+	component_set = "PLANET_KILLER_STAR_CRACKER_PBSS"
+	planet_destruction_gfx = "star_destroyer_effect_gfx"
+	power = -7500
+	windup = {
+		min = 90
+		max = 120
+	}
+	accuracy = 1
+	military_power_multiplier = 1
+	ai_weight = {
+		weight = 0
+	}
+}

@@ -1,0 +1,16 @@
+# Universal Planet Killer Star Cracker - Destroys stars
+on_destroy_planet_with_PLANET_KILLER_STAR_CRACKER_PBSS = {
+	events = {
+		crisis.4550
+		awareness.150
+	}
+}
+
+on_destroy_planet_with_PLANET_KILLER_STAR_CRACKER_PBSS_queued = {
+	events = {
+		fircon.5035
+	}
+}
+
+on_destroy_planet_with_PLANET_KILLER_STAR_CRACKER_PBSS_unqueued = {
+}
