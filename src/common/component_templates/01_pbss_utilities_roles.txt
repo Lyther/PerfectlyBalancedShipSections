@@ -220,9 +220,9 @@ utility_component_template = {
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 0.1
-		ship_accuracy_add = 0.1
-		ship_tracking_add = 0.1
-		ship_damage_reduction_add = 0.05
+		ship_accuracy_add = 10
+		ship_tracking_add = 10
+		ship_damage_reduction_add = 5
 	}
 	ai_weight = {
 		weight = 0
@@ -276,9 +276,9 @@ utility_component_template = {
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 0.2
-		ship_accuracy_add = 0.2
-		ship_tracking_add = 0.2
-		ship_damage_reduction_add = 0.1
+		ship_accuracy_add = 20
+		ship_tracking_add = 20
+		ship_damage_reduction_add = 10
 	}
 	ai_weight = {
 		weight = 0
@@ -331,9 +331,9 @@ utility_component_template = {
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 0.3
-		ship_accuracy_add = 0.35
-		ship_tracking_add = 0.35
-		ship_damage_reduction_add = 0.15
+		ship_accuracy_add = 35
+		ship_tracking_add = 35
+		ship_damage_reduction_add = 15
 	}
 	ai_weight = {
 		weight = 0
@@ -386,9 +386,9 @@ utility_component_template = {
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 0.3
-		ship_accuracy_add = 0.35
-		ship_tracking_add = 0.35
-		ship_damage_reduction_add = 0.15
+		ship_accuracy_add = 35
+		ship_tracking_add = 35
+		ship_damage_reduction_add = 15
 	}
 	ai_weight = {
 		weight = 0
@@ -442,9 +442,9 @@ utility_component_template = {
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 0.3
-		ship_accuracy_add = 0.3
-		ship_tracking_add = 0.3
-		ship_damage_reduction_add = 0.15
+		ship_accuracy_add = 30
+		ship_tracking_add = 30
+		ship_damage_reduction_add = 15
 		ship_steal_defeated_ship_chance = 0.1
 	}
 	ai_weight = {
@@ -779,8 +779,8 @@ utility_component_template = {
 	ship_modifier = {
 		ship_fire_rate_mult = 0.1
 		ship_weapon_range_mult = 0.2
-		ship_accuracy_add = 0.1
-		ship_tracking_add = 0.1
+		ship_accuracy_add = 10
+		ship_tracking_add = 10
 		ship_engagement_range_mult = 0.5
 		ship_hull_damage_mult = 0.25
 	}
@@ -839,8 +839,8 @@ utility_component_template = {
 	ship_modifier = {
 		ship_fire_rate_mult = 0.2
 		ship_weapon_range_mult = 0.4
-		ship_accuracy_add = 0.2
-		ship_tracking_add = 0.2
+		ship_accuracy_add = 20
+		ship_tracking_add = 20
 		ship_engagement_range_mult = 1
 		ship_hull_damage_mult = 0.5
 	}
@@ -898,8 +898,8 @@ utility_component_template = {
 	ship_modifier = {
 		ship_fire_rate_mult = 0.3
 		ship_weapon_range_mult = 0.6
-		ship_accuracy_add = 0.3
-		ship_tracking_add = 0.3
+		ship_accuracy_add = 30
+		ship_tracking_add = 30
 		ship_engagement_range_mult = 1.5
 		ship_hull_damage_mult = 0.75
 	}
@@ -957,8 +957,8 @@ utility_component_template = {
 	ship_modifier = {
 		ship_fire_rate_mult = 0.3
 		ship_weapon_range_mult = 0.6
-		ship_accuracy_add = 0.3
-		ship_tracking_add = 0.3
+		ship_accuracy_add = 30
+		ship_tracking_add = 30
 		ship_engagement_range_mult = 1.5
 		ship_hull_damage_mult = 0.75
 	}
@@ -1016,8 +1016,8 @@ utility_component_template = {
 	ship_modifier = {
 		ship_fire_rate_mult = 0.25
 		ship_weapon_range_mult = 0.8
-		ship_accuracy_add = 0.25
-		ship_tracking_add = 0.25
+		ship_accuracy_add = 25
+		ship_tracking_add = 25
 		ship_engagement_range_mult = 1.5
 		ship_hull_damage_mult = 1
 		ship_armor_penetration_add = 0.25

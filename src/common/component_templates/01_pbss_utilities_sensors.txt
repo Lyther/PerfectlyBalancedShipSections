@@ -43,7 +43,7 @@ utility_component_template = {
 	hyperlane_range = @hyperlane2
 	component_set = "sensor_components"
 	upgrades_to = "PBSS_SENSOR_2"
-	modifier = {
+	ship_modifier = {
 		ship_armor_penetration_add = 0.25
 		ship_shield_penetration_add = 0.25
 	}
@@ -79,12 +79,10 @@ utility_component_template = {
 	}
 	component_set = "sensor_components"
 	upgrades_to = "PBSS_SENSOR_3"
-	modifier = {
-		ship_armor_penetration_add = 0.5
-		ship_shield_penetration_add = 0.5
-	}
 	ship_modifier = {
 		ship_tracking_add = @hit2
+		ship_armor_penetration_add = 0.5
+		ship_shield_penetration_add = 0.5
 	}
 	potential = {
 		from = {
@@ -118,12 +116,10 @@ utility_component_template = {
 	}
 	component_set = "sensor_components"
 	upgrades_to = "PBSS_SENSOR_4"
-	modifier = {
-		ship_armor_penetration_add = 0.75
-		ship_shield_penetration_add = 0.75
-	}
 	ship_modifier = {
 		ship_tracking_add = @hit3
+		ship_armor_penetration_add = 0.75
+		ship_shield_penetration_add = 0.75
 	}
 	potential = {
 		from = {
@@ -152,12 +148,10 @@ utility_component_template = {
 	}
 	sensor_range = @sensor5
 	hyperlane_range = @hyperlane5
-	modifier = {
-		ship_armor_penetration_add = 1
-		ship_shield_penetration_add = 1
-	}
 	ship_modifier = {
 		ship_tracking_add = @hit4
+		ship_armor_penetration_add = 1
+		ship_shield_penetration_add = 1
 	}
 	potential = {
 		from = {
@@ -194,7 +188,7 @@ utility_component_template = {
 	}
 	sensor_range = @sensor2
 	hyperlane_range = @hyperlane2
-	modifier = {
+	ship_modifier = {
 		ship_armor_penetration_add = 0.25
 		ship_shield_penetration_add = 0.25
 	}
@@ -220,12 +214,10 @@ utility_component_template = {
 	}
 	sensor_range = @sensor3
 	hyperlane_range = @hyperlane3
-	modifier = {
-		ship_armor_penetration_add = 0.5
-		ship_shield_penetration_add = 0.5
-	}
 	ship_modifier = {
 		ship_tracking_add = @hit3
+		ship_armor_penetration_add = 0.5
+		ship_shield_penetration_add = 0.5
 	}
 	prerequisites = {
 		"tech_sensors_2"
@@ -253,12 +245,10 @@ utility_component_template = {
 	}
 	sensor_range = @sensor4
 	hyperlane_range = @hyperlane4
-	modifier = {
-		ship_armor_penetration_add = 0.75
-		ship_shield_penetration_add = 0.75
-	}
 	ship_modifier = {
 		ship_tracking_add = @hit3
+		ship_armor_penetration_add = 0.75
+		ship_shield_penetration_add = 0.75
 	}
 	prerequisites = {
 		"tech_sensors_3"
@@ -323,7 +313,7 @@ utility_component_template = {
 	hyperlane_range = @hyperlane2
 	component_set = "sensor_components"
 	upgrades_to = "PBSS_BIOSHIP_SENSOR_2"
-	modifier = {
+	ship_modifier = {
 		ship_armor_penetration_add = 0.25
 		ship_shield_penetration_add = 0.25
 	}
@@ -360,12 +350,10 @@ utility_component_template = {
 	}
 	component_set = "sensor_components"
 	upgrades_to = "PBSS_BIOSHIP_SENSOR_3"
-	modifier = {
-		ship_armor_penetration_add = 0.5
-		ship_shield_penetration_add = 0.5
-	}
 	ship_modifier = {
 		ship_tracking_add = @hit2
+		ship_armor_penetration_add = 0.5
+		ship_shield_penetration_add = 0.5
 	}
 	potential = {
 		from = {
@@ -400,12 +388,10 @@ utility_component_template = {
 	}
 	component_set = "sensor_components"
 	upgrades_to = "PBSS_BIOSHIP_SENSOR_4"
-	modifier = {
-		ship_armor_penetration_add = 0.75
-		ship_shield_penetration_add = 0.75
-	}
 	ship_modifier = {
 		ship_tracking_add = @hit3
+		ship_armor_penetration_add = 0.75
+		ship_shield_penetration_add = 0.75
 	}
 	potential = {
 		from = {
@@ -435,12 +421,10 @@ utility_component_template = {
 	}
 	sensor_range = @sensor5
 	hyperlane_range = @hyperlane5
-	modifier = {
-		ship_armor_penetration_add = 1
-		ship_shield_penetration_add = 1
-	}
 	ship_modifier = {
 		ship_tracking_add = @hit5
+		ship_armor_penetration_add = 1
+		ship_shield_penetration_add = 1
 	}
 	potential = {
 		from = {
