@@ -9,7 +9,7 @@ weapon_component_template = {
 	prio_projectile = yes
 	icon = "GFX_ship_part_perdition_beam"
 	icon_frame = 1
-	firing_arc = 10
+	firing_arc = 360
 	use_ship_main_target = no
 	tags = {
 		weapon_type_energy
@@ -97,7 +97,7 @@ weapon_component_template = {
 	prio_projectile = yes
 	icon = "GFX_ship_part_archaeo_titan_beam"
 	icon_frame = 1
-	firing_arc = 10
+	firing_arc = 360
 	use_ship_main_target = no
 	tags = {
 		weapon_type_energy
@@ -180,13 +180,13 @@ weapon_component_template = {
 # Universal Gray Tempest Penetrator - Full penetration T-slot beam
 # Based on GG_BEAM but available to players (100% shield + armor penetration)
 weapon_component_template = {
-	key = "PBSS_PENETRATOR_TITANIC"
+	key = "PBSS_PENETRATOR_TITANIC_COMMON"
 	size = titanic
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_arc_emitter_2"
+	icon = "GFX_ship_part_archaeo_titan_beam"
 	icon_frame = 1
-	firing_arc = 25
+	firing_arc = 360
 	use_ship_main_target = no
 	tags = {
 		weapon_type_energy
@@ -197,7 +197,7 @@ weapon_component_template = {
 		"tech_titans"
 		"tech_arc_emitter_2"
 	}
-	component_set = "PBSS_PENETRATOR_TITANIC"
+	component_set = "PBSS_PENETRATOR_TITANIC_COMMON"
 	projectile_gfx = "gatebuilder_titan_weapon"
 	# Available to all ships EXCEPT AI ships
 	potential = {
@@ -263,185 +263,6 @@ weapon_component_template = {
 	shield_penetration = 1
 	armor_damage = 1
 	armor_penetration = 1
-	size_damage_factor = 1
-	ai_weight = {
-		weight = 0
-	}
-}
-
-# Enhanced version of the Universal Titanic Laser that can bypass arc and range limitations
-# Universal Titanic Laser - Energy beam for all ships (except titan/ion/DSC components)
-# Based on Perdition Beam but available to all ship types
-weapon_component_template = {
-	key = "PBSS_TITANIC_LASER_ENHANCED"
-	size = titanic
-	type = instant
-	prio_projectile = yes
-	icon = "GFX_ship_part_perdition_beam"
-	icon_frame = 1
-	firing_arc = 360
-	use_ship_main_target = no
-	tags = {
-		weapon_type_energy
-		weapon_role_artillery
-		t_slot
-	}
-	prerequisites = {
-		"tech_titans"
-	}
-	component_set = "PBSS_PERDITION_BEAM_ENHANCED"
-	projectile_gfx = "perdition_beam"
-	# Available to all ships EXCEPT those using titan/ion/DSC components
-	potential = {
-		ship_uses_titan_components = no
-		ship_uses_ion_cannon_components = no
-		ship_uses_dsc_components = no
-	}
-	show_tech_unlock_if = {
-		always = yes
-	}
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = 2400
-			rare_crystals = 300
-		}
-		upkeep = {
-			alloys = 150
-		}
-		upkeep = {
-			trigger = {
-				from = {
-					country_uses_bio_ships = no
-				}
-			}
-			energy = 300
-		}
-		upkeep = {
-			trigger = {
-				from = {
-					country_uses_bio_ships = yes
-				}
-			}
-			food = 300
-		}
-	}
-	target_weights = {
-		titan = 3
-		battleship = 2
-		cruiser = 2
-		destroyer = 1.5
-		corvette = 1
-		stinger_stage_1 = 1.5
-		stinger_stage_2 = 2
-		stinger_stage_3 = 2
-	}
-	power = -500
-	damage = {
-		min = 5000
-		max = 10000
-	}
-	windup = {
-		min = 30
-		max = 120
-	}
-	total_fire_time = 180
-	range = 250
-	accuracy = 0.85
-	tracking = 0
-	hull_damage = 1.25
-	shield_damage = 0.75
-	armor_damage = 1.5
-	size_damage_factor = 1
-	ai_weight = {
-		weight = 0
-	}
-}
-
-# Enhanced version of the Universal Ancient Titan Beam that can bypass arc and range limitations
-# Universal Ancient Titan Beam - Archaeotech beam for all ships
-# Based on ARCHAEO_TITAN but available to non-titan ships
-weapon_component_template = {
-	key = "PBSS_ARCHAEO_TITANIC_ENHANCED"
-	size = titanic
-	type = instant
-	prio_projectile = yes
-	icon = "GFX_ship_part_archaeo_titan_beam"
-	icon_frame = 1
-	firing_arc = 360
-	use_ship_main_target = no
-	tags = {
-		weapon_type_energy
-		weapon_archaeotech
-		weapon_role_artillery
-		t_slot
-	}
-	prerequisites = {
-		"tech_archaeo_titan_beam"
-	}
-	component_set = "PBSS_ARCHAEO_TITAN_ENHANCED"
-	projectile_gfx = "perdition_beam"
-	# Available to all ships EXCEPT those using titan/ion/DSC components
-	potential = {
-		ship_uses_titan_components = no
-		ship_uses_ion_cannon_components = no
-		ship_uses_dsc_components = no
-	}
-	show_tech_unlock_if = {
-		always = yes
-	}
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = 2400
-			minor_artifacts = 100
-		}
-		upkeep = {
-			alloys = 150
-		}
-		upkeep = {
-			trigger = {
-				from = {
-					country_uses_bio_ships = no
-				}
-			}
-			energy = 300
-		}
-		upkeep = {
-			trigger = {
-				from = {
-					country_uses_bio_ships = yes
-				}
-			}
-			food = 300
-		}
-	}
-	target_weights = {
-		titan = 3
-		battleship = 2
-		cruiser = 2
-		destroyer = 1.5
-		corvette = 1
-		stinger_stage_1 = 1.5
-		stinger_stage_2 = 2
-		stinger_stage_3 = 2
-	}
-	power = -500
-	damage = {
-		min = 5000
-		max = 10000
-	}
-	windup = {
-		min = 15
-		max = 60
-	}
-	total_fire_time = 90
-	range = 125
-	accuracy = 0.85
-	tracking = 0
-	hull_damage = 1.25
-	shield_damage = 0.5
-	armor_damage = 1.75
 	size_damage_factor = 1
 	ai_weight = {
 		weight = 0
@@ -452,11 +273,11 @@ weapon_component_template = {
 # Universal Gray Tempest Penetrator - Full penetration T-slot beam
 # Based on GG_BEAM but available to players (100% shield + armor penetration)
 weapon_component_template = {
-	key = "PBSS_PENETRATOR_TITANIC_ENHANCED"
+	key = "PBSS_PENETRATOR_TITANIC_ADVANCED"
 	size = titanic
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_arc_emitter_2"
+	icon = "GFX_ship_part_archaeo_titan_beam"
 	icon_frame = 1
 	firing_arc = 360
 	use_ship_main_target = no
@@ -469,7 +290,7 @@ weapon_component_template = {
 		"tech_titans"
 		"tech_arc_emitter_2"
 	}
-	component_set = "PBSS_PENETRATOR_TITANIC_ENHANCED"
+	component_set = "PBSS_PENETRATOR_TITANIC_ADVANCED"
 	projectile_gfx = "gatebuilder_titan_weapon"
 	# Available to all ships EXCEPT AI ships
 	potential = {
@@ -483,12 +304,12 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 3000
-			rare_crystals = 400
-			sr_dark_matter = 50
+			alloys = 6000
+			rare_crystals = 800
+			sr_dark_matter = 100
 		}
 		upkeep = {
-			alloys = 200
+			alloys = 400
 		}
 		upkeep = {
 			trigger = {
@@ -496,7 +317,7 @@ weapon_component_template = {
 					country_uses_bio_ships = no
 				}
 			}
-			energy = 400
+			energy = 800
 		}
 		upkeep = {
 			trigger = {
@@ -504,7 +325,7 @@ weapon_component_template = {
 					country_uses_bio_ships = yes
 				}
 			}
-			food = 400
+			food = 800
 		}
 	}
 	target_weights = {
@@ -517,25 +338,304 @@ weapon_component_template = {
 		stinger_stage_2 = 2
 		stinger_stage_3 = 2
 	}
-	power = -600
+	power = -1200
 	damage = {
-		min = 1
-		max = 9999
+		min = 2
+		max = 19998
 	}
 	windup = {
-		min = 20
-		max = 77
+		min = 17
+		max = 62
 	}
-	total_fire_time = 115
-	range = 200
+	total_fire_time = 95
+	range = 240
 	accuracy = 1
-	tracking = 0.2
-	hull_damage = 1
-	shield_damage = 1
-	shield_penetration = 1
-	armor_damage = 1
-	armor_penetration = 1
-	size_damage_factor = 1
+	tracking = 0.4
+	hull_damage = 1.25
+	shield_damage = 1.25
+	shield_penetration = 1.25
+	armor_damage = 1.25
+	armor_penetration = 1.25
+	size_damage_factor = 1.25
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Pro version of the Universal Gray Tempest Penetrator that can bypass arc and range limitations
+# Universal Gray Tempest Penetrator - Full penetration T-slot beam
+# Based on GG_BEAM but available to players (100% shield + armor penetration)
+weapon_component_template = {
+	key = "PBSS_PENETRATOR_TITANIC_PRO"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+	icon = "GFX_ship_part_archaeo_titan_beam"
+	icon_frame = 1
+	firing_arc = 360
+	use_ship_main_target = no
+	tags = {
+		weapon_type_energy
+		weapon_role_artillery
+		t_slot
+	}
+	prerequisites = {
+		"tech_titans"
+		"tech_arc_emitter_2"
+	}
+	component_set = "PBSS_PENETRATOR_TITANIC_PRO"
+	projectile_gfx = "gatebuilder_titan_weapon"
+	# Available to all ships EXCEPT AI ships
+	potential = {
+		from = {
+			is_ai = no
+		}
+	}
+	show_tech_unlock_if = {
+		always = yes
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 12000
+			rare_crystals = 1600
+			sr_dark_matter = 200
+		}
+		upkeep = {
+			alloys = 800
+		}
+		upkeep = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			energy = 1600
+		}
+		upkeep = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 1600
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+		cruiser = 2
+		destroyer = 1.5
+		corvette = 1
+		stinger_stage_1 = 1.5
+		stinger_stage_2 = 2
+		stinger_stage_3 = 2
+	}
+	power = -2400
+	damage = {
+		min = 4
+		max = 39996
+	}
+	windup = {
+		min = 14
+		max = 47
+	}
+	total_fire_time = 75
+	range = 280
+	accuracy = 1
+	tracking = 0.6
+	hull_damage = 1.5
+	shield_damage = 1.5
+	shield_penetration = 1.5
+	armor_damage = 1.5
+	armor_penetration = 1.5
+	size_damage_factor = 1.5
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Ultra version of the Universal Gray Tempest Penetrator that can bypass arc and range limitations
+# Universal Gray Tempest Penetrator - Full penetration T-slot beam
+# Based on GG_BEAM but available to players (100% shield + armor penetration)
+weapon_component_template = {
+	key = "PBSS_PENETRATOR_TITANIC_ULTRA"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+	icon = "GFX_ship_part_archaeo_titan_beam"
+	icon_frame = 1
+	firing_arc = 360
+	use_ship_main_target = no
+	tags = {
+		weapon_type_energy
+		weapon_role_artillery
+		t_slot
+	}
+	prerequisites = {
+		"tech_titans"
+		"tech_arc_emitter_2"
+	}
+	component_set = "PBSS_PENETRATOR_TITANIC_ULTRA"
+	projectile_gfx = "gatebuilder_titan_weapon"
+	# Available to all ships EXCEPT AI ships
+	potential = {
+		from = {
+			is_ai = no
+		}
+	}
+	show_tech_unlock_if = {
+		always = yes
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 24000
+			rare_crystals = 3200
+			sr_dark_matter = 400
+		}
+		upkeep = {
+			alloys = 1600
+		}
+		upkeep = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			energy = 3200
+		}
+		upkeep = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 3200
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+		cruiser = 2
+		destroyer = 1.5
+		corvette = 1
+		stinger_stage_1 = 1.5
+		stinger_stage_2 = 2
+		stinger_stage_3 = 2
+	}
+	power = -4800
+	damage = {
+		min = 8
+		max = 79992
+	}
+	windup = {
+		min = 11
+		max = 32
+	}
+	total_fire_time = 55
+	range = 320
+	accuracy = 1
+	tracking = 0.8
+	hull_damage = 1.75
+	shield_damage = 1.75
+	shield_penetration = 1.75
+	armor_damage = 1.75
+	armor_penetration = 1.75
+	size_damage_factor = 1.75
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Ultimate version of the Universal Gray Tempest Penetrator that can bypass arc and range limitations
+# Universal Gray Tempest Penetrator - Full penetration T-slot beam
+# Based on GG_BEAM but available to players (100% shield + armor penetration)
+weapon_component_template = {
+	key = "PBSS_PENETRATOR_TITANIC_ULTIMATE"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+	icon = "GFX_ship_part_archaeo_titan_beam"
+	icon_frame = 1
+	firing_arc = 360
+	use_ship_main_target = no
+	tags = {
+		weapon_type_energy
+		weapon_role_artillery
+		t_slot
+	}
+	prerequisites = {
+		"tech_titans"
+		"tech_arc_emitter_2"
+	}
+	component_set = "PBSS_PENETRATOR_TITANIC_ULTIMATE"
+	projectile_gfx = "gatebuilder_titan_weapon"
+	# Available to all ships EXCEPT AI ships
+	potential = {
+		from = {
+			is_ai = no
+		}
+	}
+	show_tech_unlock_if = {
+		always = yes
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 48000
+			rare_crystals = 6400
+			sr_dark_matter = 800
+		}
+		upkeep = {
+			alloys = 3200
+		}
+		upkeep = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			energy = 6400
+		}
+		upkeep = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 6400
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+		cruiser = 2
+		destroyer = 1.5
+		corvette = 1
+		stinger_stage_1 = 1.5
+		stinger_stage_2 = 2
+		stinger_stage_3 = 2
+	}
+	power = -9600
+	damage = {
+		min = 16
+		max = 159984
+	}
+	windup = {
+		min = 8
+		max = 17
+	}
+	total_fire_time = 35
+	range = 360
+	accuracy = 1
+	tracking = 1
+	hull_damage = 2
+	shield_damage = 2
+	shield_penetration = 2
+	armor_damage = 2
+	armor_penetration = 2
+	size_damage_factor = 2
 	ai_weight = {
 		weight = 0
 	}

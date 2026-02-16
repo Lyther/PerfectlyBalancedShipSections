@@ -20,31 +20,38 @@ component_set = {
 	icon_frame = 1
 }
 
-# Universal Gray Tempest Penetrator - T-slot with 100% shield/armor penetration
+# Basic version of the Universal Gray Tempest Penetrator that can bypass arc and range limitations
 component_set = {
-	key = "PBSS_PENETRATOR_TITANIC"
-	icon = "GFX_ship_part_arc_emitter_2"
-	icon_frame = 1
-}
-
-# Universal Perdition Beam - T-slot with 100% shield/armor penetration
-component_set = {
-	key = "PBSS_PERDITION_BEAM_ENHANCED"
-	icon = "GFX_ship_part_perdition_beam"
-	icon_frame = 1
-}
-
-# Universal Ancient Titan Beam - T-slot with 100% shield/armor penetration
-component_set = {
-	key = "PBSS_ARCHAEO_TITAN_ENHANCED"
+	key = "PBSS_PENETRATOR_TITANIC_COMMON"
 	icon = "GFX_ship_part_archaeo_titan_beam"
 	icon_frame = 1
 }
 
-# Universal Gray Tempest Penetrator - T-slot with 100% shield/armor penetration
+# Advanced version of the Universal Gray Tempest Penetrator that can bypass arc and range limitations
 component_set = {
-	key = "PBSS_PENETRATOR_TITANIC_ENHANCED"
-	icon = "GFX_ship_part_arc_emitter_2"
+	key = "PBSS_PENETRATOR_TITANIC_ADVANCED"
+	icon = "GFX_ship_part_archaeo_titan_beam"
+	icon_frame = 1
+}
+
+# Pro version of the Universal Gray Tempest Penetrator that can bypass arc and range limitations
+component_set = {
+	key = "PBSS_PENETRATOR_TITANIC_PRO"
+	icon = "GFX_ship_part_archaeo_titan_beam"
+	icon_frame = 1
+}
+
+# Ultra version of the Universal Gray Tempest Penetrator that can bypass arc and range limitations
+component_set = {
+	key = "PBSS_PENETRATOR_TITANIC_ULTRA"
+	icon = "GFX_ship_part_archaeo_titan_beam"
+	icon_frame = 1
+}
+
+# Ultimate version of the Universal Gray Tempest Penetrator that can bypass arc and range limitations
+component_set = {
+	key = "PBSS_PENETRATOR_TITANIC_ULTIMATE"
+	icon = "GFX_ship_part_archaeo_titan_beam"
 	icon_frame = 1
 }
 
