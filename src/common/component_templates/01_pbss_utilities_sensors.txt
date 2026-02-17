@@ -2,31 +2,37 @@
 @hit3 = 10
 @hit4 = 15
 @hit5 = 20
+@hit6 = 25
 @cost1 = 2
 @cost2 = 4
 @cost3 = 6
 @cost4 = 8
 @cost5 = 10
+@cost6 = 12
 @cost_fauna_1 = 8
 @cost_fauna_2 = 16
 @cost_fauna_3 = 24
 @cost_fauna_4 = 32
 @cost_fauna_5 = 40
+@cost_fauna_6 = 48
 @power1 = -5
 @power2 = -10
 @power3 = -15
 @power4 = -20
 @power5 = -25
+@power6 = -30
 @sensor1 = 1
 @sensor2 = 2
 @sensor3 = 3
 @sensor4 = 4
 @sensor5 = 5
+@sensor6 = 6
 @hyperlane1 = 2
 @hyperlane2 = 3
 @hyperlane3 = 4
 @hyperlane4 = 5
 @hyperlane5 = 6
+@hyperlane6 = 7
 utility_component_template = {
 	key = "PBSS_SENSOR_1"
 	size = medium
@@ -152,6 +158,44 @@ utility_component_template = {
 		ship_tracking_add = @hit4
 		ship_armor_penetration_add = 1
 		ship_shield_penetration_add = 1
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	prerequisites = {
+		"tech_sensors_4"
+	}
+	component_set = "sensor_components"
+	upgrades_to = "PBSS_SENSOR_5"
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_SENSOR_5"
+	size = medium
+	icon = "GFX_ship_part_sensor_4"
+	icon_frame = 1
+	power = @power6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost6
+		}
+	}
+	sensor_range = @sensor6
+	hyperlane_range = @hyperlane6
+	ship_modifier = {
+		ship_tracking_add = @hit5
+		ship_armor_penetration_add = 1.25
+		ship_shield_penetration_add = 1.25
+		ship_hull_damage_mult = 0.5
 	}
 	potential = {
 		from = {
@@ -425,6 +469,45 @@ utility_component_template = {
 		ship_tracking_add = @hit5
 		ship_armor_penetration_add = 1
 		ship_shield_penetration_add = 1
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = yes
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+	}
+	prerequisites = {
+		"tech_sensors_4"
+	}
+	component_set = "sensor_components"
+	upgrades_to = "PBSS_BIOSHIP_SENSOR_5"
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "PBSS_BIOSHIP_SENSOR_5"
+	size = medium
+	icon = "GFX_ship_part_bioship_sensor_4"
+	icon_frame = 1
+	power = @power6
+	resources = {
+		category = ship_components
+		cost = {
+			food = @cost6
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+	sensor_range = @sensor6
+	hyperlane_range = @hyperlane6
+	ship_modifier = {
+		ship_tracking_add = @hit6
+		ship_armor_penetration_add = 1.25
+		ship_shield_penetration_add = 1.25
+		ship_hull_damage_mult = 0.5
 	}
 	potential = {
 		from = {
