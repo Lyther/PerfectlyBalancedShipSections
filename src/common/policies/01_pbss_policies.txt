@@ -1,0 +1,65 @@
+pbss_components_tier = {
+	potential = {
+		is_ai = no
+	}
+	allow = {
+		always = yes
+	}
+	option = {
+		name = "pbss_components_common"
+		valid = {
+			always = yes
+		}
+		policy_flags = {
+			pbss_components_common
+		}
+		ai_weight = {
+			weight = 0
+		}
+	}
+	option = {
+		name = "pbss_components_advanced"
+		valid = {
+			always = yes
+		}
+		policy_flags = {
+			pbss_components_advanced
+		}
+	}
+	option = {
+		name = "pbss_components_pro"
+		valid = {
+			always = yes
+		}
+		policy_flags = {
+			pbss_components_pro
+		}
+	}
+	option = {
+		name = "pbss_components_ultra"
+		valid = {
+			always = yes
+		}
+		policy_flags = {
+			pbss_components_ultra
+		}
+	}
+	option = {
+		name = "pbss_components_ultimate"
+		valid = {
+			always = yes
+		}
+		policy_flags = {
+			pbss_components_ultimate
+		}
+	}
+	option = {
+		name = "pbss_components_all"
+		valid = {
+			always = yes
+		}
+		policy_flags = {
+			pbss_components_all
+		}
+	}
+}
