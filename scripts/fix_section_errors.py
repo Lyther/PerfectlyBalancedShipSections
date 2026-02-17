@@ -20,7 +20,9 @@ from generate_sections import parse_notation, TIER_MULTIPLIERS, DEFAULT_BASE_POI
 import generate_sections
 
 SCRIPT_DIR = Path(__file__).parent
-SECTION_DIR = SCRIPT_DIR.parent / "src" / "common" / "section_templates"
+SRC_DIR = SCRIPT_DIR.parent / "src"
+SECTION_DIR = SRC_DIR / "common" / "section_templates"
+LOC_DIR = SRC_DIR / "localisation"
 VANILLA_DATA_PATH = SCRIPT_DIR / "vanilla_ship_data.json"
 
 # Valid tier names for detection
@@ -28,6 +30,52 @@ VALID_TIERS = {"COMMON", "ADVANCED", "PRO", "ULTRA", "ULTIMATE"}
 
 # Ship base points (populated from vanilla data)
 SHIP_BASE_POINTS: dict[str, int] = {}
+
+# Ship size classes based on vanilla size_multiplier:
+#   size_multiplier 1  -> class 1 (small, max L/HB)
+#   size_multiplier 2  -> class 2 (medium, max X)
+#   size_multiplier 4+ -> class 3 (large, all weapons)
+SHIP_SIZE_CLASS: dict[str, int] = {
+    # size_multiplier = 1
+    "corvette": 1,
+    "frigate": 1,
+    # military_station_small: special — no weapon restrictions (class 3)
+    # "military_station_small": 1,
+    "crisis_corvette": 1,
+    "offspring_corvette": 1,
+    "cosmo_crisis_mauler": 1,
+    "mauler_stage_1": 1,
+    "mauler_stage_2": 1,
+    "mauler_stage_3": 1,
+    "offspring_mauler_stage_1": 1,
+    "offspring_mauler_stage_2": 1,
+    "offspring_mauler_stage_3": 1,
+    # size_multiplier = 2
+    "destroyer": 2,
+    "crisis_destroyer": 2,
+    "offspring_destroyer": 2,
+    "cosmo_crisis_destroyer": 2,
+    "cosmo_crisis_weaver": 2,
+    "weaver_stage_1": 2,
+    "weaver_stage_2": 2,
+    "weaver_stage_3": 2,
+    "offspring_weaver_stage_1": 2,
+    "offspring_weaver_stage_2": 2,
+    "offspring_weaver_stage_3": 2,
+    # size_multiplier >= 4 -> class 3 (default)
+    # Includes: cruiser(4), battleship(8), titan(16), juggernaut(32), colossus(32),
+    # harbinger_all(4), stinger_all(8), cosmo_crisis_stinger(8),
+    # cosmo_crisis_harbinger(4), cosmo_crisis_battlecruiser(8), cosmo_crisis_titan(16),
+    # bio_titan(16), star_eater(8), ion_cannon, citadels, etc.
+}
+DEFAULT_SIZE_CLASS = 3
+
+# Forbidden weapon types per size class
+FORBIDDEN_WEAPONS_BY_SIZE: dict[int, set[str]] = {
+    1: {"X", "T"},
+    2: {"T"},
+    3: set(),
+}
 
 
 def load_vanilla_data() -> dict:
@@ -688,7 +736,393 @@ def process_file(
     return False, all_changes
 
 
+def parse_section_key(full_key: str) -> dict | None:
+    """Parse a PBSS section key into components.
+
+    Returns dict with ship_type, slot, tier, notation or None if unparseable.
+    Key format: PBSS_<SHIP_TYPE>_<SLOT>_<TIER>_<NOTATION>
+    """
+    parts = full_key.split("_")
+    if len(parts) < 5 or parts[0] != "PBSS":
+        return None
+
+    tier_idx = None
+    for i, part in enumerate(parts):
+        if part in VALID_TIERS:
+            tier_idx = i
+            break
+
+    if tier_idx is None or tier_idx < 3:
+        return None
+
+    tier = parts[tier_idx]
+    notation = "_".join(parts[tier_idx + 1 :])
+    slot = parts[tier_idx - 1].lower()
+    ship_type_parts = parts[1 : tier_idx - 1]
+    ship_type = "_".join(ship_type_parts).lower()
+
+    # Validate ship_type exists in base points
+    if ship_type not in SHIP_BASE_POINTS:
+        # Try including the slot part as part of ship_type
+        ship_type = "_".join(parts[1:tier_idx]).lower()
+        if ship_type not in SHIP_BASE_POINTS:
+            return None
+
+    return {
+        "full_key": full_key,
+        "ship_type": ship_type,
+        "slot": slot,
+        "tier": tier,
+        "notation": notation,
+    }
+
+
+def extract_section_blocks(content: str) -> list[tuple[str, int, int]]:
+    """Extract all section template blocks from file content.
+
+    Returns list of (block_text, start_line_idx, end_line_idx).
+    Line indices are 0-based into the lines list.
+    """
+    lines = content.split("\n")
+    blocks = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if "ship_section_template" in line and "=" in line and "{" in line:
+            brace_count = line.count("{") - line.count("}")
+            start = i
+            i += 1
+            while i < len(lines) and brace_count > 0:
+                brace_count += lines[i].count("{") - lines[i].count("}")
+                i += 1
+            blocks.append(("\n".join(lines[start:i]), start, i))
+        else:
+            i += 1
+    return blocks
+
+
+def audit_sections(threshold: float) -> list[dict]:
+    """Audit all sections and return those exceeding threshold multiplier."""
+    flagged = []
+
+    for filepath in sorted(SECTION_DIR.glob("*.txt")):
+        content = filepath.read_text(encoding="utf-8-sig")
+        for block, start, end in extract_section_blocks(content):
+            key_match = re.search(r'key\s*=\s*"(PBSS_[^"]+)"', block)
+            if not key_match:
+                continue
+
+            parsed = parse_section_key(key_match.group(1))
+            if not parsed:
+                continue
+
+            try:
+                design = parse_notation(parsed["notation"], parsed["ship_type"])
+            except Exception:
+                continue
+
+            base = SHIP_BASE_POINTS.get(parsed["ship_type"], DEFAULT_BASE_POINTS)
+            ratio = design.total_points / base if base > 0 else 0
+
+            if ratio >= threshold:
+                flagged.append(
+                    {
+                        "key": parsed["full_key"],
+                        "ship_type": parsed["ship_type"],
+                        "slot": parsed["slot"],
+                        "tier": parsed["tier"],
+                        "notation": parsed["notation"],
+                        "points": design.total_points,
+                        "base": base,
+                        "ratio": ratio,
+                        "file": filepath,
+                    }
+                )
+
+    return flagged
+
+
+def remove_sections_from_file(filepath: Path, keys_to_remove: set[str]) -> int:
+    """Remove section template blocks with matching keys from a file.
+
+    Returns count of removed sections.
+    """
+    content = filepath.read_text(encoding="utf-8-sig")
+    lines = content.split("\n")
+    keep_lines = []
+    removed = 0
+    i = 0
+
+    while i < len(lines):
+        line = lines[i]
+        if "ship_section_template" in line and "=" in line and "{" in line:
+            brace_count = line.count("{") - line.count("}")
+            block_lines = [line]
+            i += 1
+            while i < len(lines) and brace_count > 0:
+                brace_count += lines[i].count("{") - lines[i].count("}")
+                block_lines.append(lines[i])
+                i += 1
+
+            block = "\n".join(block_lines)
+            key_match = re.search(r'key\s*=\s*"(PBSS_[^"]+)"', block)
+            if key_match and key_match.group(1) in keys_to_remove:
+                removed += 1
+                # Skip trailing blank lines after removed block
+                while i < len(lines) and lines[i].strip() == "":
+                    i += 1
+                continue
+
+            keep_lines.extend(block_lines)
+        else:
+            keep_lines.append(line)
+            i += 1
+
+    if removed > 0:
+        # Update the header comment listing generated designs
+        new_content = "\n".join(keep_lines)
+        filepath.write_text(new_content, encoding="utf-8")
+
+    return removed
+
+
+def remove_loc_keys(keys_to_remove: set[str]) -> int:
+    """Remove localisation entries matching the given section keys.
+
+    Returns total lines removed across all loc files.
+    """
+    total_removed = 0
+    for loc_file in LOC_DIR.rglob("*.yml"):
+        content = loc_file.read_text(encoding="utf-8-sig")
+        lines = content.split("\n")
+        new_lines = []
+        removed = 0
+
+        for line in lines:
+            # Loc lines look like:   PBSS_KEY:0 "text"
+            stripped = line.strip()
+            matched = False
+            for key in keys_to_remove:
+                if stripped.startswith(f"{key}:"):
+                    matched = True
+                    removed += 1
+                    break
+            if not matched:
+                new_lines.append(line)
+
+        if removed > 0:
+            loc_file.write_text("\n".join(new_lines), encoding="utf-8-sig")
+            total_removed += removed
+            print(f"  Removed {removed} loc entries from {loc_file.name}")
+
+    return total_removed
+
+
+def cmd_audit(threshold: float) -> int:
+    """Audit sections and report those at or above the threshold multiplier."""
+    flagged = audit_sections(threshold)
+
+    if not flagged:
+        print(f"No sections found at or above {threshold:.1f}x base points.")
+        return 0
+
+    flagged.sort(key=lambda x: -x["ratio"])
+
+    print(f"\n{'KEY':65} {'PTS':>4} {'BASE':>4} {'RATIO':>6}")
+    print("-" * 85)
+    for entry in flagged:
+        print(
+            f"{entry['key']:65} {entry['points']:4} {entry['base']:4} "
+            f"{entry['ratio']:5.1f}x"
+        )
+
+    # Summary by ship type
+    ship_counts: dict[str, int] = defaultdict(int)
+    for entry in flagged:
+        ship_counts[entry["ship_type"]] += 1
+
+    print(f"\nTotal: {len(flagged)} sections at or above {threshold:.1f}x base")
+    print("\nBy ship type:")
+    for ship, count in sorted(ship_counts.items(), key=lambda x: -x[1]):
+        print(f"  {ship:30} {count}")
+
+    return 0
+
+
+def cmd_remove(threshold: float) -> int:
+    """Remove sections at or above the threshold and their loc entries."""
+    flagged = audit_sections(threshold)
+
+    if not flagged:
+        print(f"No sections found at or above {threshold:.1f}x base points.")
+        return 0
+
+    keys_to_remove = {entry["key"] for entry in flagged}
+
+    print(
+        f"Removing {len(keys_to_remove)} sections at or above {threshold:.1f}x base..."
+    )
+    print()
+
+    # Group by file
+    by_file: dict[Path, set[str]] = defaultdict(set)
+    for entry in flagged:
+        by_file[entry["file"]].add(entry["key"])
+
+    total_removed = 0
+    for filepath, keys in sorted(by_file.items()):
+        removed = remove_sections_from_file(filepath, keys)
+        if removed > 0:
+            total_removed += removed
+            print(f"  {filepath.name}: removed {removed} sections")
+
+    # Remove corresponding loc entries
+    print()
+    loc_removed = remove_loc_keys(keys_to_remove)
+
+    print(f"\nDone: removed {total_removed} sections, {loc_removed} loc entries")
+    return 0
+
+
+def audit_oversized() -> list[dict]:
+    """Find sections with weapon types exceeding their ship size class."""
+    flagged = []
+
+    for filepath in sorted(SECTION_DIR.glob("*.txt")):
+        content = filepath.read_text(encoding="utf-8-sig")
+        for block, start, end in extract_section_blocks(content):
+            key_match = re.search(r'key\s*=\s*"(PBSS_[^"]+)"', block)
+            if not key_match:
+                continue
+
+            parsed = parse_section_key(key_match.group(1))
+            if not parsed:
+                continue
+
+            ship_type = parsed["ship_type"]
+            size_class = SHIP_SIZE_CLASS.get(ship_type, DEFAULT_SIZE_CLASS)
+            forbidden = FORBIDDEN_WEAPONS_BY_SIZE.get(size_class, set())
+            if not forbidden:
+                continue
+
+            try:
+                design = parse_notation(parsed["notation"], ship_type)
+            except Exception:
+                continue
+
+            violations = {
+                w for w in design.weapons if w in forbidden and design.weapons[w] > 0
+            }
+            if violations:
+                size_label = {
+                    1: "small (max L/HB)",
+                    2: "medium (max X)",
+                    3: "large (all)",
+                }
+                flagged.append(
+                    {
+                        "key": parsed["full_key"],
+                        "ship_type": ship_type,
+                        "size_class": size_class,
+                        "size_label": size_label.get(size_class, "?"),
+                        "violations": violations,
+                        "notation": parsed["notation"],
+                        "file": filepath,
+                    }
+                )
+
+    return flagged
+
+
+def cmd_audit_size() -> int:
+    """Report sections with weapon types exceeding ship size class."""
+    flagged = audit_oversized()
+
+    if not flagged:
+        print("No oversized weapon violations found.")
+        return 0
+
+    print(f"\n{'KEY':65} {'SIZE':>4} VIOLATIONS")
+    print("-" * 90)
+    for entry in flagged:
+        viols = ", ".join(sorted(entry["violations"]))
+        print(f"{entry['key']:65} {entry['size_class']:>4} {viols}")
+
+    ship_counts: dict[str, int] = defaultdict(int)
+    for entry in flagged:
+        ship_counts[entry["ship_type"]] += 1
+
+    print(f"\nTotal: {len(flagged)} sections with oversized weapons")
+    print("\nBy ship type:")
+    for ship, count in sorted(ship_counts.items(), key=lambda x: -x[1]):
+        size = SHIP_SIZE_CLASS.get(ship, DEFAULT_SIZE_CLASS)
+        label = {1: "small/max L", 2: "medium/max X"}.get(size, "large")
+        print(f"  {ship:30} {count:3}  ({label})")
+
+    return 0
+
+
+def cmd_remove_oversized() -> int:
+    """Remove sections with weapon types exceeding ship size class."""
+    flagged = audit_oversized()
+
+    if not flagged:
+        print("No oversized weapon violations found.")
+        return 0
+
+    keys_to_remove = {entry["key"] for entry in flagged}
+
+    print(f"Removing {len(keys_to_remove)} sections with oversized weapons...")
+    print()
+
+    by_file: dict[Path, set[str]] = defaultdict(set)
+    for entry in flagged:
+        by_file[entry["file"]].add(entry["key"])
+
+    total_removed = 0
+    for filepath, keys in sorted(by_file.items()):
+        removed = remove_sections_from_file(filepath, keys)
+        if removed > 0:
+            total_removed += removed
+            print(f"  {filepath.name}: removed {removed} sections")
+
+    print()
+    loc_removed = remove_loc_keys(keys_to_remove)
+
+    print(f"\nDone: removed {total_removed} sections, {loc_removed} loc entries")
+    return 0
+
+
 def main():
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="Fix Stellaris section template errors and audit overpowered sections."
+    )
+    parser.add_argument(
+        "--audit",
+        type=float,
+        metavar="MULT",
+        help="Audit sections at or above MULT times base points (e.g. --audit 5.0)",
+    )
+    parser.add_argument(
+        "--remove-above",
+        type=float,
+        metavar="MULT",
+        help="Remove sections at or above MULT times base points and their loc entries",
+    )
+    parser.add_argument(
+        "--audit-size",
+        action="store_true",
+        help="Audit sections with weapons exceeding ship size class (1=max L/HB, 2=max X)",
+    )
+    parser.add_argument(
+        "--remove-oversized",
+        action="store_true",
+        help="Remove sections with weapons exceeding ship size class and their loc entries",
+    )
+    args = parser.parse_args()
+
     print("Stellaris Section Template Error Fixer")
     print("=" * 50)
 
@@ -699,7 +1133,20 @@ def main():
         print(f"ERROR: {e}")
         return 1
 
-    # Build lookup tables
+    # Dispatch to audit/remove if requested
+    if args.audit is not None:
+        return cmd_audit(args.audit)
+
+    if args.remove_above is not None:
+        return cmd_remove(args.remove_above)
+
+    if args.audit_size:
+        return cmd_audit_size()
+
+    if args.remove_oversized:
+        return cmd_remove_oversized()
+
+    # Default: run all fixes
     entity_locators = build_entity_locator_map(vanilla_data)
     locator_entities = build_locator_entity_map(vanilla_data)
     ship_slot_entities = build_ship_slot_entities(vanilla_data)

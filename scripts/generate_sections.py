@@ -26,7 +26,18 @@ from dataclasses import dataclass
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
+SRC_DIR = SCRIPT_DIR.parent / "src"
+LOC_DIR = SRC_DIR / "localisation"
 VANILLA_DATA_PATH = SCRIPT_DIR / "vanilla_ship_data.json"
+
+# Stellaris color codes per tier
+TIER_COLOR = {
+    "common": "§L",
+    "advanced": "§G",
+    "pro": "§B",
+    "ultra": "§M",
+    "ultimate": "§Y",
+}
 
 # Point costs
 WEAPON_COSTS = {
@@ -473,6 +484,59 @@ def generate_section_template(
     return "\n".join(lines)
 
 
+def write_loc_entries(entries: list[tuple[str, str]]) -> None:
+    """Append localization entries to all yml files.
+
+    entries: list of (key, tier) tuples, e.g. ("PBSS_BATTLESHIP_BOW_COMMON_T1UL1", "common")
+    """
+    if not entries:
+        return
+
+    for lang_dir in LOC_DIR.iterdir():
+        if not lang_dir.is_dir():
+            continue
+        for yml_file in lang_dir.glob("pbss_l_*.yml"):
+            raw = yml_file.read_bytes()
+            has_bom = raw[:3] == b"\xef\xbb\xbf"
+            text = raw.decode("utf-8-sig")
+            lines = text.split("\n")
+
+            # Collect existing keys
+            existing_keys: set[str] = set()
+            for line in lines:
+                stripped = line.strip()
+                if (
+                    ":" in stripped
+                    and not stripped.startswith("#")
+                    and not stripped.startswith("l_")
+                ):
+                    existing_keys.add(stripped.split(":")[0].strip())
+
+            new_lines = []
+            for key, tier in entries:
+                if key in existing_keys:
+                    continue
+                color = TIER_COLOR.get(tier.lower(), "§L")
+                new_lines.append(f'  {key}:0 "{color}§!"')
+
+            if not new_lines:
+                continue
+
+            # Remove trailing empty lines, append new entries, re-add trailing newline
+            while lines and lines[-1].strip() == "":
+                lines.pop()
+            lines.extend(new_lines)
+            lines.append("")
+
+            out = "\n".join(lines)
+            if has_bom:
+                yml_file.write_bytes(b"\xef\xbb\xbf" + out.encode("utf-8"))
+            else:
+                yml_file.write_text(out, encoding="utf-8")
+
+            print(f"  Localization: {yml_file.name} (+{len(new_lines)} entries)")
+
+
 def cmd_design(args: list[str]) -> int:
     """Generate sections from CLI notation."""
     if len(args) < 3:
@@ -505,6 +569,7 @@ def cmd_design(args: list[str]) -> int:
     lookup_slot = "north" if ship_type == "military_station_small" else slot
 
     sections = []
+    loc_entries: list[tuple[str, str]] = []
     for notation in notations:
         design = parse_notation(notation, ship_type)
 
@@ -524,6 +589,7 @@ def cmd_design(args: list[str]) -> int:
             key, ship_type, slot, entity, design, locator_map
         )
         sections.append(template)
+        loc_entries.append((key, design.tier))
 
         print(
             f"  {notation:15} -> {design.tier:10} ({design.total_points:2} pts) -> {entity}"
@@ -558,6 +624,9 @@ def cmd_design(args: list[str]) -> int:
             print(f"\n  Created: {output_file.name} ({len(sections)} sections)")
 
         output_file.write_text(content, encoding="utf-8")
+
+        # Write localization entries
+        write_loc_entries(loc_entries)
 
     return 0
 
