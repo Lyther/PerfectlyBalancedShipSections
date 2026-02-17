@@ -231,6 +231,10 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
+			OR = {
+				has_policy_flag = pbss_components_common
+				has_policy_flag = pbss_components_all
+			}
 		}
 	}
 	show_tech_unlock_if = {
@@ -321,6 +325,10 @@ weapon_component_template = {
 		from = {
 			is_ai = no
 		}
+		OR = {
+			has_policy_flag = pbss_components_advanced
+			has_policy_flag = pbss_components_all
+		}
 	}
 	show_tech_unlock_if = {
 		always = yes
@@ -409,6 +417,10 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
+		}
+		OR = {
+			has_policy_flag = pbss_components_pro
+			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
@@ -499,6 +511,10 @@ weapon_component_template = {
 		from = {
 			is_ai = no
 		}
+		OR = {
+			has_policy_flag = pbss_components_ultra
+			has_policy_flag = pbss_components_all
+		}
 	}
 	show_tech_unlock_if = {
 		always = yes
@@ -588,6 +604,10 @@ weapon_component_template = {
 		from = {
 			is_ai = no
 		}
+		OR = {
+			has_policy_flag = pbss_components_ultimate
+			has_policy_flag = pbss_components_all
+		}
 	}
 	show_tech_unlock_if = {
 		always = yes
@@ -675,6 +695,10 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
+		}
+		OR = {
+			has_policy_flag = pbss_components_common
+			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
@@ -765,6 +789,10 @@ weapon_component_template = {
 		from = {
 			is_ai = no
 		}
+		OR = {
+			has_policy_flag = pbss_components_advanced
+			has_policy_flag = pbss_components_all
+		}
 	}
 	show_tech_unlock_if = {
 		always = yes
@@ -853,6 +881,10 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
+		}
+		OR = {
+			has_policy_flag = pbss_components_pro
+			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
@@ -943,6 +975,10 @@ weapon_component_template = {
 		from = {
 			is_ai = no
 		}
+		OR = {
+			has_policy_flag = pbss_components_ultra
+			has_policy_flag = pbss_components_all
+		}
 	}
 	show_tech_unlock_if = {
 		always = yes
@@ -1031,6 +1067,10 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
+		}
+		OR = {
+			has_policy_flag = pbss_components_ultimate
+			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
