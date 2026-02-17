@@ -1,5 +1,5 @@
 # PBSS Cosmo_Crisis_Harbinger Mid Sections
-# Generated designs: HB6G4UL6AUX3, HB8G4L2UL8AUX4, HB10G6L4UL10AUX5, L4UL4, X2UL4, T1UL4, L4UL4, X2UL4, T1UL4
+# Generated designs: HB6G4UL6AUX3, HB8G4L2UL8AUX4, HB10G6L4UL10AUX5, L4UL4, X2UL4, T1UL4, L4UL4, X2UL4, T1UL4, T2X1UL5AUX2, T3UL5AUX2, T4UL5AUX2, T3X1UL5AUX2, T5UL5AUX2, T4X1UL5AUX2, T6UL5AUX2, T5UL5AUX2, T6UL5AUX2, T4X1UL5AUX2, T7UL5AUX2, T5X1UL5AUX2, T8UL5AUX2, T3L2UL1, T4UL1, T3HB2UL1, T5, T4X1, T6, T5HB2, T7, T8, T10
 ship_section_template = {
 	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ADVANCED_HB6G4UL6AUX3"
 	ship_size = cosmo_crisis_harbinger
@@ -513,6 +513,1169 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ADVANCED_T2X1UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_PRO_T3UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTRA_T4UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_PRO_T3X1UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTRA_T5UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTRA_T4X1UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTRA_T6UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTRA_T5UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTRA_T6UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTRA_T4X1UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTIMATE_T7UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTRA_T5X1UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTIMATE_T8UL5AUX2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ADVANCED_T3L2UL1"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ADVANCED_T4UL1"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ADVANCED_T3HB2UL1"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_PRO_T5"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_PRO_T4X1"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTRA_T6"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_PRO_T5HB2"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTRA_T7"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTIMATE_T8"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_HARBINGER_MID_ULTIMATE_T10"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
 		}
 	}
 }

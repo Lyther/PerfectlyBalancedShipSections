@@ -1,5 +1,5 @@
 # PBSS Juggernaut Mid Sections
-# Generated designs: X2HB6M5UL21AUX4, T2HB6M5UL21AUX4, T2X2HB6M4UL21AUX5, T4HB8L4UL21AUX6, T4X4HB6L4UL21AUX6
+# Generated designs: X2HB6M5UL21AUX4, T2HB6M5UL21AUX4, T2X2HB6M4UL21AUX5, T4HB8L4UL21AUX6, T4X4HB6L4UL21AUX6, T3X2UL5AUX2, X6UL5AUX2, T2X3UL5AUX2, T4UL5AUX2, T1X1L2UL3, L4UL3, T10UL10AUX2, T12UL10AUX2, T14UL10AUX2, T18UL10AUX2, T22UL10AUX2, T25X5UL10AUX2, T20X10UL10AUX2, T30UL10AUX2, T8UL8AUX2, X10UL10AUX2, T6X4UL8AUX2, HB10UL10AUX2
 ship_section_template = {
 	key = "PBSS_JUGGERNAUT_CORE_PRO_X2HB6M5UL21AUX4"
 	ship_size = juggernaut
@@ -762,6 +762,1588 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_T3X2UL5AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_X6UL5AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_T2X3UL5AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_T4UL5AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_T1X1L2UL3"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_L4UL3"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_PRO_T10UL10AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_ULTRA_T12UL10AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_ULTRA_T14UL10AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_ULTRA_T18UL10AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_15"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_16"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_17"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_18"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_ULTIMATE_T22UL10AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_15"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_16"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_17"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_18"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_19"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_20"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_21"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_22"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_ULTIMATE_T25X5UL10AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_15"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_16"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_17"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_18"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_19"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_20"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_21"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_22"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_23"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_24"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_25"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_ULTIMATE_T20X10UL10AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_15"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_16"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_17"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_18"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_19"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_20"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_ULTIMATE_T30UL10AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_15"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_16"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_17"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_18"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_19"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_20"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_21"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_22"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_23"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_24"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_25"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_26"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_27"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_28"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_29"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_30"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_ADVANCED_T8UL8AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 8
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_ADVANCED_X10UL10AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_ADVANCED_T6X4UL8AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+	large_utility_slots = 8
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_JUGGERNAUT_CORE_COMMON_HB10UL10AUX2"
+	ship_size = juggernaut
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "juggernaut_core_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "strike_craft_locator_04"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_05"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "strike_craft_locator_06"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_10"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "strike_craft_locator_04"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
 		}
 	}
 }

@@ -1,5 +1,5 @@
 # PBSS Corvette Mid Sections
-# Generated designs: S3US3AUX1, S4US4AUX1, PD3S2US4AUX1, M1S2US3AUX1, M2S1US4AUX2, L1S2US3AUX1, L1US4AUX2, HB1S1US3AUX1, HB1US4AUX2, S3UL1, S4UL1, S5UL1, M2UL1, M3UL1, L1UL1, L2UL1, PD4UL1, HB1UL1, L3UL2, L4UL2, M4L1UL2, HB2UL2, L2HB1UL2, M2L2UL2, L3UL3AUX2, L4UL3AUX2, L5UL3AUX2, HB3UL3AUX2, L2HB2UL3AUX2, L6UL4AUX3, HB4UL4AUX3, L4HB2UL4AUX3, L6UL4AUX2, HB4UL4AUX2, L4HB1UL4AUX2, M6L1UL4AUX2, L7UL5AUX2, L8UL5AUX2, HB5UL5AUX2, L5HB1UL5AUX2, L4HB2UL5AUX2, X1L3UL5AUX2, L9UL6AUX2, L10UL6AUX2, HB6UL6AUX2, L6HB2UL6AUX2, X2L2UL6AUX2, X1L4UL6AUX2
+# Generated designs: S3US3AUX1, S4US4AUX1, PD3S2US4AUX1, M1S2US3AUX1, M2S1US4AUX2, L1S2US3AUX1, L1US4AUX2, HB1S1US3AUX1, HB1US4AUX2, S3UL1, S4UL1, S5UL1, M2UL1, M3UL1, L1UL1, L2UL1, PD4UL1, HB1UL1, L3UL2, L4UL2, M4L1UL2, HB2UL2, L2HB1UL2, M2L2UL2, L3UL3AUX2, L4UL3AUX2, L5UL3AUX2, HB3UL3AUX2, L2HB2UL3AUX2, L6UL4AUX3, HB4UL4AUX3, L4HB2UL4AUX3, L6UL4AUX2, HB4UL4AUX2, L4HB1UL4AUX2, M6L1UL4AUX2, L7UL5AUX2, L8UL5AUX2, HB5UL5AUX2, L5HB1UL5AUX2, L4HB2UL5AUX2, X1L3UL5AUX2, L9UL6AUX2, L10UL6AUX2, HB6UL6AUX2, L6HB2UL6AUX2, X2L2UL6AUX2, X1L4UL6AUX2, L3UL1, L4, HB4, L2HB2, S8HB2
 ship_section_template = {
 	key = "PBSS_CORVETTE_MID_COMMON_S3US3AUX1"
 	ship_size = corvette
@@ -1482,127 +1482,6 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_CORVETTE_MID_ULTIMATE_L7UL5AUX2"
-	ship_size = corvette
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "corvette_S3_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "LARGE_GUN_01"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_02"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_03"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_04"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_05"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_06"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_07"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	large_utility_slots = 5
-	aux_utility_slots = 2
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 112
-		}
-	}
-}
-
-ship_section_template = {
-	key = "PBSS_CORVETTE_MID_ULTIMATE_L8UL5AUX2"
-	ship_size = corvette
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "corvette_S3_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "LARGE_GUN_01"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_02"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_03"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_04"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_05"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_06"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_07"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_08"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	large_utility_slots = 5
-	aux_utility_slots = 2
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 128
-		}
-	}
-}
-
-ship_section_template = {
 	key = "PBSS_CORVETTE_MID_ULTIMATE_HB5UL5AUX2"
 	ship_size = corvette
 	fits_on_slot = mid
@@ -1767,50 +1646,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_CORVETTE_MID_ULTIMATE_X1L3UL5AUX2"
-	ship_size = corvette
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "corvette_S3_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "invisible_extra_large_fixed"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_01"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_02"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_03"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	large_utility_slots = 5
-	aux_utility_slots = 2
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 112
-		}
-	}
-}
-
-ship_section_template = {
-	key = "PBSS_CORVETTE_MID_ULTIMATE_L9UL6AUX2"
+	key = "PBSS_CORVETTE_MID_ADVANCED_L3UL1"
 	ship_size = corvette
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -1837,48 +1673,17 @@ ship_section_template = {
 		template = "large_turret"
 		locatorname = "small_gun_01"
 	}
-	component_slot = {
-		name = "LARGE_GUN_04"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_05"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_06"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_07"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_08"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_09"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	large_utility_slots = 6
-	aux_utility_slots = 2
+	large_utility_slots = 1
 	resources = {
 		category = ship_sections
 		cost = {
-			alloys = 128
+			alloys = 88
 		}
 	}
 }
 
 ship_section_template = {
-	key = "PBSS_CORVETTE_MID_ULTIMATE_L10UL6AUX2"
+	key = "PBSS_CORVETTE_MID_ADVANCED_L4"
 	ship_size = corvette
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -1910,48 +1715,16 @@ ship_section_template = {
 		template = "large_turret"
 		locatorname = "small_gun_01"
 	}
-	component_slot = {
-		name = "LARGE_GUN_05"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_06"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_07"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_08"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_09"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_10"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	large_utility_slots = 6
-	aux_utility_slots = 2
 	resources = {
 		category = ship_sections
 		cost = {
-			alloys = 128
+			alloys = 88
 		}
 	}
 }
 
 ship_section_template = {
-	key = "PBSS_CORVETTE_MID_ULTIMATE_HB6UL6AUX2"
+	key = "PBSS_CORVETTE_MID_ADVANCED_HB4"
 	ship_size = corvette
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -1987,30 +1760,16 @@ ship_section_template = {
 		rotation = -90
 		locatorname = "small_gun_01"
 	}
-	component_slot = {
-		name = "STRIKE_CRAFT_05"
-		template = "large_strike_craft"
-		rotation = 90
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "STRIKE_CRAFT_06"
-		template = "large_strike_craft"
-		rotation = -90
-		locatorname = "small_gun_01"
-	}
-	large_utility_slots = 6
-	aux_utility_slots = 2
 	resources = {
 		category = ship_sections
 		cost = {
-			alloys = 112
+			alloys = 88
 		}
 	}
 }
 
 ship_section_template = {
-	key = "PBSS_CORVETTE_MID_ULTIMATE_L6HB2UL6AUX2"
+	key = "PBSS_CORVETTE_MID_ADVANCED_L2HB2"
 	ship_size = corvette
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -2045,123 +1804,84 @@ ship_section_template = {
 		template = "large_turret"
 		locatorname = "small_gun_01"
 	}
-	component_slot = {
-		name = "LARGE_GUN_03"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_04"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_05"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_06"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	large_utility_slots = 6
-	aux_utility_slots = 2
 	resources = {
 		category = ship_sections
 		cost = {
-			alloys = 128
+			alloys = 88
 		}
 	}
 }
 
 ship_section_template = {
-	key = "PBSS_CORVETTE_MID_ULTIMATE_X2L2UL6AUX2"
+	key = "PBSS_CORVETTE_MID_ADVANCED_S8HB2"
 	ship_size = corvette
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "corvette_S3_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = {
-		artillery
+		carrier
+		gunship
 	}
 	ai_weight = {
 		factor = 0
 	}
 	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "invisible_extra_large_fixed"
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
 		locatorname = "small_gun_01"
 	}
 	component_slot = {
-		name = "EXTRA_LARGE_02"
-		template = "invisible_extra_large_fixed"
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
 		locatorname = "small_gun_01"
 	}
 	component_slot = {
-		name = "LARGE_GUN_01"
-		template = "large_turret"
+		name = "SMALL_GUN_01"
+		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
 	component_slot = {
-		name = "LARGE_GUN_02"
-		template = "large_turret"
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
-	large_utility_slots = 6
-	aux_utility_slots = 2
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_06"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_07"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_08"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
 	resources = {
 		category = ship_sections
 		cost = {
-			alloys = 112
-		}
-	}
-}
-
-ship_section_template = {
-	key = "PBSS_CORVETTE_MID_ULTIMATE_X1L4UL6AUX2"
-	ship_size = corvette
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "corvette_S3_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "invisible_extra_large_fixed"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_01"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_02"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_03"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_04"
-		template = "large_turret"
-		locatorname = "small_gun_01"
-	}
-	large_utility_slots = 6
-	aux_utility_slots = 2
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 112
+			alloys = 88
 		}
 	}
 }

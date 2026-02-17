@@ -1,5 +1,5 @@
 # PBSS Stinger_Stage_2 Mid Sections
-# Generated designs: L8M2UL7AUX2, X4L2UL7AUX2, X5L4UL8AUX3, S5UL1, M3UL1, L2UL1
+# Generated designs: L8M2UL7AUX2, X4L2UL7AUX2, X5L4UL8AUX3, S5UL1, M3UL1, L2UL1, T2X1UL3, T3UL3, X4UL3, T2X2UL5AUX2, T4UL5AUX2, X6UL5AUX2, T5UL5AUX2, T3X2UL5AUX2, T6X1UL5AUX2, T7UL5AUX2, T8UL5AUX2, T6X2UL5AUX2, T9UL5AUX2, T7X2UL5AUX2, T10UL5AUX2, T12UL5AUX2, T10X2UL5AUX2, T14UL5AUX2, T12X2UL5AUX2, T15UL5AUX2, T5X1, T6, T5HB2, T7, T6X1, T8, T9, T10, T12, T14, T16, T18, T15X1
 ship_section_template = {
 	key = "PBSS_STINGER_STAGE_2_MID_COMMON_L8M2UL7AUX2"
 	ship_size = stinger_stage_2
@@ -307,6 +307,2214 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_COMMON_T2X1UL3"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_COMMON_T3UL3"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_COMMON_X4UL3"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_COMMON_T2X2UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_COMMON_T4UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_COMMON_X6UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ADVANCED_T5UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_COMMON_T3X2UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_PRO_T6X1UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_PRO_T7UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_PRO_T8UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_PRO_T6X2UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTRA_T9UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_PRO_T7X2UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTRA_T10UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTRA_T12UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTRA_T10X2UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTIMATE_T14UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTIMATE_T12X2UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTIMATE_T15UL5AUX2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_15"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_COMMON_T5X1"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_COMMON_T6"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_COMMON_T5HB2"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ADVANCED_T7"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ADVANCED_T6X1"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ADVANCED_T8"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_PRO_T9"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_PRO_T10"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTRA_T12"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTRA_T14"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTIMATE_T16"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_15"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_16"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTIMATE_T18"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_15"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_16"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_17"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_18"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_STINGER_STAGE_2_MID_ULTIMATE_T15X1"
+	ship_size = stinger_stage_2
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "stinger_stage_2_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_07"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_08"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_09"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_10"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_11"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_12"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_13"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_14"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "TITANIC_15"
+		template = "invisible_titanic_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
 		}
 	}
 }

@@ -1,5 +1,5 @@
 # PBSS Cosmo_Crisis_Mauler Mid Sections
-# Generated designs: G4S2PD2US8AUX2, G6S4PD4US10AUX3, L2G4S4PD4US10AUX4, L4UL4, X2UL4, T1UL4, T2UL5AUX2, T3UL5AUX2, X4UL5AUX2, L6UL5AUX2, T2X1UL5AUX2
+# Generated designs: G4S2PD2US8AUX2, G6S4PD4US10AUX3, L2G4S4PD4US10AUX4, L4UL4, X2UL4, T1UL4, T2UL5AUX2, T3UL5AUX2, X4UL5AUX2, L6UL5AUX2, T2X1UL5AUX2, L2UL3, HB2UL3, L3UL3, HB3UL3, L4UL3, HB4UL3, L3HB2UL3, L4UL3, HB4UL3, L5UL3, HB5UL3, L4HB1UL3, L5UL4, HB5UL4, L6UL4, HB6UL4, L7UL5, HB7UL5, L8UL5, HB8UL5, L9UL5, HB9UL5, L10UL5, HB10UL5, L11UL5, HB11UL5, L12UL6, HB12UL6, L14UL6, HB14UL6, L6HB2, L5HB3, L8, HB8, L6HB4, L10, L8HB4, HB12, L10HB2, L12HB4, L14, HB16, L10HB8
 ship_section_template = {
 	key = "PBSS_COSMO_CRISIS_MAULER_MID_COMMON_G4S2PD2US8AUX2"
 	ship_size = cosmo_crisis_mauler
@@ -293,179 +293,6 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_X2UL4"
-	ship_size = cosmo_crisis_mauler
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "invisible_extra_large_fixed"
-		locatorname = "root"
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_02"
-		template = "invisible_extra_large_fixed"
-		locatorname = "root"
-	}
-	large_utility_slots = 4
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 88
-		}
-	}
-}
-
-ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_T1UL4"
-	ship_size = cosmo_crisis_mauler
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "TITANIC_01"
-		template = "invisible_titanic_fixed"
-		locatorname = "root"
-	}
-	large_utility_slots = 4
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 88
-		}
-	}
-}
-
-ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_T2UL5AUX2"
-	ship_size = cosmo_crisis_mauler
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "TITANIC_01"
-		template = "invisible_titanic_fixed"
-		locatorname = "root"
-	}
-	component_slot = {
-		name = "TITANIC_02"
-		template = "invisible_titanic_fixed"
-		locatorname = "root"
-	}
-	large_utility_slots = 5
-	aux_utility_slots = 2
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 128
-		}
-	}
-}
-
-ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTIMATE_T3UL5AUX2"
-	ship_size = cosmo_crisis_mauler
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "TITANIC_01"
-		template = "invisible_titanic_fixed"
-		locatorname = "root"
-	}
-	component_slot = {
-		name = "TITANIC_02"
-		template = "invisible_titanic_fixed"
-		locatorname = "root"
-	}
-	component_slot = {
-		name = "TITANIC_03"
-		template = "invisible_titanic_fixed"
-		locatorname = "root"
-	}
-	large_utility_slots = 5
-	aux_utility_slots = 2
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 128
-		}
-	}
-}
-
-ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_X4UL5AUX2"
-	ship_size = cosmo_crisis_mauler
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "invisible_extra_large_fixed"
-		locatorname = "root"
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_02"
-		template = "invisible_extra_large_fixed"
-		locatorname = "root"
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_03"
-		template = "invisible_extra_large_fixed"
-		locatorname = "root"
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_04"
-		template = "invisible_extra_large_fixed"
-		locatorname = "root"
-	}
-	large_utility_slots = 5
-	aux_utility_slots = 2
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 128
-		}
-	}
-}
-
-ship_section_template = {
 	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_L6UL5AUX2"
 	ship_size = cosmo_crisis_mauler
 	fits_on_slot = mid
@@ -519,7 +346,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_T2X1UL5AUX2"
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_COMMON_L2UL3"
 	ship_size = cosmo_crisis_mauler
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -532,22 +359,2902 @@ ship_section_template = {
 		factor = 0
 	}
 	component_slot = {
-		name = "TITANIC_01"
-		template = "invisible_titanic_fixed"
+		name = "LARGE_GUN_01"
+		template = "large_turret"
 		locatorname = "root"
 	}
 	component_slot = {
-		name = "TITANIC_02"
-		template = "invisible_titanic_fixed"
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_COMMON_HB2UL3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
 		locatorname = "root"
 	}
 	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "invisible_extra_large_fixed"
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_COMMON_L3UL3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_COMMON_HB3UL3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_COMMON_L4UL3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_COMMON_HB4UL3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_L3HB2UL3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_COMMON_L4UL3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_COMMON_HB4UL3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_L5UL3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_HB5UL3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_L4HB1UL3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_L5UL4"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 4
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_HB5UL4"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	large_utility_slots = 4
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_PRO_L6UL4"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 4
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_PRO_HB6UL4"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	large_utility_slots = 4
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_PRO_L7UL5"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
 		locatorname = "root"
 	}
 	large_utility_slots = 5
-	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_PRO_HB7UL5"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_L8UL5"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_HB8UL5"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_L9UL5"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_HB9UL5"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_L10UL5"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_HB10UL5"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_10"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_L11UL5"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_HB11UL5"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_10"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_11"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	large_utility_slots = 5
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTIMATE_L12UL6"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 6
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTIMATE_HB12UL6"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_10"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_11"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_12"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	large_utility_slots = 6
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTIMATE_L14UL6"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_13"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_14"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	large_utility_slots = 6
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTIMATE_HB14UL6"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_10"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_11"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_12"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_13"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_14"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	large_utility_slots = 6
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_L6HB2"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_L5HB3"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_L8"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ADVANCED_HB8"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_PRO_L6HB4"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_PRO_L10"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_PRO_L8HB4"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_PRO_HB12"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_10"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_11"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_12"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_PRO_L10HB2"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_L12HB4"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_L14"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_13"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_14"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTRA_HB16"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_10"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_11"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_12"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_13"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_14"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_15"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_16"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_MAULER_MID_ULTIMATE_L10HB8"
+	ship_size = cosmo_crisis_mauler
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_mauler_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "large_turret"
+		locatorname = "root"
+	}
 	resources = {
 		category = ship_sections
 		cost = {

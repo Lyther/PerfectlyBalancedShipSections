@@ -1,5 +1,5 @@
 # PBSS Cosmo_Crisis_Weaver Mid Sections
-# Generated designs: M6PD6US2AUX3, M8PD8US4AUX4, L2M6PD6US4AUX5, S5UL2, M3UL2, L2UL2, HB2UL2, X1UL2, L6UL5AUX2, HB4UL5AUX2, X3UL5AUX2, L4HB2UL5AUX2, X2HB2UL5AUX2, L7UL6AUX2, HB5UL6AUX2, X4UL6AUX2, L5HB2UL6AUX2, X3HB1UL6AUX2
+# Generated designs: M6PD6US2AUX3, M8PD8US4AUX4, L2M6PD6US4AUX5, S5UL2, M3UL2, L2UL2, HB2UL2, X1UL2, L6UL5AUX2, HB4UL5AUX2, X3UL5AUX2, L4HB2UL5AUX2, X2HB2UL5AUX2, L7UL6AUX2, HB5UL6AUX2, X4UL6AUX2, L5HB2UL6AUX2, X3HB1UL6AUX2, X2UL3, X3UL3, X2UL5AUX2, X3UL5AUX2, X4UL5AUX2, X5UL5AUX2, X6UL5AUX2, X7UL5AUX2, X8UL5AUX2, X9UL5AUX2, X10UL5AUX2, X12UL5AUX2, X14UL5AUX2, X2UL3, X1L2UL2, X2L1UL2, L4UL3, X1HB2UL2, X2L2UL2, X8, X7HB2, X9, X10, X9L2, X11, X13, X14, X15, X18, X20
 ship_section_template = {
 	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_M6PD6US2AUX3"
 	ship_size = cosmo_crisis_weaver
@@ -431,33 +431,6 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X1UL2"
-	ship_size = cosmo_crisis_weaver
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "invisible_extra_large_fixed"
-		locatorname = "weapon_01"
-	}
-	large_utility_slots = 2
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 80
-		}
-	}
-}
-
-ship_section_template = {
 	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_L6UL5AUX2"
 	ship_size = cosmo_crisis_weaver
 	fits_on_slot = mid
@@ -558,44 +531,6 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X3UL5AUX2"
-	ship_size = cosmo_crisis_weaver
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "invisible_extra_large_fixed"
-		locatorname = "weapon_01"
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_02"
-		template = "invisible_extra_large_fixed"
-		locatorname = "weapon_01"
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_03"
-		template = "invisible_extra_large_fixed"
-		locatorname = "weapon_01"
-	}
-	large_utility_slots = 5
-	aux_utility_slots = 2
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 112
-		}
-	}
-}
-
-ship_section_template = {
 	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_L4HB2UL5AUX2"
 	ship_size = cosmo_crisis_weaver
 	fits_on_slot = mid
@@ -639,52 +574,6 @@ ship_section_template = {
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = "large_turret"
-		locatorname = "weapon_01"
-	}
-	large_utility_slots = 5
-	aux_utility_slots = 2
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 112
-		}
-	}
-}
-
-ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X2HB2UL5AUX2"
-	ship_size = cosmo_crisis_weaver
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		carrier
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "invisible_extra_large_fixed"
-		locatorname = "weapon_01"
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_02"
-		template = "invisible_extra_large_fixed"
-		locatorname = "weapon_01"
-	}
-	component_slot = {
-		name = "STRIKE_CRAFT_01"
-		template = "large_strike_craft"
-		rotation = 90
-		locatorname = "weapon_01"
-	}
-	component_slot = {
-		name = "STRIKE_CRAFT_02"
-		template = "large_strike_craft"
-		rotation = -90
 		locatorname = "weapon_01"
 	}
 	large_utility_slots = 5
@@ -809,49 +698,6 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ADVANCED_X4UL6AUX2"
-	ship_size = cosmo_crisis_weaver
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = {
-		artillery
-	}
-	ai_weight = {
-		factor = 0
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "invisible_extra_large_fixed"
-		locatorname = "weapon_01"
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_02"
-		template = "invisible_extra_large_fixed"
-		locatorname = "weapon_01"
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_03"
-		template = "invisible_extra_large_fixed"
-		locatorname = "weapon_01"
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_04"
-		template = "invisible_extra_large_fixed"
-		locatorname = "weapon_01"
-	}
-	large_utility_slots = 6
-	aux_utility_slots = 2
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = 128
-		}
-	}
-}
-
-ship_section_template = {
 	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ADVANCED_L5HB2UL6AUX2"
 	ship_size = cosmo_crisis_weaver
 	fits_on_slot = mid
@@ -913,7 +759,1020 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ADVANCED_X3HB1UL6AUX2"
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X2UL3"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X3UL3"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X2UL5AUX2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X3UL5AUX2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ADVANCED_X4UL5AUX2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ADVANCED_X5UL5AUX2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ADVANCED_X6UL5AUX2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_PRO_X7UL5AUX2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_PRO_X8UL5AUX2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ULTRA_X9UL5AUX2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ULTRA_X10UL5AUX2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ULTRA_X12UL5AUX2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_11"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_12"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ULTIMATE_X14UL5AUX2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_11"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_12"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_13"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_14"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X2UL3"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X1L2UL2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X2L1UL2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_L4UL3"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X1HB2UL2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_COMMON_X2L2UL2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ADVANCED_X8"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ADVANCED_X7HB2"
 	ship_size = cosmo_crisis_weaver
 	fits_on_slot = mid
 	should_draw_components = yes
@@ -942,13 +1801,831 @@ ship_section_template = {
 		locatorname = "weapon_01"
 	}
 	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
 		name = "STRIKE_CRAFT_01"
 		template = "large_strike_craft"
 		rotation = 90
 		locatorname = "weapon_01"
 	}
-	large_utility_slots = 6
-	aux_utility_slots = 2
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ADVANCED_X9"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_PRO_X10"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_PRO_X9L2"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_PRO_X11"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_11"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ULTRA_X13"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_11"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_12"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_13"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ULTRA_X14"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_11"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_12"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_13"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_14"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ULTRA_X15"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_11"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_12"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_13"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_14"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_15"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ULTIMATE_X18"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_11"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_12"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_13"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_14"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_15"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_16"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_17"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_18"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_COSMO_CRISIS_WEAVER_MID_ULTIMATE_X20"
+	ship_size = cosmo_crisis_weaver
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "biogenesis_01_fallen_empire_weaver_stage_3_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_11"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_12"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_13"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_14"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_15"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_16"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_17"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_18"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_19"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_20"
+		template = "invisible_extra_large_fixed"
+		locatorname = "weapon_01"
+	}
 	resources = {
 		category = ship_sections
 		cost = {

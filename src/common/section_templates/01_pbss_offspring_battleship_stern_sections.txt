@@ -1,5 +1,5 @@
 # PBSS Offspring_Battleship Stern Sections
-# Generated designs: L1AUX2, M2AUX3, X1AUX3, T1AUX3, L2UL3, L3UL3, X1UL3, HB2UL3, T1UL3, T2UL4AUX2, X3UL4AUX2, L4UL4AUX2, HB3UL4AUX2
+# Generated designs: L1AUX2, M2AUX3, X1AUX3, T1AUX3, L2UL3, L3UL3, X1UL3, HB2UL3, T1UL3, T2UL4AUX2, X3UL4AUX2, L4UL4AUX2, HB3UL4AUX2, T2UL5AUX2, X3UL5AUX2, T1X2UL5AUX2, T2X1UL3AUX2, T3UL3AUX2, T2X1UL5AUX2, T1X2UL5AUX2, X4UL5AUX2, X3UL2, T1L4UL1, T1HB2UL2, L8UL1, X2HB2UL2, X3UL2AUX1, T1L4UL1AUX1, T1HB2UL2AUX1, L8UL1AUX1, X2HB2UL2AUX1, T1X2UL2AUX1, T1L4UL2AUX1, T2X4UL2AUX2, T3X2UL2AUX2
 ship_section_template = {
 	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_COMMON_L1AUX2"
 	ship_size = offspring_battleship
@@ -421,6 +421,964 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ULTRA_T2UL5AUX2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ULTRA_X3UL5AUX2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ULTRA_T1X2UL5AUX2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ULTRA_T2X1UL3AUX2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ULTIMATE_T3UL3AUX2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ULTIMATE_T2X1UL5AUX2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ULTRA_T1X2UL5AUX2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ULTRA_X4UL5AUX2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 112
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ADVANCED_X3UL2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ADVANCED_T1L4UL1"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ADVANCED_T1HB2UL2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ADVANCED_L8UL1"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_L1_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ADVANCED_X2HB2UL2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ADVANCED_X3UL2AUX1"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_PRO_T1L4UL1AUX1"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 1
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ADVANCED_T1HB2UL2AUX1"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_PRO_L8UL1AUX1"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_L1_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 1
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ADVANCED_X2HB2UL2AUX1"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		carrier
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 88
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_PRO_T1X2UL2AUX1"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_PRO_T1L4UL2AUX1"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ULTIMATE_T2X4UL2AUX2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
+		}
+	}
+}
+
+ship_section_template = {
+	key = "PBSS_OFFSPRING_BATTLESHIP_STERN_ULTIMATE_T3X2UL2AUX2"
+	ship_size = offspring_battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {
+		artillery
+	}
+	ai_weight = {
+		factor = 0
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_01"
+	}
+	large_utility_slots = 2
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 128
 		}
 	}
 }
