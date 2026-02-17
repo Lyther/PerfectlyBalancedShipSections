@@ -1,4 +1,4 @@
-# Universal Planet Killer Star Cracker - Destroys stars
+# Universal Planet Killer Star Cracker - Destroys stars and planets
 can_destroy_planet_with_PLANET_KILLER_STAR_CRACKER_PBSS = {
 	custom_tooltip = {
 		fail_text = is_your_megastructure_system
@@ -19,9 +19,6 @@ can_destroy_planet_with_PLANET_KILLER_STAR_CRACKER_PBSS = {
 			}
 			space_owner = {
 				is_hostile = from.owner
-			}
-			space_owner = {
-				is_same_value = from.owner
 			}
 		}
 	}
