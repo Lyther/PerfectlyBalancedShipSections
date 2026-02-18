@@ -216,7 +216,7 @@ weapon_component_template = {
 	size = titanic
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_archaeo_titan_beam"
+	icon = "GFX_pbss_icon_penetrator_titanic_common"
 	icon_frame = 1
 	firing_arc = 360
 	use_ship_main_target = no
@@ -231,10 +231,6 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
-			OR = {
-				has_policy_flag = pbss_components_common
-				has_policy_flag = pbss_components_all
-			}
 		}
 	}
 	show_tech_unlock_if = {
@@ -309,7 +305,7 @@ weapon_component_template = {
 	size = titanic
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_archaeo_titan_beam"
+	icon = "GFX_pbss_icon_penetrator_titanic_advanced"
 	icon_frame = 1
 	firing_arc = 360
 	use_ship_main_target = no
@@ -324,10 +320,6 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
-		}
-		OR = {
-			has_policy_flag = pbss_components_advanced
-			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
@@ -402,7 +394,7 @@ weapon_component_template = {
 	size = titanic
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_archaeo_titan_beam"
+	icon = "GFX_pbss_icon_penetrator_titanic_pro"
 	icon_frame = 1
 	firing_arc = 360
 	use_ship_main_target = no
@@ -417,10 +409,6 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
-		}
-		OR = {
-			has_policy_flag = pbss_components_pro
-			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
@@ -495,7 +483,7 @@ weapon_component_template = {
 	size = titanic
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_archaeo_titan_beam"
+	icon = "GFX_pbss_icon_penetrator_titanic_ultra"
 	icon_frame = 1
 	firing_arc = 360
 	use_ship_main_target = no
@@ -510,10 +498,6 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
-		}
-		OR = {
-			has_policy_flag = pbss_components_ultra
-			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
@@ -588,7 +572,7 @@ weapon_component_template = {
 	size = titanic
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_archaeo_titan_beam"
+	icon = "GFX_pbss_icon_penetrator_titanic_ultimate"
 	icon_frame = 1
 	firing_arc = 360
 	use_ship_main_target = no
@@ -603,10 +587,6 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
-		}
-		OR = {
-			has_policy_flag = pbss_components_ultimate
-			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
@@ -680,7 +660,7 @@ weapon_component_template = {
 	size = extra_large
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_perdition_beam"
+	icon = "GFX_pbss_icon_penetrator_xl_common"
 	icon_frame = 1
 	firing_arc = 360
 	use_ship_main_target = no
@@ -695,10 +675,6 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
-		}
-		OR = {
-			has_policy_flag = pbss_components_common
-			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
@@ -773,7 +749,7 @@ weapon_component_template = {
 	size = extra_large
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_perdition_beam"
+	icon = "GFX_pbss_icon_penetrator_xl_advanced"
 	icon_frame = 1
 	firing_arc = 360
 	use_ship_main_target = no
@@ -788,10 +764,6 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
-		}
-		OR = {
-			has_policy_flag = pbss_components_advanced
-			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
@@ -866,7 +838,7 @@ weapon_component_template = {
 	size = extra_large
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_perdition_beam"
+	icon = "GFX_pbss_icon_penetrator_xl_pro"
 	icon_frame = 1
 	firing_arc = 360
 	use_ship_main_target = no
@@ -881,10 +853,6 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
-		}
-		OR = {
-			has_policy_flag = pbss_components_pro
-			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
@@ -959,7 +927,7 @@ weapon_component_template = {
 	size = extra_large
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_perdition_beam"
+	icon = "GFX_pbss_icon_penetrator_xl_ultra"
 	icon_frame = 1
 	firing_arc = 360
 	use_ship_main_target = no
@@ -974,10 +942,6 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
-		}
-		OR = {
-			has_policy_flag = pbss_components_ultra
-			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {
@@ -1052,7 +1016,7 @@ weapon_component_template = {
 	size = extra_large
 	type = instant
 	prio_projectile = yes
-	icon = "GFX_ship_part_perdition_beam"
+	icon = "GFX_pbss_icon_penetrator_xl_ultimate"
 	icon_frame = 1
 	firing_arc = 360
 	use_ship_main_target = no
@@ -1067,10 +1031,6 @@ weapon_component_template = {
 	potential = {
 		from = {
 			is_ai = no
-		}
-		OR = {
-			has_policy_flag = pbss_components_ultimate
-			has_policy_flag = pbss_components_all
 		}
 	}
 	show_tech_unlock_if = {

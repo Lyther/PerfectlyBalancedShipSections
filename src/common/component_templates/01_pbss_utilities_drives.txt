@@ -18,33 +18,11 @@
 #############
 # UTILITIES #
 #############
-### NON-FTL DRIVE
-utility_component_template = {
-	key = "PBSS_EMPTY_DRIVE"
-	size = small
-	icon = "GFX_ship_part_empty_ftl_drive"
-	icon_frame = 1
-	power = 0
-	potential = {
-		from = {
-			country_uses_bio_ships = no
-		}
-	}
-	show_tech_unlock_if = {
-		country_uses_bio_ships = no
-	}
-	component_set = "ftl_components"
-	upgrades_to = "HYPER_DRIVE_1"
-	ai_weight = {
-		base = 0
-	}
-}
-
 # Subspace Drive
 utility_component_template = {
 	key = "PBSS_SUBSPACE_DRIVE"
 	size = small
-	icon = "GFX_ship_part_subspace_drive"
+	icon = "GFX_pbss_ship_part_subspace_drive"
 	icon_frame = 1
 	power = @power1
 	resources = {
@@ -90,7 +68,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "PBSS_HYPER_DRIVE_1"
 	size = small
-	icon = "GFX_ship_part_hyper_drive_1"
+	icon = "GFX_pbss_ship_part_hyper_drive_1"
 	icon_frame = 1
 	power = @power2
 	resources = {
@@ -129,7 +107,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "PBSS_HYPER_DRIVE_2"
 	size = small
-	icon = "GFX_ship_part_hyper_drive_2"
+	icon = "GFX_pbss_ship_part_hyper_drive_2"
 	icon_frame = 1
 	power = @power3
 	resources = {
@@ -169,7 +147,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "PBSS_HYPER_DRIVE_3"
 	size = small
-	icon = "GFX_ship_part_hyper_drive_3"
+	icon = "GFX_pbss_ship_part_hyper_drive_3"
 	icon_frame = 1
 	power = @power4
 	resources = {
@@ -210,7 +188,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "PBSS_JUMP_DRIVE_1"
 	size = small
-	icon = "GFX_ship_part_jump_drive_1"
+	icon = "GFX_pbss_ship_part_jump_drive_1"
 	icon_frame = 1
 	power = @power5
 	resources = {
@@ -252,7 +230,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "PBSS_PSI_JUMP_DRIVE_1"
 	size = small
-	icon = "GFX_ship_part_psi_jump_drive_1"
+	icon = "GFX_pbss_ship_part_psi_jump_drive_1"
 	icon_frame = 1
 	power = @power5
 	resources = {
@@ -296,7 +274,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "PBSS_BIO_DRIVE"
 	size = small
-	icon = "GFX_ship_part_bio_warp_drive_1"
+	icon = "GFX_pbss_ship_part_bio_warp_drive_1"
 	icon_frame = 1
 	power = 0
 	ftl = yes
@@ -324,7 +302,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "PBSS_BIO_DRIVE_2"
 	size = small
-	icon = "GFX_ship_part_bio_warp_drive_2"
+	icon = "GFX_pbss_ship_part_bio_warp_drive_2"
 	icon_frame = 1
 	power = 0
 	ftl = yes
@@ -357,7 +335,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "PBSS_BIO_DRIVE_3"
 	size = small
-	icon = "GFX_ship_part_bio_subspace_drive"
+	icon = "GFX_pbss_ship_part_bio_warp_drive_3"
 	icon_frame = 1
 	power = 0
 	ftl = yes
@@ -390,7 +368,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "PBSS_BIO_DRIVE_4"
 	size = small
-	icon = "GFX_ship_part_bio_jump_drive_1"
+	icon = "GFX_pbss_ship_part_bio_jump_drive_1"
 	icon_frame = 1
 	power = 0
 	ftl = yes
@@ -423,7 +401,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "PBSS_BIO_DRIVE_5"
 	size = small
-	icon = "GFX_ship_part_bio_psi_jump_drive_1"
+	icon = "GFX_pbss_ship_part_bio_psi_jump_drive_1"
 	icon_frame = 1
 	power = 0
 	ftl = yes

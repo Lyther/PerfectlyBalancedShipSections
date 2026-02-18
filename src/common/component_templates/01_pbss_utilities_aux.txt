@@ -4,7 +4,7 @@
 utility_component_template = {
 	key = "PBSS_PENETRATION_BOOST"
 	size = aux
-	icon = "GFX_ship_part_computer_default"
+	icon = "GFX_pbss_icon_penetrator"
 	icon_frame = 1
 	resources = {
 		category = ship_components
