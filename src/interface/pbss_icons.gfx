@@ -1,0 +1,262 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_pbss_icon_penetrator"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_icon_penetrator.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_icon_penetrator_titanic_common"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_icon_penetrator_titanic_common.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_icon_penetrator_titanic_advanced"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_icon_penetrator_titanic_advanced.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_icon_penetrator_titanic_pro"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_icon_penetrator_titanic_pro.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_icon_penetrator_titanic_ultra"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_icon_penetrator_titanic_ultra.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_icon_penetrator_titanic_ultimate"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_icon_penetrator_titanic_ultimate.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_icon_penetrator_xl_common"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_icon_penetrator_xl_common.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_icon_penetrator_xl_advanced"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_icon_penetrator_xl_advanced.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_icon_penetrator_xl_pro"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_icon_penetrator_xl_pro.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_icon_penetrator_xl_ultra"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_icon_penetrator_xl_ultra.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_icon_penetrator_xl_ultimate"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_icon_penetrator_xl_ultimate.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_subspace_drive"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_subspace_drive.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_hyper_drive_1"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_hyper_drive_1.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_hyper_drive_2"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_hyper_drive_2.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_hyper_drive_3"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_hyper_drive_3.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_jump_drive_1"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_jump_drive_1.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_psi_jump_drive_1"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_psi_jump_drive_1.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bio_warp_drive_1"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bio_warp_drive_1.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bio_warp_drive_2"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bio_warp_drive_2.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bio_warp_drive_3"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bio_warp_drive_3.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bio_jump_drive_1"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bio_jump_drive_1.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bio_psi_jump_drive_1"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bio_psi_jump_drive_1.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_free_fire_default"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_free_fire_default.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_lock_target_default"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_lock_target_default.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_sniper_default"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_sniper_default.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_free_fire_basic"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_free_fire_basic.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_lock_target_basic"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_lock_target_basic.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_sniper_basic"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_sniper_basic.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_free_fire_advanced"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_free_fire_advanced.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_lock_target_advanced"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_lock_target_advanced.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_sniper_advanced"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_sniper_advanced.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_free_fire_sapient"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_free_fire_sapient.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_lock_target_sapient"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_lock_target_sapient.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_sniper_sapient"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_sniper_sapient.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_free_fire_precog"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_free_fire_precog.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_lock_target_precog"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_lock_target_precog.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_computer_sniper_precog"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_computer_sniper_precog.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_sensor_1"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_sensor_1.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_sensor_2"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_sensor_2.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_sensor_3"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_sensor_3.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_sensor_4"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_sensor_4.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_sensor_5"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_sensor_5.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bio_sensor_1"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bio_sensor_1.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bio_sensor_2"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bio_sensor_2.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bio_sensor_3"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bio_sensor_3.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bio_sensor_4"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bio_sensor_4.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bio_sensor_5"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bio_sensor_5.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bioship_sensor_1"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bioship_sensor_1.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bioship_sensor_2"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bioship_sensor_2.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bioship_sensor_3"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bioship_sensor_3.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bioship_sensor_4"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bioship_sensor_4.dds"
+        noOfFrames = 1
+    }
+    spriteType = {
+        name = "GFX_pbss_ship_part_bioship_sensor_5"
+        textureFile = "gfx/interface/icons/pbss_icons/pbss_ship_part_bioship_sensor_5.dds"
+        noOfFrames = 1
+    }
+}
